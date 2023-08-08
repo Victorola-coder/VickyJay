@@ -1,6 +1,6 @@
 # VickyJay - Personal Portfolio Website
 
-![VickyJay's Portfolio Screenshot](./screenshot.png)
+![VickyJay's Portfolio Screenshot]()
 
 Welcome to my personal portfolio! This project showcases my frontend development skills and projects I've worked on. Feel free to explore the different sections to learn more about me and my work.
 
@@ -23,10 +23,10 @@ Welcome to my personal portfolio! This project showcases my frontend development
 ## Installation and Setup
 
 1. Clone this repository to your local machine using `git clone`.
-2. Navigate to the project directory: `cd vickyjay-portfolio`.
+2. Navigate to the project directory: `cd vickyjay`.
 3. Install project dependencies using `npm install`.
 4. Start the development server: `npm start`.
-5. Open your web browser and navigate to `http://localhost:3000` to view the portfolio.
+5. Open your web browser and navigate to `http://localhost:5173` to view the portfolio.
 
 ## Usage
 
