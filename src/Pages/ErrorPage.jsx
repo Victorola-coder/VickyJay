@@ -4,11 +4,16 @@ import errorImg from "../assets/images/favicon.png";
 const ErrorPage = () => {
   return (
     <div>
-      <div className="flex flex-col items-center justify-center w-full gap-7">
+      <div className="min-h-[80vh] overflow-hidden flex flex-col items-center justify-center gap-7">
         <h1 className="text-[40px] leading-[25.78px] text-transparent h-12  bg-clip-text bg-gradient-to-r from-[#1ED760] to-[#069447] font-clash font-bold md:text-[40px] md:leading-[30.47px]">
-         VickyJay
+          VickyJay
         </h1>
-        <img src={errorImg} alt="face_icon" draggable={false} className="w-20" />
+        <img
+          src={errorImg}
+          alt="face_icon"
+          draggable={false}
+          className="w-20"
+        />
 
         <h1 className="text-[#FEFEFE] font-medium max-w-max mx-4 text-center font-pop">
           Nothing for you, chief!😝
@@ -23,10 +28,6 @@ const ErrorPage = () => {
       </div>
     </div>
   );
-}
+};
 
-export default ErrorPage
-
-
-
-
+export default ErrorPage;
