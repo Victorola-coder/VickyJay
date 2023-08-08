@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { GhIcon } from "../assets/Icons";
 
 const Navbar = () => {
@@ -8,11 +9,24 @@ const Navbar = () => {
           className={`w-full scroll:bg-black fixed top-0 py-[25px] px-[28px] md:py-[30px] md:px-[80px]`}
         >
           <nav className={`flex items-center justify-between`}>
-            <h2
+            {/* <h2
               className={`font-clashbold font-semibold text-[18px] md:text-[25px] leading-[]`}
             >
               VickyJay<span>.</span>
-            </h2>
+            </h2> */}
+           <NavLink>
+             {({ isActive }) => (
+                  <div
+                    className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] hover:before:bg-[#FF4F6E] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
+                      isActive
+                        ? "text-[#4C686F] hover:before:w-full"
+                        : "text-white hover:before:w-full"
+                    } relative`}
+                  >
+                    
+                  </div>
+                )}
+           </NavLink>
             <a
               href="https://www.github.com/victorola-coder"
               target="_blank"
