@@ -11,14 +11,14 @@ const ErrorPage = () => {
         <img src={errorImg} alt="face_icon" draggable={false} className="w-20" />
 
         <h1 className="text-[#FEFEFE] font-medium max-w-max mx-4 text-center font-pop">
-          Nothing for ou, chief!😝
+          Nothing for you, chief!😝
         </h1>
         <motion.a
           whileTap={{ scale: 0.9 }}
-          className="text-[#FEFEFE] font-figtree p-2 outline-dashed outline-[#1ED760]"
+          className="text-[#FEFEFE] font-clash p-2 outline-dashed outline-[#1ED760]"
           href="/"
         >
-          Go back Home
+          Go back home
         </motion.a>
       </div>
     </div>
