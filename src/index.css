@@ -39,3 +39,8 @@ html {
   scrollbar-width: thin;
 }
 
+@font-face {
+	font-family: Clash;
+	src: url("./assets/fonts/clash/ClashDisplay-Regular.otf") format("opentype");
+}
+
