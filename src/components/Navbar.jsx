@@ -3,8 +3,10 @@ import { GhIcon } from "../assets/Icons";
 const Navbar = () => {
   return (
     <>
-      <div>
-        <header className={`pt-[25px] px-[31px] md:pt-[30px] md:px-[100px]`}>
+      <main className="">
+        <header
+          className={`w-full scroll:bg-black fixed top-0 py-[25px] px-[31px] md:py-[30px] md:px-[80px]`}
+        >
           <nav className={`flex items-center justify-between`}>
             <h2
               className={`font-clashbold font-semibold text-[25px] leading-[]`}
@@ -17,7 +19,7 @@ const Navbar = () => {
               rel="noreferrer"
             >
               <span className={`flex items-center gap-[10px]`}>
-                <GhIcon className={``} />
+                <GhIcon className={`w-full`} />
                 <p className="font-clash text-[18px] font-medium text-[#FFFFFF99]">
                   github
                 </p>
@@ -25,7 +27,7 @@ const Navbar = () => {
             </a>
           </nav>
         </header>
-      </div>
+      </main>
     </>
   );
 };
