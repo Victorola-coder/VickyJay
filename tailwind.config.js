@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         pop: ['Poppins', "sans-serif"],
-        clash: ["Clash Display", "sans-serif"]
+        clash: ["clash", "sans-serif"],
+        clashbold: ["clashBold", "sans-serif"]
       }
     },
   },

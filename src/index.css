@@ -5,13 +5,14 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body,
 html {
   overflow-x: hidden;
   background-color: #0a1c20;
+  color: white;
 }
 
 body::-webkit-scrollbar {
@@ -40,7 +41,10 @@ html {
 }
 
 @font-face {
-	font-family: Clash;
-	src: url("./assets/fonts/clash/ClashDisplay-Regular.otf") format("opentype");
+  font-family: clash;
+  src: url("./assets/fonts/clash/ClashDisplay-Regular.otf") format("opentype");
 }
-
+@font-face {
+  font-family: clashBold;
+  src: url("./assets/fonts/clash/ClashDisplay-Semibold.otf") format("opentype");
+}
