@@ -5,11 +5,11 @@ const Navbar = () => {
     <>
       <main className="">
         <header
-          className={`w-full scroll:bg-black fixed top-0 py-[25px] px-[31px] md:py-[30px] md:px-[80px]`}
+          className={`w-full scroll:bg-black fixed top-0 py-[25px] px-[28px] md:py-[30px] md:px-[80px]`}
         >
           <nav className={`flex items-center justify-between`}>
             <h2
-              className={`font-clashbold font-semibold text-[25px] leading-[]`}
+              className={`font-clashbold font-semibold text-[18px] md:text-[25px] leading-[]`}
             >
               VickyJay<span>.</span>
             </h2>
@@ -18,9 +18,9 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <span className={`flex items-center gap-[10px]`}>
-                <GhIcon className={`w-full`} />
-                <p className="font-clash text-[18px] font-medium text-[#FFFFFF99]">
+              <span className={`flex items-center gap-[8px] md:gap-[10px]`}>
+                <GhIcon className={`w-[26px] h-[26px] md:w-[32px] md:h-[32px]`} />
+                <p className="font-clash text-[15px] md:text-[18px] font-medium text-[#FFFFFF99]">
                   github
                 </p>
               </span>
