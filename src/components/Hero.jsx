@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
-import { FbIcon, IgIcon, InIcon, LinkedIcon, TwIcon } from "../assets/Icons";
+import { FbIcon, IgIcon, InIcon, TwIcon } from "../assets/Icons";
 import heroImg from "../assets/images/hero.png";
 
 const Hero = () => {
   return (
     <div>
-      <section className="mx-auto px-[80px] pt-[50px] ">
+      <section className="mx-auto pt-[30px] px-[38px] md:px-[80px] md:pt-[50px] ">
         <div className="flex items-center justify-between">
           <div>
             <div className={`gradientText`}>
               <h1
-                className={`max-w-[570px] text-[#CFFAFF] text-[60px] leading-[73.8px] font-clash font-semibold`}
+                className={`font-clash font-semibold text-[#CFFAFF] max-w-[285px] text-[30px] leading-[36.9px] md:max-w-[600px] md:text-[60px] md:leading-[73.8px]`}
               >
-                Frontend Developer<span>.</span>
+               Creative <br /> Frontend Developer<span>.</span>
               </h1>
             </div>
             <p
