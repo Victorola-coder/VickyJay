@@ -9,19 +9,24 @@ const Navbar = () => {
           className={`w-full scroll:bg-black fixeds top-0 py-[25px] px-[28px] md:py-[30px] md:px-[80px]`}
         >
           <nav className={`flex items-center justify-between`}>
-            <NavLink className={`gradientText`}>
-              {({ isActive }) => (
-                <div
-                  className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] hover:before:bg-[#4C686F] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
-                    isActive
-                      ? "text-white hover:before:w-full"
-                      : "text-white hover:before:w-full"
-                  } relative`}
-                >
-                  VickyJay<span>.</span>
-                </div>
-              )}
-            </NavLink>
+            <h2
+              className={`font-clashbold font-semibold text-[18px] md:text-[25px] leading-[]`}
+            >
+              VickyJay<span>.</span>
+            </h2>
+            {/* <NavLink>
+             {({ isActive }) => (
+                  <div
+                    className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] hover:before:bg-[[#4C686F] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
+                      isActive
+                        ? "text-white hover:before:w-full"
+                        : "text-white hover:before:w-full"
+                    } relative`}
+                  >
+                     VickyJay<span>.</span>
+                  </div>
+                )}
+           </NavLink> */}
             <a
               href="https://www.github.com/victorola-coder"
               target="_blank"

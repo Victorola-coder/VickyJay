@@ -28,13 +28,16 @@ export function FbIcon({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width="40"
-      // height="40"
+      // width="25"
+      // height="25"
       className={className}
-      viewBox="0 0 40 40"
+      viewBox="0 0 25 25"
       fill="none"
     >
-      <circle cx="20" cy="20" r="19" stroke="#1ED760" strokeWidth="2" />
+      <path
+        d="M10.575 22.5H14.2375V13.375H17.3L17.7625 9.825H14.2375V7.55C14.2375 6.525 14.525 5.825 16 5.825H17.8875V2.6375C17.5625 2.6 16.45 2.5 15.15 2.5C12.425 2.5 10.575 4.1625 10.575 7.2V9.825H7.5V13.375H10.575V22.5Z"
+        fill="#1ED760"
+      />
     </svg>
   );
 }
@@ -114,3 +117,19 @@ export const LinkedIcon = ({ className }) => {
     </svg>
   );
 };
+
+export function InIcon({className}) {
+  return (
+    <svg
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      className={className}
+    >
+      <path
+        d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"
+        fill="#1ED760"
+      />
+    </svg>
+  );
+}
