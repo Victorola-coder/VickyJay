@@ -16,7 +16,7 @@ html {
 }
 
 body::-webkit-scrollbar {
-  @apply bg-transparent w-1;
+  @apply w-1 bg-transparent;
 }
 
 body::-webkit-scrollbar-corner {
@@ -32,7 +32,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 body::-webkit-scrollbar-thumb {
-  @apply bg-black/30 hover:bg-black/40 rounded-full transition-all duration-500;
+  @apply transition-all duration-500 rounded-full bg-black/30 hover:bg-black/40;
 }
 
 html {
@@ -47,4 +47,50 @@ html {
 @font-face {
   font-family: clashBold;
   src: url("./assets/fonts/clash/ClashDisplay-Semibold.otf") format("opentype");
+}
+
+.gradientText {
+  position: relative;
+  height: fit-content;
+  width: max-content;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background: linear-gradient(
+    76deg,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff
+  );
+  background-size: 500% 500%;
+  -webkit-animation: slime 45s ease infinite;
+  animation: slime 45s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.gradientText  h1 {
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0);
+    text-transform: capitalize;
 }
