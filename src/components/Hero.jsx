@@ -6,18 +6,18 @@ import hero from "../assets/images/hero.png";
 const Hero = () => {
   return (
     <div>
-      <section className="mx-auto mt-[60px] px-[38px] md:mx-[80px] md:mt-[50px] ">
-        <div className="flex flex-col md:flex md:flex-row md:items-center md:justify-between">
+      <section className="mx-auto mt-[30px] px-[38px] md:mx-[80px] md:mt-[50px] ">
+        <div className="md:flex md:flex-row md:items-center md:justify-between">
           <div>
             <div className={``}>
               <h1
-                className={`font-clashbold font-bold text-[#CFFAFF] max-w-[285px]  min-w-[356px] text-[30px] leading-[36.9px] md:max-w-[580px] md:text-[60px] md:leading-[73.8px]`}
+                className={`font-clash font-semibold text-[#CFFAFF] max-w-[285px] text-[30px] leading-[36.9px] md:max-w-[580px] md:text-[60px] md:leading-[73.8px]`}
               >
                 Creative Frontend Developer<span>.</span>
               </h1>
             </div>
             <p
-              className={`font-medium font-pop text-[15px] min-w-[363px] mt-[25px] text-[#FFFFFF99] md:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]`}
+              className={`font-medium font-pop text-[15px] max-w-[353px] mt-[25px] text-[#FFFFFF99] md:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]`}
             >
               I like to craft solid and scalable frontend products with great
               user experiences.
@@ -26,11 +26,11 @@ const Hero = () => {
               id="intro"
               className="text-[#F0FEFF] font-pop flex-shrink-0 text-[15px] font-medium mt-[20px] flex flex-col gap-[20px] md:mt-[45px] md:flex md:flex-row md:items-center md:gap-[10px]"
             >
-              <p className={`max-w-full md:max-w-[310px]`}>
+              <p className={`max-w-[310px]`}>
                 1+ Years of experience. Specialized in building Websites, while
                 ensuring a seamless web experience for end users.
               </p>
-              <p className={`max-w-max md:max-w-[319px]`}>
+              <p className={`max-w-[319px]`}>
                 My specialty is Front-end web Development,Turning Beautiful
                 Designs and turning it into beautiful, semantic HTML & CSS.
               </p>
@@ -89,13 +89,13 @@ const Hero = () => {
               </span>
             </div>
           </div>
-          <div className="w-full  mt-[60px] md:mt-0">
+          <div className="flex flex-col items-center mt-[60px] md:mt-0">
             <div className="relative">
               <motion.div whileHover={{}}>
                 <img
                   src={hero}
                   alt="hero image is here"
-                  className="w-full h-full md:w-[512px] md:h-[512px] absolute md:bottom-[52px] md:right-[56px] object-cover"
+                  className="w-[330px] h-[330px] md:w-[512px] md:h-[512px] absolute bottom-[32px] -left-[36px] md:bottom-[52px] md:right-[56px] object-cover"
                   draggable={false}
                 />
               </motion.div>
@@ -104,6 +104,19 @@ const Hero = () => {
               ></div>
             </div>
           </div>
+          {/* <div className="relative px-[32x] mt-[50px] md:hidden block">
+            <motion.div whileHover={{}}>
+              <img
+                src={hero}
+                alt="hero image is here"
+                className="absolute right-[36px] bottom-[32px] object-cover"
+                draggable={false}
+              />
+            </motion.div>
+            <div
+              className={`w-[330px] h-[330px] border-[#1ED760] border-[3px] border-solid`}
+            ></div>
+          </div> */}
         </div>
       </section>
     </div>
