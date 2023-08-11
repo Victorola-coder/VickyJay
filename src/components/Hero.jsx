@@ -1,29 +1,30 @@
 import { motion } from "framer-motion";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "../assets/Icons";
-import heroImg from "../assets/images/hero.png";
+import heroImg from "../assets/images/herol.png";
+import hero from "../assets/images/hero.png";
 
 const Hero = () => {
   return (
     <div>
-      <section className="mx-auto pt-[30px] px-[38px] md:px-[80px] md:pt-[50px] ">
-        <div className="flex items-center justify-between">
+      <section className="mx-auto mt-[30px] px-[38px] md:mx-[80px] md:mt-[50px] ">
+        <div className="md:flex md:flex-row md:items-center md:justify-between">
           <div>
-            <div className={`gradientText`}>
+            <div className={``}>
               <h1
-                className={`font-clash font-semibold text-[#CFFAFF] max-w-[285px] text-[30px] leading-[36.9px] md:max-w-[600px] md:text-[60px] md:leading-[73.8px]`}
+                className={`font-clash font-semibold text-[#CFFAFF] max-w-[285px] text-[30px] leading-[36.9px] md:max-w-[580px] md:text-[60px] md:leading-[73.8px]`}
               >
-               Creative <br /> Frontend Developer<span>.</span>
+                Creative Frontend Developer<span>.</span>
               </h1>
             </div>
             <p
-              className={`text-[#FFFFFF99] max-w-[639px] text-[18px] leading-[27px] font-medium font-pop`}
+              className={`font-medium font-pop text-[15px] max-w-[353px] mt-[25px] text-[#FFFFFF99] md:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]`}
             >
               I like to craft solid and scalable frontend products with great
               user experiences.
             </p>
             <div
               id="intro"
-              className="gradientText mt-[45px] flex items-center gap-[10px] text-[#F0FEFF] font-pop text-[15px] font-medium"
+              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[15px] font-medium mt-[20px] flex flex-col gap-[20px] md:mt-[45px] md:flex md:flex-row md:items-center md:gap-[10px]"
             >
               <p className={`max-w-[310px]`}>
                 1+ Years of experience. Specialized in building Websites, while
@@ -34,7 +35,7 @@ const Hero = () => {
                 Designs and turning it into beautiful, semantic HTML & CSS.
               </p>
             </div>
-            <div className="mt-[65px] flex items-center gap-[40px]">
+            <div className="mt-[35px] md:mt-[65px] flex items-center gap-[26px] md:gap-[40px]">
               <motion.a
                 href="https://web.facebook.com/victortoluu"
                 target="_blank"
@@ -88,19 +89,32 @@ const Hero = () => {
               </span>
             </div>
           </div>
-          <div className="relative">
+          <div className="mt-[60px] md:mt-0 mx-8 relative">
             <motion.div whileHover={{}}>
               <img
-                src={heroImg}
+                src={hero}
                 alt="hero image is here"
-                className="absolute bottom-[52px] right-[56px] object-cover w-full "
+                className="w-[330px] h-[330px] md:w-[512px] md:h-[512px] absolute bottom-[32px] -left-[36px] md:bottom-[52px] md:right-[56px] object-cover"
                 draggable={false}
               />
             </motion.div>
             <div
-              className={`w-[512px] h-[512px] border-[#1ED760] border-[3px] border-solid`}
+              className={`max-w-[330px] min-h-[330px] md:min-w-[512px] md:min-h-[512px] border-[#1ED760] border-[3px] border-solid`}
             ></div>
           </div>
+          {/* <div className="relative px-[32x] mt-[50px] md:hidden block">
+            <motion.div whileHover={{}}>
+              <img
+                src={hero}
+                alt="hero image is here"
+                className="absolute right-[36px] bottom-[32px] object-cover"
+                draggable={false}
+              />
+            </motion.div>
+            <div
+              className={`w-[330px] h-[330px] border-[#1ED760] border-[3px] border-solid`}
+            ></div>
+          </div> */}
         </div>
       </section>
     </div>

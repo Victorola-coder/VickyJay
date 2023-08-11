@@ -5,7 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline: 1px solid red; */
+  box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 body,
@@ -116,11 +117,11 @@ html {
   -webkit-background-clip: text;
 }
 
-.gradientText  h1 {
-    font-size: 4em;
-    font-weight: 900;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
-    color: rgba(255, 255, 255, 0);
-    text-transform: capitalize;
+.gradientText h1 {
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0);
+  text-transform: capitalize;
 }
