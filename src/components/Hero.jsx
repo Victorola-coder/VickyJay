@@ -6,25 +6,25 @@ import hero from "../assets/images/hero.png";
 const Hero = () => {
   return (
     <div>
-      <section className="mx-[">
-        <div className="flex flex-col lg:flex lg:flex-row lg:items-center lg:space-x-12 lg:justify-between">
+      <section className="mx-auto px-[30px] pt-[46px] md:px-[50px] lg:pt-[51px] lg:px-[40px] ">
+        <div className="flex flex-col flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:space-x-12 lg:justify-between">
           <div>
             <div className={``}>
               <h1
-                className={`font-clashbold text-[#CFFAFF]`}
+                className={`font-clashbold font-semibold text-[30px] leading-[36.9px] text-[#CFFAFF] md:leading-[4 5px] md:text-[35px] md:max-w-max lg:leading-[73.8px] lg:max-w-[580px] lg:text-[60px] `}
               >
                 Creative Frontend Developer<span>.</span>
               </h1>
             </div>
             <p
-              className={`font-medium font-pop text-[15px] max-w-[353px] mt-[25px] text-[#FFFFFF99] md:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]`}
+              className={`font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]`}
             >
               I like to craft solid and scalable frontend products with great
               user experiences.
             </p>
             <div
               id="intro"
-              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[15px] font-medium mt-[20px] flex flex-col gap-[20px] md:mt-[45px] md:flex md:flex-row md:items-center md:gap-[10px]"
+              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[10px] md:text-[15px] lg:text-[15px] font-medium mt-[20px] md:flex md:flex-col gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-center lg:gap-[10px]"
             >
               <p className={`max-w-[310px]`}>
                 1+ Years of experience. Specialized in building Websites, while
@@ -90,10 +90,17 @@ const Hero = () => {
             </div>
           </div>
           <div className="mt-[2.5rem]">
-            <div className="relative overflow-hidden w-max">
-              <div></div>
+            <div className="relative overflow-aut w-max">
+             <motion.div whileHover={{}}>
+                <img
+                  src={hero}
+                  alt="hero image is here"
+                 className="absolute w-full h-full md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
+                  draggable={false}
+                />
+              </motion.div>
               <div
-                className={`shrink-0 w-[300px] h-[300px] md:min-w-[350px] md:min-h-[350px] border-[3px] border-[#1ED760]`}
+                className={`shrink-0 w-[300px] h-[300px] lg:min-w-[400px] lg:min-h-[400px] border-[3px] border-[#1ED760]`}
               ></div>
             </div>
           </div>

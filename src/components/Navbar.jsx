@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <main className="">
         <header
-          className={`w-full scroll:bg-black pt-[20px] px-[28px] md:py-[30px] md:px-[80px]`}
+          className={`w-full scroll:bg-black pt-[20px] px-[32px] md:py-[30px] md:px-[80px]`}
         >
           <nav className={`flex items-center justify-between`}>
             {/* <h2
