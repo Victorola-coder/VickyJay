@@ -10,14 +10,8 @@ export default {
         pop: ['Poppins', "sans-serif"],
         clash: ["clash", "sans-serif"],
         clashbold: ["clashBold", "sans-serif"]
-      },
-      screens: {
-        sm: "576px",
-        md: "768px",
-        lg: "992px",
-        xl: "1220px",
-        xxl: "1400px",
-      },
+      }
+      
     },
   },
   plugins: [],

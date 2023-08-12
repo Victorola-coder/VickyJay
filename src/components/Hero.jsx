@@ -5,8 +5,8 @@ import hero from "../assets/images/hero.png";
 
 const Hero = () => {
   return (
-    <div>
-      <section className="mx-auto px-[30px] pt-[46px] md:px-[20px] lg:pt-[51px] lg:px-[40px] ">
+    <>
+      <section className="mx-auto px-[30px] pt-[46px] md:px-[26px] lg:pt-[51px] lg:px-[40px] ">
         <div className="flex flex-col items-center flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:space-x-12 lg:justify-between">
           <div>
             <div className={``}>
@@ -24,7 +24,7 @@ const Hero = () => {
             </p>
             <div
               id="intro"
-              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[10px] md:text-[15px] lg:text-[15px] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-start lg:gap-[12px]"
+              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[.9em] leading-[1.5] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-start lg:gap-[12px]"
             >
               <p className={`max-w-[310px]`}>
                 1+ Years of experience. Specialized in building products, while
@@ -118,7 +118,7 @@ const Hero = () => {
           </div> */}
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
