@@ -34,7 +34,7 @@ const Hero = () => {
                 Highly skilled at progressive enhancement, design systems & UI Engineering.
               </p>
             </div>
-            <div className="mt-[35px] md:mt-[65px] flex justify-center md:justify-start items-center  gap-[26px] md:gap-[40px]">
+            <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">
               <motion.a
                 href="https://web.facebook.com/victortoluu"
                 target="_blank"
