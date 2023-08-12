@@ -24,7 +24,7 @@ const Hero = () => {
             </p>
             <div
               id="intro"
-              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[10px] md:text-[15px] lg:text-[15px] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-center lg:gap-[10px]"
+              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[10px] md:text-[15px] lg:text-[15px] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-start lg:gap-[12px]"
             >
               <p className={`max-w-[310px]`}>
                 1+ Years of experience. Specialized in building products, while
