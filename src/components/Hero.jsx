@@ -6,12 +6,12 @@ import hero from "../assets/images/hero.png";
 const Hero = () => {
   return (
     <div>
-      <section className="mx-auto mt-[30px] px-[38px] md:mx-[80px] md:mt-[50px] ">
-        <div className="md:flex md:flex-row md:items-center md:justify-between">
+      <section className="mx-[">
+        <div className="flex flex-col lg:flex lg:flex-row lg:items-center lg:space-x-12 lg:justify-between">
           <div>
             <div className={``}>
               <h1
-                className={`font-clash font-semibold text-[#CFFAFF] max-w-[285px] text-[30px] leading-[36.9px] md:max-w-[580px] md:text-[60px] md:leading-[73.8px]`}
+                className={`font-clashbold text-[#CFFAFF]`}
               >
                 Creative Frontend Developer<span>.</span>
               </h1>
@@ -89,33 +89,28 @@ const Hero = () => {
               </span>
             </div>
           </div>
-          <div className="flex flex-col items-center mt-[60px] md:mt-0">
+          <div className="mt-[2.5rem]">
+            <div className="relative overflow-hidden w-max">
+              <div></div>
+              <div
+                className={`shrink-0 w-[300px] h-[300px] md:min-w-[350px] md:min-h-[350px] border-[3px] border-[#1ED760]`}
+              ></div>
+            </div>
+          </div>
+          {/* <div className="flex flex-col items-center mt-[60px] md:mt-0">
             <div className="relative">
               <motion.div whileHover={{}}>
                 <img
                   src={hero}
                   alt="hero image is here"
-                  className="w-[330px] h-[330px] md:w-[512px] md:h-[512px] absolute bottom-[32px] -left-[36px] md:bottom-[52px] md:right-[56px] object-cover"
+                  className="w-[330px] h-[330px] mg:w-3/4 lg:w-[512px] lg:h-[512px] absolute bottom-[32px] -left-[36px] md:bottom-[52px] md:right-[56px] object-cover"
                   draggable={false}
                 />
               </motion.div>
               <div
-                className={`max-w-[330px] min-h-[330px] md:min-w-[512px] md:min-h-[512px] border-[#1ED760] border-[3px] border-solid`}
+                className={`max-w-[330px] min-h-[330px] md:w-[200px] lg:min-w-[512px] lg:min-h-[512px] border-[#1ED760] border-[3px] border-solid`}
               ></div>
             </div>
-          </div>
-          {/* <div className="relative px-[32x] mt-[50px] md:hidden block">
-            <motion.div whileHover={{}}>
-              <img
-                src={hero}
-                alt="hero image is here"
-                className="absolute right-[36px] bottom-[32px] object-cover"
-                draggable={false}
-              />
-            </motion.div>
-            <div
-              className={`w-[330px] h-[330px] border-[#1ED760] border-[3px] border-solid`}
-            ></div>
           </div> */}
         </div>
       </section>
