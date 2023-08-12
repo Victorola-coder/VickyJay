@@ -118,7 +118,7 @@ export const LinkedIcon = ({ className }) => {
   );
 };
 
-export function InIcon({className}) {
+export function InIcon({ className }) {
   return (
     <svg
       viewBox="0 0 512 512"

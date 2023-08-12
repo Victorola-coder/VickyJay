@@ -31,7 +31,9 @@ const Hero = () => {
                 ensuring a seamless web experience for clients across africa.
               </p>
               <p className={`max-w-[319px]`}>
-                Highly skilled at progressive enhancement, design systems & UI Engineering.
+                Highly skilled at progressive enhancement, design systems & UI
+                Engineering - performance and scalability are top objectives on
+                my radar.
               </p>
             </div>
             <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">
@@ -83,16 +85,15 @@ const Hero = () => {
                   className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-[#CFFAFF]`}
                 />
               </motion.a>
-             
             </div>
           </div>
           <div className="mt-[2.5rem]">
             <div className="relative w-max flex flex-col justify-center">
-             <motion.div whileHover={{}}>
+              <motion.div whileHover={{}}>
                 <img
                   src={hero}
                   alt="hero image is here"
-                 className="absolute w-full h-full md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
+                  className="absolute w-full h-full md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
                   draggable={false}
                 />
               </motion.div>
