@@ -27,15 +27,14 @@ const Hero = () => {
               className="text-[#F0FEFF] font-pop flex-shrink-0 text-[10px] md:text-[15px] lg:text-[15px] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-center lg:gap-[10px]"
             >
               <p className={`max-w-[310px]`}>
-                1+ Years of experience. Specialized in building Websites, while
-                ensuring a seamless web experience for end users.
+                1+ Years of experience. Specialized in building products, while
+                ensuring a seamless web experience for clients across africa.
               </p>
               <p className={`max-w-[319px]`}>
-                My specialty is Front-end web Development,Turning Beautiful
-                Designs and turning it into beautiful, semantic HTML & CSS.
+                Highly skilled at progressive enhancement, design systems & UI Engineering.
               </p>
             </div>
-            <div className="mt-[35px] md:mt-[65px] flex justify-center md:items-center  gap-[26px] md:gap-[40px]">
+            <div className="mt-[35px] md:mt-[65px] flex justify-center md:justify-start items-center  gap-[26px] md:gap-[40px]">
               <motion.a
                 href="https://web.facebook.com/victortoluu"
                 target="_blank"
