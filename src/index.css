@@ -126,36 +126,3 @@ html {
   color: rgba(255, 255, 255, 0);
   text-transform: capitalize;
 }
-
-/* Define your custom gradient classes */
-.gradient-border {
-  position: relative;
-  padding: 1rem; /* Adjust as needed */
-  overflow: hidden;
-}
-
-.gradient-border::before,
-.gradient-border::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 2px solid transparent; /* Set initial transparent border */
-  z-index: -1;
-}
-
-.gradient-border::before {
-  border-image: linear-gradient(135deg, #f0feff4d, #f0feff00);
-  border-image-slice: 1;
-  top: 2px; /* Adjust to match border width */
-  left: 2px; /* Adjust to match border width */
-  transform: translate(-4px, -4px); /* Adjust to match border width */
-}
-
-.gradient-border::after {
-  border-image: linear-gradient(135deg, #f0feff4d, #f0feff00);
-  border-image-slice: 1;
-  bottom: 2px; /* Adjust to match border width */
-  right: 2px; /* Adjust to match border width */
-  transform: translate(4px, 4px); /* Adjust to match border width */
-}
