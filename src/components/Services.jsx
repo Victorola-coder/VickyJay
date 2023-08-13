@@ -15,9 +15,10 @@ const Services = () => {
       </div>
 
       {/* cards */}
-      <div className="flex flex-col mt-[56px] gap-2 lg:mt-[56px] lg:flex lg:flex-wrap lg:flex-shrink-0 lg:justify-center lg:flex-row lg:gap-[24px]">
+      <div className="flex flex-col mt-[56px] gap-2 lg:mt-[56px] lg:flex lg:flex-wrap lg:flex-shrink-0 lg:justify-center lg:flex-row lg:items-center lg:gap-[24px]">
+        {/* first cards */}
         <div
-          className={`flex flex-col gap-3 flex-nowrap justify-start md:flex md:flex-row md:flex-wrap md:justify-around md:gap-4 lg:flex lg:flex-col lg:gap-[0px]`}
+          className={`overflow-hidden flex flex-col gap-3 flex-nowrap justify-start md:flex md:flex-row md:flex-wrap md:justify-around md:gap-4 lg:flex lg:flex-col lg:gap-[24px]`}
         >
           <div
             className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}

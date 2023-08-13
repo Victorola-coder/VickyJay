@@ -15,32 +15,34 @@ const Navbar = () => {
               VickyJay<span>.</span>
             </h2> */}
             <NavLink>
-             {({ isActive }) => (
-                  <div
-                    className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] hover:before:bg-[[#4C686F] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
-                      isActive
-                        ? "text-white hover:before:w-full"
-                        : "text-white hover:before:w-full"
-                    } relative`}
-                  >
-                     VickyJay<span>.</span>
-                  </div>
-                )}
-           </NavLink>
-            <a
-              href="https://www.github.com/victorola-coder"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className={`flex items-center gap-[8px] md:gap-[10px]`}>
-                <GhIcon
-                  className={`w-[26px] h-[26px] md:w-[32px] md:h-[32px]`}
-                />
-                <p className="font-clash text-[15px] md:text-[18px] font-medium text-[#FFFFFF99]">
-                  github
-                </p>
-              </span>
-            </a>
+              {({ isActive }) => (
+                <div
+                  className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] lg:hover:before:bg-[#4C686F] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
+                    isActive
+                      ? "text-white hover:before:w-full"
+                      : "text-white hover:before:w-full"
+                  } relative`}
+                >
+                  VickyJay<span>.</span>
+                </div>
+              )}
+            </NavLink>
+            <div className="text-[#FFFFFF99] hover:text-white transition-all duration-300">
+              <a
+                href="https://www.github.com/victorola-coder"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className={`flex items-center gap-[8px] md:gap-[10px]`}>
+                  <GhIcon
+                    className={`hover:opacity-100 opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px]`}
+                  />
+                  <p className="font-clash text-[15px] md:text-[18px] font-medium">
+                    github
+                  </p>
+                </span>
+              </a>
+            </div>
           </nav>
         </header>
       </main>
