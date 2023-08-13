@@ -49,7 +49,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div
+          {/* <div
             className={`bg-[#0A1C20] text-[#FFFFFF99] lg:py-[100px] lg:px-[49px] lg:w-[641px] lg:h-[416px] shrink-0`}
           >
             <h4
@@ -63,7 +63,7 @@ const Services = () => {
               Integrating frontend interfaces with backend services and APIs to
               fetch and display data in real time.
             </p>
-          </div>
+          </div> */}
         </div>
         <div className={`lg:mt-[148px] lg:flex lg:flex-col lg:gap-[24px]`}>
           <div className="bg-gradient-to-l max-w-max to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5">
@@ -83,7 +83,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div
+          {/* <div
             className={`bg-[#0A1C20] shrink-0 text-[#FFFFFF99] lg:py-[100px] lg:px-[49px] lg:w-[641px] lg:h-[416px]`}
           >
             <h4
@@ -98,7 +98,7 @@ const Services = () => {
               layout, typography, color schemes, icons, and other graphical
               elements.
             </p>
-          </div>
+          </div> */}
           <div
             className={`bg-[#0A1C20] text-[#FFFFFF99] lg:py-[100px] lg:px-[49px] lg:w-[641px] lg:h-[416px] shrink-0`}
           >

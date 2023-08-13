@@ -93,7 +93,7 @@ const Hero = () => {
                 <img
                   src={hero}
                   alt="hero image is here"
-                  className="absolute w-full h-full md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
+                  className="absolute w-full h-full bottom-3 right-4 md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
                   draggable={false}
                 />
               </motion.div>
