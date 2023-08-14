@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "../assets/Icons";
-import heroImg from "../assets/images/herol.png";
+// import heroImg from "../assets/images/herol.png";
 import hero from "../assets/images/hero.png";
 
 const Hero = () => {
   return (
     <>
-      <section className="mx-auto px-[30px] pt-[46px] md:px-[26px] lg:pt-[51px] lg:px-[40px] ">
+      <section className="mx-auto px-[30px] pt-[46px] md:px-[26px] lg:pt-[51px] lg:pl-[80px] lg:pr-[40px]">
         <div className="flex flex-col items-center flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:space-x-12 lg:justify-between">
           <div>
             <div className={``}>

@@ -15,10 +15,10 @@ const Services = () => {
       </div>
 
       {/* cards */}
-      <div className="flex flex-col mt-[56px] gap-2 lg:mt-[56px] lg:flex lg:flex-wrap lg:flex-shrink-0 lg:justify-center lg:flex-row lg:items-center lg:gap-[24px]">
+      <div className="flex flex-col mt-[56px] gap-2 lg:mt-[56px] lg:flex lg:flex-wrap lg:flex-shrink-0 lg:justify-start lg:flex-row lg:items-center lg:gap-[24px]">
         {/* first cards */}
         <div
-          className={`overflow-hidden flex flex-col gap-3 flex-nowrap justify-start md:flex md:flex-row md:flex-wrap md:justify-around md:gap-4 lg:flex lg:flex-col lg:gap-[24px]`}
+          className={`overflow-hidden flex flex-col gap-3 flex-nowrap justify-start md:flex md:flex-row md:flex-wrap md:justify-arounds md:gap-4 lg:flex lg:flex-col lg:gap-[24px]`}
         >
           <div
             className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
@@ -93,12 +93,12 @@ const Services = () => {
               className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
             >
               <h4
-                className={`font-semibold text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+                className={`font-semibold text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
               >
                 VERVISON CONTROL
               </h4>
               <p
-                className={`font-normal lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+                className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
               >
                 Using version control systems like Git to collaborate with other
                 developers and manage code changes effectively.
@@ -106,15 +106,15 @@ const Services = () => {
             </div>
           </div>
           <div
-            className={`bg-[#0A1C20] shrink-0 text-[#FFFFFF99] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px]`}
+            className={`bg-[#0A1C20] shrink-0 text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px]`}
           >
             <h4
-              className={`font-semibold uppercase text-white font-clashbold lg:max-w-[400px] lg:text-[40px] lg:leading-[49.2px]`}
+              className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[400px] lg:text-[40px] lg:leading-[49.2px]`}
             >
               UI Design
             </h4>
             <p
-              className={`font-normal lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+              className={`font-normal  text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
             >
               Designing the visual elements of the user interface, including
               layout, typography, color schemes, icons, and other graphical
@@ -122,33 +122,33 @@ const Services = () => {
             </p>
           </div>
           <div
-            className={`bg-[#0A1C20] text-[#FFFFFF99] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
+            className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
           >
             <h4
-              className={`font-semibold uppercase text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+              className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
             >
               Continuous Learning
             </h4>
             <p
-              className={`font-normal lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+              className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
             >
               Staying updated with the latest frontend technologies, trends, and
               best practices to deliver modern and innovative solutions.
             </p>
           </div>
           <div
-            className={`bg-[#0A1C20] text-[#FFFFFF99] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
+            className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
           >
             <h4
-              className={`font-semibold uppercase text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+              className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
             >
-              Continuous Learning
+              Technical Support
             </h4>
             <p
-              className={`font-normal lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+              className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
             >
-              Staying updated with the latest frontend technologies, trends, and
-              best practices to deliver modern and innovative solutions.
+              Providing technical support to troubleshoot frontend-related
+              issues.
             </p>
           </div>
         </div>
