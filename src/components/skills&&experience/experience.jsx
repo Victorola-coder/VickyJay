@@ -1,5 +1,5 @@
 import { ExpCircle } from "../../assets/Icons";
-import Resume from "../../utils/resume.pdf";
+import Resume from "../../utils/victor.pdf";
 
 const Experience = () => {
   //   const handleDownload = () => {
