@@ -17,7 +17,7 @@ const Portfolio = () => {
           </p>
         </div>
         <div
-          className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[16px] lg:justify-between`}
+          className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[26px] lg:justify-between`}
         >
           <div
             className={`bg-[#0A1C20] flex flex-col gap-[25px] md:gap-[29px] px-[27px] py-[40px] justify-center w-[367px] h-[322px] md:w-[424px] md:h-[373px] md:px-[32px] md:py-[55px]`}

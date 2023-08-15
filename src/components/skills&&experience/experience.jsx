@@ -31,7 +31,7 @@ const Experience = () => {
           <div className={`flex flex-col space-y-[60px]`}>
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] -lg:translate-x-[50%]">
+                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
@@ -56,7 +56,7 @@ const Experience = () => {
             </div>
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] -lg:translate-x-[50%]">
+                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
@@ -81,7 +81,7 @@ const Experience = () => {
             </div>
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] -lg:translate-x-[50%]">
+                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
@@ -107,7 +107,7 @@ const Experience = () => {
             </div>
             {/* <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] -lg:translate-x-[50%]">
+                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
@@ -132,7 +132,7 @@ const Experience = () => {
             </div> */}
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] -lg:translate-x-[50%]">
+                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>

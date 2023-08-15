@@ -46,7 +46,7 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <FbIcon
-                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-[#CFFAFF]`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
@@ -58,7 +58,7 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <TwIcon
-                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-[#CFFAFF]`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
@@ -70,7 +70,7 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <IgIcon
-                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-[#CFFAFF]`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
@@ -82,7 +82,7 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <InIcon
-                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-[#CFFAFF]`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
                 />
               </motion.a>
             </div>
