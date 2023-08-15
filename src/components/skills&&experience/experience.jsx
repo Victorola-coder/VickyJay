@@ -16,7 +16,7 @@ const Experience = () => {
       <div className={`flex flex-col lg:items-end`}>
         <div className="">
           <h2
-            className={`font-clashbold text-white font-semibold lg:text-endgo lg:text-[40px] lg:leading-[49.2px]`}
+            className={`font-clashbold text-white font-semibold lg:text-end lg:text-[40px] lg:leading-[49.2px]`}
           >
             Experience
           </h2>
