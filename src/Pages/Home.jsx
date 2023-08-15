@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Services from "../components/Services";
-import Experience from "../components/skills&&experience/experience";
+import Portfolio from "../components/portfolio";
 import Skills from "../components/skills&&experience/skills";
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
       <Hero />
       <Services />
       <Skills />
-      <Experience />
+      <Portfolio />
     </main>
   );
 }

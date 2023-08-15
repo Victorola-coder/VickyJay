@@ -28,7 +28,7 @@ body::-webkit-scrollbar-corner {
 }
 
 body::-webkit-scrollbar-track {
-  @apply bg-[#1ED760];
+  @apply bg-white;
 }
 
 body::-webkit-scrollbar-track-piece {
@@ -36,7 +36,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 body::-webkit-scrollbar-thumb {
-  @apply transition-all duration-500 rounded-full bg-black/30 hover:bg-black/40;
+  @apply transition-all duration-500 rounded-full bg-black/60 hover:bg-black/40;
 }
 
 html {

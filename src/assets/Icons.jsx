@@ -161,3 +161,25 @@ export const ExpCircle = () => {
     </svg>
   );
 };
+
+export function Arrow({ className }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="25"
+      className={className}
+      viewBox="0 0 24 25"
+      fill="none"
+    >
+      <path
+        d="M6 19.5L19 6.5M19 6.5V18.98M19 6.5H6.52"
+        stroke="white"
+        strokeOpacity="0.6"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
