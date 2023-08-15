@@ -86,7 +86,7 @@ const Services = () => {
         </div>
         {/* second card */}
         <div
-          className={`flex flex-col gap-3 flex-nowrap justify-start md:flex md:flex-row md:flex-wrap md:justify-around md:gap-4 lg:mt-[148px] lg:flex lg:flex-col lg:gap-[24px]`}
+          className={`flex flex-col gap-3 flex-nowrap justify-start md:flex md:flex-row md:flex-wrap md:justify-start md:gap-4 lg:mt-[148px] lg:flex lg:flex-col lg:gap-[24px]`}
         >
           <div className="bg-gradient-to-l max-w-max to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5">
             <div
