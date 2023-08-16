@@ -3,7 +3,7 @@ const Services = () => {
     <section className={`mt-[20px] mx-[30px] lg:mt-[86px] lg:mx-[76px]`}>
       <div>
         <h2
-          className={`font-clashbold font-semibold text-white text-[25px] leading-[30.75px] lg:text-[60px] lg:leading-[73.8px]`}
+          className={`font-clashbold font-semibold text-white text-[20px] leading-[30.75px] lg:text-[60px] lg:leading-[73.8px]`}
         >
           Services
         </h2>
