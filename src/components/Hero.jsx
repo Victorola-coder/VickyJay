@@ -46,6 +46,7 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <FbIcon
+                  fill={`#1ED760`}
                   className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
@@ -58,6 +59,7 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <TwIcon
+                  fill={`#1ED760`}
                   className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
@@ -70,6 +72,7 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <IgIcon
+                  fill={`#1ED760`}
                   className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
@@ -82,6 +85,7 @@ const Hero = () => {
                 className={`h-auto w-auto`}
               >
                 <InIcon
+                  fill={`#1ED760`}
                   className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
                 />
               </motion.a>
