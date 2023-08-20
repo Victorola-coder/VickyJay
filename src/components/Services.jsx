@@ -146,7 +146,7 @@ const Services = () => {
               </p>
             </motion.div>
           </div>
-          <div className="bg-gradient-to-b max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5">
+          <div className="bg-gradient-to-b max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pb-0.5">
             <motion.div
               whileHover={{ scale: 0.99 }}
               className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
