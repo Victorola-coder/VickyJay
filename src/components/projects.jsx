@@ -127,7 +127,7 @@ const Projects = () => {
             <h5
               className={`text-[#FFFFFF99] font-medium max-w-[294px] text-[15px] leading-[22.5px] md:max-w-[340px] md:text-[18px] md:leading-[27px]`}
             >
-              Payday landing page full clone with
+              Payday landing page full clone
             </h5>
             <a
               href="https://payday-clone-three.vercel.app/"
