@@ -8,7 +8,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-behavior: smooth;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body,
@@ -127,4 +127,29 @@ html {
   letter-spacing: -0.03em;
   color: rgba(255, 255, 255, 0);
   text-transform: capitalize;
+}
+
+.hoverbg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #cffaff;
+  left: 0;
+  bottom: -2px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.hoverbg:hover > &::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
 }

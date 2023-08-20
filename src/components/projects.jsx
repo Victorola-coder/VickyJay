@@ -21,7 +21,7 @@ const Projects = () => {
           className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[26px] lg:justify-between`}
         >
           <div
-            className={`hover:border-bottom transition-all duration-300 bg-[#0A1C20] flex flex-col gap-[25px] md:gap-[29px] px-[27px] py-[40px] justify-center w-[367px] h-[322px] md:w-[424px] md:h-[373px] md:px-[32px] md:py-[55px]`}
+            className={`hoverbg bg-[#0A1C20] flex flex-col gap-[25px] md:gap-[29px] px-[27px] py-[40px] justify-center w-[367px] h-[322px] md:w-[424px] md:h-[373px] md:px-[32px] md:py-[55px]`}
           >
             <h5
               className={`font-medium font-clash text-[20px] leading-[24.6px] md:text-[25px] md:leading-[30.75px]`}
@@ -43,6 +43,7 @@ const Projects = () => {
               href="https://text2speeech.vercel.app/"
               target="_blank"
               rel="noreferrer"
+              className="max-w-[70px]"
             >
               <motion.div
                 whileHover={{ scale: 0.9 }}
@@ -90,6 +91,7 @@ const Projects = () => {
               href="https://askwik.vercel.app/"
               target="_blank"
               rel="noreferrer"
+              className="max-w-[70px]"
             >
               <motion.div
                 whileHover={{ scale: 0.9 }}
@@ -131,6 +133,7 @@ const Projects = () => {
               href="https://payday-clone-three.vercel.app/"
               target="_blank"
               rel="noreferrer"
+              className="max-w-[60px]"
             >
               <motion.div
                 whileHover={{ scale: 0.9 }}
