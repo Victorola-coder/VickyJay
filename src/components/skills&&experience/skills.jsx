@@ -1,6 +1,12 @@
+import { motion } from "framer-motion";
 import Experience from "./experience";
+import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
+  const [sectionRef, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.9,
+  });
   return (
     <section className="mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[152px]">
       <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-between">
@@ -22,7 +28,14 @@ const Skills = () => {
             <div
               className={`mt-[31px] grid grid-cols-1 md:grid md:grid-cols-2 md:space-y-0 md:gap-3 space-y-[18.67px] lg:mt-[36px] lg:grid-cols-2 lg:space-y-0 lg:gap-[24px]`}
             >
-              <div className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, x: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20] max-w-full w-[368px] px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
@@ -32,8 +45,15 @@ const Skills = () => {
                     Html
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-b max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, x: 300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="bg-gradient-to-b max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
@@ -43,150 +63,259 @@ const Skills = () => {
                     Css
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Html
+                    Bootstrap
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-b max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-b max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Css
+                    TailwindCSS
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, x: 300, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Html
+                    SCSS
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, x: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Csss
+                    JavaScript
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, x: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Html
+                    TypeScript
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, x: 300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Css
+                    JQuery
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, x: 300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Html
+                    Git
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Css
+                    Github
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Html
+                    ReactJs
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Css
+                    NextJs
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Html
+                    Framer-Motion
                   </p>
                 </div>
-              </div>
-              <div className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Css
+                    Figma
                   </p>
                 </div>
-              </div>
-              <div className="lg:col-span-2 bg max-w-[369px]-gradient-to-r lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5">
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
+              >
                 <div
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
                     className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
                   >
-                    Html
+                    Photoshop
                   </p>
                 </div>
-              </div>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                ref={sectionRef}
+                initial={{ opacity: 0, y: -300 }}
+                transition={{ duration: 0.6 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                className="bg max-w-[369px] bg-gradient-to-r lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+              >
+                <div
+                  className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
+                >
+                  <p
+                    className={`text-white tracking-[10px] font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                  >
+                    ...
+                  </p>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
