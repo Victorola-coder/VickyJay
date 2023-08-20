@@ -32,7 +32,7 @@ const Experience = () => {
           <div className={`flex flex-col space-y-[60px]`}>
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
+                <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
@@ -60,7 +60,7 @@ const Experience = () => {
             </div>
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
+                <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
@@ -80,22 +80,22 @@ const Experience = () => {
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
                 >
-                  I worked/works as a frontend developer with the responsibility
-                  of building and managing the websites with a team of Creative
-                  developers. it aced my ReactJS Skills.
+                  I work as a frontend developer with the responsibility of
+                  building and managing the websites with a team of Creative
+                  developers.
                 </h5>
               </div>
             </div>
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
+                <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Frontend Engineer
+                  Frontend Engineer&nbsp;
                   <span>-</span> &nbsp;
                   <span className="italic text-[#FFFFFF99]">
                     2023 - till date
@@ -109,15 +109,15 @@ const Experience = () => {
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
                 >
-                  I worked/works as a frontend developer with the responsibility
-                  of building and managing the websites with a team of Creative
-                  developers. it aced my ReactJS Skills.
+                  I work as a frontend developer with the responsibility of
+                  building and managing the websites with a team of Creative
+                  developers.
                 </h5>
               </div>
             </div>
             {/* <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
+                <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
@@ -142,7 +142,7 @@ const Experience = () => {
             </div> */}
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
-                <span className="absolute -top-1 -translate-x-[60%] lg:translate-x-[-50%]">
+                <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
                 </span>
               </div>
