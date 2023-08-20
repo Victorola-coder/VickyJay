@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
-import Portfolio from "../components/portfolio";
+import Projects from "../components/projects";
 import Skills from "../components/skills&&experience/skills";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
       <Hero />
       <Services />
       <Skills />
-      <Portfolio />
+      <Projects />
       <Contact />
       <Footer />
     </main>
