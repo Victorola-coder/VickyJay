@@ -14,14 +14,14 @@ const Skills = () => {
         <div className={`flex flex-col`}>
           <div>
             <h2
-              className={`font-clashbold text-white font-semibold text-[20px] leading-[24.6px] lg:text-[40px] lg:leading-[49.2px]`}
+              className={`flex items-center font-clashbold text-white font-semibold text-[20px] leading-[24.6px] lg:text-[40px] lg:leading-[49.2px]`}
             >
-              Skills
+              Skills <small className="animate-bounce">🤹‍♂️</small>
             </h2>
             <p
               className={`font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] lg:text-[20px] lg:leading-[30px] lg:tracking-wide`}
             >
-              Some list of my skills
+              yo, I{"'"}ve horned some of these skills over the years...
             </p>
           </div>
           <div className="w-fit">

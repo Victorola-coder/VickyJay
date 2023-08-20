@@ -14,8 +14,8 @@ const Contact = () => {
           Do You Have Any Ideas?
         </h1>
 
-        <p className="font-semibold text-[15px] leading-[22.5px] md:text-[20px] md:leading-[30px] text-[#FFFFFF99]">
-          SAY HELLO!
+        <p className="flex items-center font-semibold text-[15px] leading-[22.5px] md:text-[20px] md:leading-[30px] text-[#FFFFFF99]">
+          SAY HELLO! <small className={`animate-bounce`}>👋</small>
         </p>
       </div>
       <div

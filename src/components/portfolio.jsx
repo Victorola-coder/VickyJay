@@ -8,12 +8,12 @@ const Portfolio = () => {
           <h2
             className={`font-clashbold text-[20px] text-white md:text-[60px] md:font-semibold md:leading-[73.8px]`}
           >
-            Portfolio
+            Do...ings? Yo! 👨‍🍳⚡
           </h2>
           <p
             className={`font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] lg:text-[18px] lg:leading-[27px]`}
           >
-            These are some of the projects I have worked on
+            some of my fun projects...
           </p>
         </div>
         <div

@@ -93,17 +93,17 @@ const Hero = () => {
           </div>
           <div className="mt-[2.5rem]">
             <div className="relative w-max flex flex-col justify-center">
-              <motion.div whileHover={{}}>
+              <div className={`w-full`}>
                 <img
                   src={hero}
                   alt="hero image is here"
                   className="absolute w-full h-full bottom-3 right-4 md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
                   draggable={false}
                 />
-              </motion.div>
-              <div
+              </div>
+              <motion.div
                 className={`shrink-0 w-[300px] h-[300px] lg:min-w-[400px] lg:min-h-[400px] border-[3px] border-[#1ED760]`}
-              ></div>
+              ></motion.div>
             </div>
           </div>
           {/* <div className="flex flex-col items-center mt-[60px] md:mt-0">

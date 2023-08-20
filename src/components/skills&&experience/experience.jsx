@@ -14,11 +14,11 @@ const Experience = () => {
   return (
     <>
       <div className={`flex flex-col lg:items-end`}>
-        <div className="">
+        <div className="font-pop">
           <h2
-            className={`font-clashbold text-white font-semibold lg:text-end lg:text-[40px] lg:leading-[49.2px]`}
+            className={`flex items-center font-clashbold text-white text-[20px] font-semibold lg:text-end lg:text-[40px] lg:leading-[49.2px]`}
           >
-            Experience
+            Experience <small className={`animate-bounce`}>😎🌩</small>
           </h2>
           <p
             className={`font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] lg:text-[20px] lg:leading-[30px] lg:tracking-wide`}
@@ -38,7 +38,10 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Web Developer
+                  Web Developer <span>-</span> &nbsp;
+                  <span className="italic text-[#FFFFFF99]">
+                    2023 - till date
+                  </span>
                 </h3>
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
@@ -48,9 +51,9 @@ const Experience = () => {
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
                 >
-                  I worked/works as a frontend developer with the responsibility
-                  of building and managing the websites with a team of Creative
-                  developers. It aced my ReactJS Skills.
+                  I work as a Lead Frontend Engineer at showmeelove, crafting
+                  thoughtful and inclusive experiences that adhere to web
+                  standards.
                 </h5>
               </div>
             </div>
@@ -63,7 +66,10 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Web Developer
+                  Web Developer <span>-</span>&nbsp;
+                  <span className="italic text-[#FFFFFF99]">
+                    2022 - till date
+                  </span>
                 </h3>
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
@@ -88,8 +94,11 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Web Developer
-                  {/* <span className="italic text-[#FFFFFF99]">Frontend</span> */}
+                  Frontend Engineer
+                  <span>-</span> &nbsp;
+                  <span className="italic text-[#FFFFFF99]">
+                    2023 - till date
+                  </span>
                 </h3>
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
