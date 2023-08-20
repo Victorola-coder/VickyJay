@@ -22,7 +22,8 @@ const Services = () => {
         <div
           className={`overflow-hidden flex flex-col gap-3 flex-nowrap justify-start md:flex md:flex-row md:flex-wrap md:justify-arounds md:gap-4 lg:flex lg:flex-col lg:gap-[24px]`}
         >
-          <div
+          <motion.div
+            whileHover={{ scale: 0.99 }}
             className={`bg-gradient-to-l max-w-max to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5`}
           >
             <motion.div
@@ -41,10 +42,10 @@ const Services = () => {
                 Bootstrap, JavaScript, ReactJs, NextJs & Typescript.
               </p>
             </motion.div>
-          </div>
+          </motion.div>
           <motion.div
-            whileHover={{ scale: 0.97 }}
-            className="bg-gradient-to-t max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5"
+            whileHover={{ scale: 0.99 }}
+            className="bg-gradient-to-r max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pr-0.5 pt-0.5"
           >
             <motion.div
               whileHover={{ scale: 0.99 }}
@@ -59,49 +60,56 @@ const Services = () => {
                 className={`font-normal text-[13px] leading-[19.5px] mt-4 max-w-[308px] lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
               >
                 Building websites and applications that work seamlessly on
-                various deviced and screen sizes, from desktop to smartphones.
+                various devices and screen sizes, from desktop to smartphones.
               </p>
             </motion.div>
           </motion.div>
           <motion.div
-            whileHover={{ scale: 0.97 }}
-            className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
+            whileHover={{ scale: 0.99 }}
+            className="bg-gradient-to-l max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5"
           >
-            <h4
-              className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+            <motion.div
+              whileHover={{ scale: 0.99 }}
+              className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
             >
-              Integration with APIs
-            </h4>
-            <p
-              className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4 lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
-            >
-              Integrating frontend interfaces with backend services and APIs to
-              fetch and display data in real time.
-            </p>
+              <h4
+                className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+              >
+                Integration with APIs
+              </h4>
+              <p
+                className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4 lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+              >
+                Integrating frontend interfaces with backend services and APIs
+                to fetch and display data in real time.
+              </p>
+            </motion.div>
           </motion.div>
-          <motion.div
-            whileHover={{ scale: 0.97 }}
-            className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
-          >
-            <h4
-              className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+          <motion.div className="bg-gradient-to-r max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pr-0.5 pt-0.5">
+            <motion.div
+              whileHover={{ scale: 0.99 }}
+              className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
             >
-              Web Accessibility
-            </h4>
-            <p
-              className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4 lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
-            >
-              Ensuring that websites and applications are accessible to users
-              with disabilities by implementing features like proper HTML
-              structure and ARIA roles.
-            </p>
+              <h4
+                className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+              >
+                Web Accessibility
+              </h4>
+              <p
+                className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4 lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+              >
+                Ensuring that websites and applications are accessible to users
+                with disabilities by implementing features like proper HTML
+                structure and ARIA roles.
+              </p>
+            </motion.div>
           </motion.div>
         </div>
         {/* second card */}
         <div
           className={`flex flex-col gap-3 flex-nowrap justify-start md:flex md:flex-row md:flex-wrap md:justify-start md:gap-4 lg:mt-[148px] lg:flex lg:flex-col lg:gap-[24px]`}
         >
-          <div className="bg-gradient-to-r max-w-max to-[#F0FEFF4D] from-[#F0FEFF00] pr-0.5 pt-0.5">
+          <div className="bg-gradient-to-t max-w-max to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5">
             <motion.div
               whileHover={{ scale: 0.99 }}
               className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
@@ -138,38 +146,42 @@ const Services = () => {
               </p>
             </motion.div>
           </div>
-          <motion.div
-            whileHover={{ scale: 0.97 }}
-            className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
-          >
-            <h4
-              className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+          <div className="bg-gradient-to-b max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5">
+            <motion.div
+              whileHover={{ scale: 0.99 }}
+              className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px] lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
             >
-              Continuous Learning
-            </h4>
-            <p
-              className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+              <h4
+                className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+              >
+                Continuous Learning
+              </h4>
+              <p
+                className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+              >
+                Staying updated with the latest frontend technologies, trends,
+                and best practices to deliver modern and innovative solutions.
+              </p>
+            </motion.div>
+          </div>
+          <div className="bg-gradient-to-t max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pl-0.5 pt-0.5">
+            <motion.div
+              whileHover={{ scale: 0.99 }}
+              className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px]x lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
             >
-              Staying updated with the latest frontend technologies, trends, and
-              best practices to deliver modern and innovative solutions.
-            </p>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 0.97 }}
-            className={`bg-[#0A1C20] text-[#FFFFFF99] py-[65px] px-[27px] max-w-[369.808px] h-[240px]x lg:py-[100px] lg:px-[49px] lg:max-w-[641px] lg:h-[416px] shrink-0`}
-          >
-            <h4
-              className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
-            >
-              Technical Support
-            </h4>
-            <p
-              className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
-            >
-              Providing technical support to troubleshoot frontend-related
-              issues.
-            </p>
-          </motion.div>
+              <h4
+                className={`font-semibold uppercase text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
+              >
+                Technical Support
+              </h4>
+              <p
+                className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+              >
+                Providing technical support to troubleshoot frontend-related
+                issues.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
