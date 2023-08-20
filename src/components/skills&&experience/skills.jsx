@@ -14,7 +14,7 @@ const Skills = () => {
         <div className={`flex flex-col`}>
           <div>
             <h2
-              className={`flex items-center font-clashbold text-white font-semibold text-[20px] leading-[24.6px] lg:text-[40px] lg:leading-[49.2px]`}
+              className={`flex items-center font-clashbold text-white font-semibold text-[20px] leading-[24.6px] lg:text-[60px] lg:leading-[49.2px]`}
             >
               Skills <small className="animate-bounce">🤹‍♂️</small>
             </h2>
@@ -299,6 +299,7 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
+                title="loading... expect greatness!"
                 whileHover={{ scale: 1.1 }}
                 ref={sectionRef}
                 initial={{ opacity: 0, y: -300 }}

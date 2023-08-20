@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { ExpCircle } from "../../assets/Icons";
 import Resume from "../../utils/victor.pdf";
 
@@ -16,14 +17,14 @@ const Experience = () => {
       <div className={`flex flex-col lg:items-end`}>
         <div className="font-pop">
           <h2
-            className={`flex items-center font-clashbold text-white text-[20px] font-semibold lg:text-end lg:text-[40px] lg:leading-[49.2px]`}
+            className={`flex items-center font-clashbold text-white text-[20px] font-semibold lg:text- lg:text-[50px] lg:leading-[49.2px]`}
           >
-            Experience <small className={`animate-bounce`}>😎🌩</small>
+            Experience <small className={`animate-bounce`}>🚀</small>
           </h2>
           <p
-            className={`font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] lg:text-[20px] lg:leading-[30px] lg:tracking-wide`}
+            className={`font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] text-left lg:text-[20px] lg:leading-[30px]]`}
           >
-            Some list of my experience
+            Some list of my experience over the year..
           </p>
         </div>
         <div className="flex lg:justify-between mt-[30px]">
@@ -164,18 +165,20 @@ const Experience = () => {
                 </h5>
               </div>
             </div>
-            <a
-              href={Resume}
-              className="flex justify-center lg:flex lg:justify-start"
-              download="VickyJay.pdf"
-              rel="noopener noreferrer"
-            >
-              <div className="cursor-pointer bg-gradient-to-r max-w-[197px] lg:max-w-[252px] to-[#D9D9D9] from-[#D9D9D900] py-0.5 pr-0.5">
-                <div className="bg-[#061417] px-[17px] py-[18px] font-medium text-[18px] font-clash">
-                  Download Resume
-                </div>
-              </div>
-            </a>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+              <a
+                href={Resume}
+                className="flex justify-center lg:flex lg:justify-start"
+                download="VickyJay.pdf"
+                rel="noopener noreferrer"
+              >
+                <span className="cursor-pointer bg-gradient-to-r max-w-[197px] lg:max-w-[252px] to-[#D9D9D9] from-[#D9D9D900] py-0.5 pr-0.5">
+                  <p className="bg-[#061417] px-[17px] py-[18px] font-medium text-[18px] font-clash">
+                    Download Resume
+                  </p>
+                </span>
+              </a>
+            </motion.div>
           </div>
         </div>
       </div>
