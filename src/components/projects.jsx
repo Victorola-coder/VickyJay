@@ -42,13 +42,8 @@ const Projects = () => {
               >
                 {project.desc}
               </small>
-              <div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="max-w-[70px]"
-                >
+              <div className="w-[68px]">
+                <a href={project.link} target="_blank" rel="noreferrer">
                   <motion.div
                     whileHover={{ scale: 0.9 }}
                     className="flex items-center space-x-2"

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "../assets/Icons";
-// import heroImg from "../assets/images/herol.png";
-import hero from "../assets/images/hero.png";
+import hero from "../assets/images/jay.png";
 
 const Hero = () => {
   return (

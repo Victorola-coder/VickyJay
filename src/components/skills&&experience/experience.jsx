@@ -154,14 +154,13 @@ const Experience = () => {
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
                 >
-                  Drawr
+                  Edukarma
                 </p>
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
                 >
-                  I work as a frontend developer integrating the figma design
-                  under a senior developer, I aced my skills of connecting
-                  frontend to backend.
+                  I work as a frontend developer building the system of the
+                  company, creating beautiful interfaces that
                 </h5>
               </div>
             </div>

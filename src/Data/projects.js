@@ -31,7 +31,7 @@ export const projectData = [
     },
     {
         name: 'afrifanz',
-        desc: 'only fanz for africans content creators',
+        desc: 'onlyfans for africans content creators',
         lang: 'JavaScript + ReactJS + TailwindCss',
         link: 'https://waitlist.afrifnaz.com/',
     },
