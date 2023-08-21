@@ -23,12 +23,12 @@ const ErrorPage = () => {
 
       <div className={`mt-[100px] relative`}>
         <p
-          className={`absolute top-0  -z-10 left-0 right-0 text-[100.999px] lg:text-[200.477px] mx-auto font-clashbold font-semibold rotate-[-0.133deg] bg-gradient-to-r bg-clip-text text-transparent from-[#FFFFFF03]/40 to-[#D9D9D900] text-center`}
+          className={`absolute top-0 left-0 right-0 text-[100.999px] lg:text-[200.477px] mx-auto font-clashbold font-semibold rotate-[-0.133deg] bg-gradient-to-r bg-clip-text text-transparent from-[#FFFFFF03]/40 to-[#D9D9D900] text-center`}
         >
           404
         </p>
         <p
-          className={`absolute top-5 left-0  right-0 text-[100.999px] lg:text-[200.477px] mx-auto font-clashbold font-semibold rotate-[-0.133deg] bg-gradient-to-r bg-clip-text text-[#FFFFFF66] from-[#FFFFFF66] to-[#D9D9D900] text-center`}
+          className={`absolute top-6 left-0 right-0 text-[100.999px] lg:text-[200.477px] mx-auto font-clashbold font-semibold rotate-[-0.133deg] bg-gradient-to-r bg-clip-text text-[#FFFFFF66] from-[#FFFFFF66] to-[#D9D9D900] text-center`}
         >
           404
         </p>

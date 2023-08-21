@@ -44,7 +44,7 @@ Thank you for visiting my portfolio!
 
 ## Todos
 
-add few sleazy animation.
-change the experience section into an array and map it.
-404 page
-more features yet to come.
+- add few sleazy animation.
+- change the experience section into an array and map it.
+- 404 page
+- more features yet to come.
