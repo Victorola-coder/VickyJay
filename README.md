@@ -46,5 +46,5 @@ Thank you for visiting my portfolio!
 
 - add few sleazy animation.
 - change the experience section into an array and map it.
-- 404 page
+- 404 page - done ✔✔
 - more features yet to come.
