@@ -6,18 +6,18 @@ import hero from "../assets/images/hero.png";
 const Hero = () => {
   return (
     <>
-      <section className="mx-auto px-[38px] pt-[65px] md:px-[26px] lg:pt-[51px] lg:pl-[80px] lg:pr-[40px]">
+      <section className="mx-auto px-[38px] pt-[75px] md:px-[26px] lg:pt-[51px] lg:pl-[80px] lg:pr-[40px]">
         <div className="flex flex-col items-start flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:space-x-12 lg:justify-between">
           <div>
-            <div className={``}>
+            <div className={`gradientTexts`}>
               <h1
-                className={`font-clashbold font-semibold text-[30px] leading-[36.9px] text-[#CFFAFF] md:leading-[4 5px] md:text-[35px] md:max-w-max lg:leading-[73.8px] lg:max-w-[580px] lg:text-[60px] `}
+                className={`font-clashbold font-semibold text-[40px] leading-[36.9px] text-[#CFFAFF] md:leading-[4 5px] md:text-[35px] md:max-w-max lg:leading-[73.8px] lg:max-w-[580px] lg:text-[60px] `}
               >
                 Creative Frontend Developer<span>.</span>
               </h1>
             </div>
             <p
-              className={`font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]`}
+              className={`gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]`}
             >
               I like to craft solid and scalable frontend products with great
               user experiences.
