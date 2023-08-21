@@ -160,7 +160,7 @@ const Experience = () => {
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
                 >
                   I work as a frontend developer building the system of the
-                  company, creating beautiful interfaces that
+                  company, creating beautiful interfaces that user loves.
                 </h5>
               </div>
             </div>

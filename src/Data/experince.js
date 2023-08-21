@@ -1,4 +1,4 @@
-export const Experience = [
+export const experienceData = [
     {
         role: 'Frontend Developer',
         span: '2023 - till date',

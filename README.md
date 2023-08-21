@@ -41,3 +41,9 @@ If you have any questions or would like to get in touch, you can reach me at:
 - Portfolio: [preview](https://www.vickyjay.dev)
 
 Thank you for visiting my portfolio!
+
+## Todos
+
+add few sleazy animation.
+change the experience section into an array and map it.
+more yet to come.
