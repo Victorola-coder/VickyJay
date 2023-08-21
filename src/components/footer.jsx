@@ -4,7 +4,7 @@ import { Copyright, FbIcon, IgIcon, InIcon, TwIcon } from "../assets/Icons";
 const Footer = () => {
   return (
     <section
-      className={`mx-[30px]  mt-[60px] pb-[110px] lg:mx-[76px] lg:mt-[150px]`}
+      className={`mx-[30px] mt-[60px] pb-[50px] lg:mx-[76px] lg:mt-[150px]`}
     >
       {/* line */}
       <div className="lg:max-w-[13000px] lg:mx-[71px] h-[2px] mt-[63.37px] bg-[#0A1C20]"></div>

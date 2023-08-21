@@ -117,7 +117,7 @@ const Services = () => {
               <h4
                 className={`font-semibold text-[20px] leading-[24.6px] max-w-[156px] text-white font-clashbold lg:max-w-[312px] lg:text-[40px] lg:leading-[49.2px]`}
               >
-                VERVISON CONTROL
+                VERSION CONTROL
               </h4>
               <p
                 className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4  lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}

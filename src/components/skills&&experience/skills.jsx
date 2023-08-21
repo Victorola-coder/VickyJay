@@ -21,7 +21,7 @@ const Skills = () => {
             <p
               className={`font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] lg:text-[20px] lg:leading-[30px] lg:tracking-wide`}
             >
-              yo, I{"'"}ve horned some of these skills over the years...
+              yo, I{"'"}ve honed some of these skills over the years...
             </p>
           </div>
           <div className="w-fit">
