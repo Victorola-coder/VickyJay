@@ -46,4 +46,5 @@ Thank you for visiting my portfolio!
 
 add few sleazy animation.
 change the experience section into an array and map it.
-more yet to come.
+404 page
+more features yet to come.
