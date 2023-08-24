@@ -33,7 +33,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className={`flex items-center gap-[8px] md:gap-[10px]`}>
+                <span className={` flex items-center gap-[8px] md:gap-[10px]`}>
                   <GhIcon
                     className={`hover:opacity-100 opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px]`}
                   />

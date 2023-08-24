@@ -12,7 +12,7 @@ const Services = () => {
         <p
           className={`text-[#FFFFFF99] font-medium text-[15px] leading-[22.5px]  lg:text-[18px] lg:leading-[27px]`}
         >
-          This are some of the services I render and I got you covered
+          These are some of the services I render and I got you covered
         </p>
       </div>
 
@@ -96,7 +96,7 @@ const Services = () => {
                 Web Accessibility
               </h4>
               <p
-                className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] mt-4 lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
+                className={`font-normal text-[13px] leading-[19.5px] max-w-[308px] ensure mt-4 lg:mt-[27px] lg:max-w-[466px] lg:leading-[30px] lg:text-[20px]`}
               >
                 Ensuring that websites and applications are accessible to users
                 with disabilities by implementing features like proper HTML
