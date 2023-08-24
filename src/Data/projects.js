@@ -27,13 +27,13 @@ export const projectData = [
         name: 'Scrimm',
         desc: 'Get to know everything about scrim.',
         lang: 'Bootstrap + Html',
-        link: 'hhttps://victorola-coder.github.io/scrimm/',
+        link: 'https://victorola-coder.github.io/scrimm/',
     },
     {
         name: 'afrifanz',
         desc: 'onlyfans for africans content creators',
         lang: 'JavaScript + ReactJS + TailwindCss',
-        link: 'https://waitlist.afrifnaz.com/',
+        link: 'https://waitlist.afrifanz.com/',
     },
     {
         name: 'showmeelove',
