@@ -164,7 +164,11 @@ const Experience = () => {
                 </h5>
               </div>
             </div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
+            <motion.div
+              className="max-w-[200px]"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <a
                 href={Resume}
                 className="flex justify-center lg:flex lg:justify-start"
