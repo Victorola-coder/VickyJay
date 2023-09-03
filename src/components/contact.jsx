@@ -34,7 +34,7 @@ const Contact = () => {
             victoluolatunji@gmail.com
           </a>
         </div>
-        {/* <div className="flex flex-col items-center gap-[10px]">
+        <div className="flex flex-col items-center gap-[10px]">
           <div className="bg-gradient-to-r to-[#CFFAFF] from-[#CFFAFF00] pr-[1px] pt-[1px] max-w-[75px] max-h-[50px]">
             <PhoneIcon
               className={`w-[30px] h-[30px] p-2 md:p-[5px] bg-[#061417] md:w-[36px] md:h-[36px]`}
@@ -44,9 +44,9 @@ const Contact = () => {
             href="tel:+2349075789680"
             className={`text-[#FFFFFF99] tex-base font-medium md:text-[20px] md:leading-[30px]`}
           >
-            it is not necessary tho
+            +2349075789680
           </a>
-        </div> */}
+        </div>
         <div className="flex flex-col items-center gap-[10px]">
           <div className="bg-gradient-to-l from-[#CFFAFF] to-[#CFFAFF00] pr-[1px] pt-[1px] max-w-[75px] max-h-[75px]">
             <LocationIcon
@@ -56,7 +56,7 @@ const Contact = () => {
           <p
             className={`text-[#FFFFFF99] tex<i class="fas fa-baseball-ball    "></i> font-medium md:text-[20px] md:leading-[30px]`}
           >
-            somewhere in the metaverse!⚡
+            127.0.0.1 OR somewhere in the metaverse!⚡
           </p>
         </div>
       </div>
