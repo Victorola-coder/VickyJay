@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.23",
     "@vercel/analytics": "^1.0.1",
     "framer-motion": "^10.15.1",
+    "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.2",
