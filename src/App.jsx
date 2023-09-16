@@ -3,12 +3,13 @@ import Home from "./Pages/Home";
 import ErrorPage from "./Pages/ErrorPage";
 import Test from "./Pages/test";
 import { useEffect } from "react";
-import Scroll from "./animation/scroll";
+import scroll from "./animation/scroll";
 
 const App = () => {
-  useEffect(() => {
-    Scroll();
-  }, []);
+  // ==== scroll no work sha imma try it later
+  // useEffect(() => {
+  //   scroll();
+  // }, []);
 
   return (
     <main className={`transition-all duration-300`}>

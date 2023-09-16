@@ -11,7 +11,12 @@
 }
 
 body {
+  scroll-behavior: auto;
   overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   /* background-color: #0a1c20; */
   background-color: #061417;
   /* background-color: black; */
@@ -21,7 +26,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  @apply w-1 bg-transparent;
+  @apply w-0 bg-transparent;
 }
 
 body::-webkit-scrollbar-corner {
