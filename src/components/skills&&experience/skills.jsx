@@ -8,7 +8,7 @@ const Skills = () => {
     threshold: 0.9,
   });
   return (
-    <section className="mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[152px]">
+    <section className="overflow-hidden mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[152px]">
       <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-between">
         {/*skills */}
         <div className={`flex flex-col`}>

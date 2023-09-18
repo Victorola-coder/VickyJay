@@ -7,9 +7,9 @@ import scroll from "./animation/scroll";
 
 const App = () => {
   // ==== scroll no work sha imma try it later
-  // useEffect(() => {
-  //   scroll();
-  // }, []);
+  useEffect(() => {
+    scroll();
+  }, []);
 
   return (
     <main className={`transition-all duration-300`}>

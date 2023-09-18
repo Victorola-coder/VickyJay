@@ -10,6 +10,7 @@ export default function scroll() {
   });
 
   function raf(time) {
+    console.log("RAF called with time:", time); // Add this line for debugging
     lenis.raf(time);
     requestAnimationFrame(raf);
   }

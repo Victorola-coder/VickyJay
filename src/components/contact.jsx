@@ -1,6 +1,27 @@
+import React, { useState, useEffect } from "react";
 import { LocationIcon, MailIcon, PhoneIcon } from "../assets/Icons";
 
 const Contact = () => {
+  const [timeOfDay, setTimeOfDay] = useState(getTimeOfDay());
+
+  useEffect(() => {
+    // Update timeOfDay when component mounts
+    setTimeOfDay(getTimeOfDay());
+  }, []);
+
+  function getTimeOfDay() {
+    const now = new Date();
+    const currentHour = now.getHours();
+
+    if (currentHour >= 6 && currentHour < 12) {
+      return "morning";
+    } else if (currentHour >= 12 && currentHour < 18) {
+      return "afternoon";
+    } else {
+      return "evening";
+    }
+  }
+
   return (
     <section className="mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[150px]">
       <div className="flex flex-col items-center gap-[35px] md:gap-[25px]">
@@ -54,9 +75,13 @@ const Contact = () => {
             />
           </div>
           <p
-            className={`text-[#FFFFFF99] tex<i class="fas fa-baseball-ball    "></i> font-medium md:text-[20px] md:leading-[30px]`}
+            className={`text-[#FFFFFF99] text-base mx-auto text-center font-medium md:text-[20px] md:leading-[30px]`}
           >
-            127.0.0.1 <br /> OR <br /> somewhere in the metaverse!⚡
+            {timeOfDay === "morning" && (
+              <span>somewhere in the metaverse!⚡</span>
+            )}
+            {timeOfDay === "afternoon" && <span>localhost:3000</span>}
+            {timeOfDay === "morning" && <span>127.0.0.1</span>}
           </p>
         </div>
       </div>
