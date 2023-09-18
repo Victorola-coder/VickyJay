@@ -20,7 +20,8 @@ const Projects = () => {
         </div>
 
         <div
-          className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[26px] lg:justify-between`}
+          // className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[26px] lg:justify-between`}
+          className="grid grid-cols-1 gap-[13px] mt-[46px] md:grids-col-2 md:gap-[18px] lg:grid-cols-3 lg:gap-[26px] lg:mt-[67px]"
         >
           {projectData.map((project, index) => (
             <div
