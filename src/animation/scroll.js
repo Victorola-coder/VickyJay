@@ -3,14 +3,15 @@ import Lenis from "@studio-freight/lenis";
 
 export default function scroll() {
   const lenis = new Lenis({
-    duration: 1.6,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    duration: 1.8,
+    easing: function (t) {
+      return Math.min(1, 1.001 - Math.pow(2, -10 * t));
+    },
     infinite: false,
     smooth: true,
   });
 
   function raf(time) {
-    console.log("RAF called with time:", time); // Add this line for debugging
     lenis.raf(time);
     requestAnimationFrame(raf);
   }

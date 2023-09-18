@@ -8,7 +8,7 @@ const Skills = () => {
     threshold: 0.9,
   });
   return (
-    <section className="overflow-hidden mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[152px]">
+    <section className="h-full overflow-hidden mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[152px]">
       <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-between">
         {/*skills */}
         <div className={`flex flex-col`}>
@@ -26,14 +26,14 @@ const Skills = () => {
           </div>
           <div className="w-fit">
             <div
-              className={`mt-[31px] grid grid-cols-1 md:grid md:grid-cols-2 md:space-y-0 md:gap-3 space-y-[18.67px] lg:mt-[36px] lg:grid-cols-2 lg:space-y-0 lg:gap-[24px]`}
+              className={`mt-[31px] grid grid-cols-1 md:grid md:grid-cols- md:space-y-0 md:gap-3 space-y-[18.67px] lg:mt-[36px] lg:grid-cols-2 lg:space-y-0 lg:gap-[24px]`}
             >
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, x: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, x: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, x: 0 }}
                 className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
               >
                 <div
@@ -47,11 +47,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, x: 300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, x: 300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, x: 0 }}
                 className="bg-gradient-to-b max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
               >
                 <div
@@ -65,11 +65,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
               >
                 <div
@@ -83,11 +83,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-b max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
               >
                 <div
@@ -101,11 +101,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, x: 300, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, x: 300, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, x: 0, y: 0 }}
                 className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
               >
                 <div
@@ -119,11 +119,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, x: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, x: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, x: 0 }}
                 className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
               >
                 <div
@@ -137,11 +137,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, x: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, x: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, x: 0 }}
                 className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
               >
                 <div
@@ -155,11 +155,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, x: 300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, x: 300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, x: 0 }}
                 className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
               >
                 <div
@@ -173,11 +173,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, x: 300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, x: 300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, x: 0 }}
                 className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
               >
                 <div
@@ -191,11 +191,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
               >
                 <div
@@ -209,11 +209,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
               >
                 <div
@@ -227,11 +227,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
               >
                 <div
@@ -245,11 +245,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
               >
                 <div
@@ -263,11 +263,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
               >
                 <div
@@ -281,11 +281,11 @@ const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg-gradient-to-b max-w-[369px]  lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pb-0.5 pl-0.5"
               >
                 <div
@@ -300,11 +300,11 @@ const Skills = () => {
               </motion.div>
               <motion.div
                 title="loading... expect greatness!"
-                whileHover={{ scale: 1.1 }}
-                ref={sectionRef}
-                initial={{ opacity: 0, y: -300 }}
-                transition={{ duration: 0.6 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 0.96 }}
+                // ref={sectionRef}
+                // initial={{ opacity: 0, y: -300 }}
+                // transition={{ duration: 0.6 }}
+                // whileInView={{ opacity: 1, y: 0 }}
                 className="bg max-w-[369px] bg-gradient-to-r lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
               >
                 <div

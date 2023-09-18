@@ -81,7 +81,10 @@ const Contact = () => {
               <span>somewhere in the metaverse!⚡</span>
             )}
             {timeOfDay === "afternoon" && <span>localhost:3000</span>}
-            {timeOfDay === "morning" && <span>127.0.0.1</span>}
+            {timeOfDay === "evening" && <span>127.0.0.1:5500</span>}
+            {/* {timeOfDay === "evening" && (
+              <span> http://192.168.116.1:5173/</span>
+            )} */}
           </p>
         </div>
       </div>

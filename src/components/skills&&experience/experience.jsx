@@ -3,21 +3,21 @@ import { ExpCircle } from "../../assets/Icons";
 import Resume from "../../utils/victor.pdf";
 
 const Experience = () => {
-  //   const handleDownload = () => {
-  //     const downloadLink = document.createElement("a");
-  //     downloadLink.href = { Resume };
-  //     downloadLink.download = "hello  ";
-  //     document.body.appendChild(downloadLink);
-  //     downloadLink.click();
-  //     document.body.removeChild(downloadLink);
-  //   };
+    const handleDownload = () => {
+      const downloadLink = document.createElement("a");
+      downloadLink.href = { Resume };
+      downloadLink.download = "hello  ";
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    };
 
   return (
     <>
       <div className={`flex flex-col lg:items-end`}>
         <div className="font-pop">
           <h2
-            className={`flex items-center ml-0 lg:ml-20 font-clashbold text-white text-[20px] font-semibold lg:text- lg:text-[50px] lg:leading-[49.2px]`}
+            className={`h-full flex items-center ml-0 lg:ml-20 font-clashbold text-white text-[20px] font-semibold lg:text- lg:text-[50px] lg:leading-[49.2px]`}
           >
             Experience <small className={`animate-bounce`}>🚀</small>
           </h2>
@@ -28,7 +28,7 @@ const Experience = () => {
           </p>
         </div>
         <div className="flex lg:justify-between mt-[30px]">
-          <div className="w-0.5 h-[740px] bg-[#1ED7601A]"></div>
+          <div className="w-[3px] h-[740px] bg-[#1ED7601A]"></div>
           <div className={`flex flex-col space-y-[60px]`}>
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
@@ -171,6 +171,7 @@ const Experience = () => {
             >
               <a
                 href={Resume}
+                onclick={handleDownload}
                 className="flex justify-center lg:flex lg:justify-start"
                 download="VickyJay.pdf"
                 rel="noopener noreferrer"
