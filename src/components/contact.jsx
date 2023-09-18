@@ -54,9 +54,9 @@ const Contact = () => {
             />
           </div>
           <p
-            className={`text-[#FFFFFF99] text-center font-medium md:text-[20px] md:leading-[30px]`}
+            className={`text-[#FFFFFF99] tex<i class="fas fa-baseball-ball    "></i> font-medium md:text-[20px] md:leading-[30px]`}
           >
-            127.0.0.1 OR metaverse!⚡
+            127.0.0.1 <br /> OR <br /> somewhere in the metaverse!⚡
           </p>
         </div>
       </div>
