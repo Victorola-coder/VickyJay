@@ -27,10 +27,10 @@ const Experience = () => {
             Some list of my experience over the year..
           </p>
         </div>
-        <div className="flex relative z-[10000000000]  lg:justify-between mt-[30px]">
+        <div className="flex flex-row relative z-[10000000000]  lg:justify-between mt-[30px]">
           <div className="w-0.5 h-[740px] bg-[#1ED7601A]"></div>
           <div className={`flex flex-col space-y-[60px]`}>
-            <div className="flex gap-[38px] lg:gap-[48px]">
+            <div className="flex gap-[28px] lg:gap-[48px]">
               <div className="relative">
                 <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
@@ -58,7 +58,7 @@ const Experience = () => {
                 </h5>
               </div>
             </div>
-            <div className="flex gap-[38px] lg:gap-[48px]">
+            <div className="flex gap-[28px] lg:gap-[48px]">
               <div className="relative">
                 <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
@@ -86,7 +86,7 @@ const Experience = () => {
                 </h5>
               </div>
             </div>
-            <div className="flex gap-[38px] lg:gap-[48px]">
+            <div className="flex gap-[28px] lg:gap-[48px]">
               <div className="relative">
                 <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
@@ -115,7 +115,7 @@ const Experience = () => {
                 </h5>
               </div>
             </div>
-            {/* <div className="flex gap-[38px] lg:gap-[48px]">
+            {/* <div className="flex gap-[28px] lg:gap-[48px]">
               <div className="relative">
                 <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
@@ -129,7 +129,7 @@ const Experience = () => {
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
                 >
-                  FLowday
+                  Flowday
                 </p>
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
@@ -140,7 +140,7 @@ const Experience = () => {
                 </h5>
               </div>
             </div> */}
-            <div className="relative flex gap-[38px] lg:gap-[48px]">
+            <div className="relative flex gap-[28px] lg:gap-[48px]">
               <div className="relative">
                 <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
@@ -165,7 +165,7 @@ const Experience = () => {
               </div>
             </div>
             <motion.div
-              className="max-w-[200px]"
+              className="max-w-[200px] mx-auto md:mx-0"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
             >

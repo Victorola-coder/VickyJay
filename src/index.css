@@ -125,7 +125,7 @@ html {
 
 .gradientText h1 {
   /* font-size: 4em; */
-  @apply font-clashbold font-semibold text-[40px] leading-[36.9px] text-[#CFFAFF] md:leading-[45px] md:text-[35px] md:max-w-max lg:leading-[73.8px] lg:max-w-[580px] lg:text-[60px];
+  @apply font-clashbold font-semibold text-[34px] leading-[36.9px] text-[#CFFAFF] md:leading-[45px] md:text-[35px] md:max-w-max lg:leading-[73.8px] lg:max-w-[580px] lg:text-[60px];
   /* font-weight: 900; */
   /* line-height: 1.2; */
   /* letter-spacing: -0.03em; */

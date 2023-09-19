@@ -8,8 +8,8 @@ const Skills = () => {
     threshold: 0.9,
   });
   return (
-    <section className="h-full w-full overflow-hidden mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[152px]">
-      <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-between">
+    <section className="overflow-hidden px-[33px] mt-[60px] lg:px-[76px] lg:mt-[152px]">
+      <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-center">
         {/*skills */}
         <div className={`flex flex-col`}>
           <div>
@@ -26,7 +26,7 @@ const Skills = () => {
           </div>
           <div className="w-fit">
             <div
-              className={`mt-[31px] grid grid-cols-1 md:grid md:grid-cols- md:space-y-0 md:gap-3 space-y-[18.67px] lg:mt-[36px] lg:grid-cols-2 lg:space-y-0 lg:gap-[24px]`}
+              className={`mt-[31px] grid grid-cols-1 md:grid md:grid-cols-2  md:space-y-0 md:gap-3 space-y-[18.67px] lg:mt-[36px] lg:grid-cols-2 lg:space-y-0 lg:gap-[24px]`}
             >
               <motion.div
                 whileHover={{ scale: 0.96 }}
