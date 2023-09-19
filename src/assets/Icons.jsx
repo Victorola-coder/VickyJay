@@ -138,12 +138,13 @@ export function InIcon({ className, fill }) {
   );
 }
 
-export const ExpCircle = () => {
+export const ExpCircle = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"
+      className={className}
       viewBox="0 0 32 32"
       fill="none"
     >

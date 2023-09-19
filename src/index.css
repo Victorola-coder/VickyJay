@@ -7,14 +7,14 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
   scroll-behavior: auto;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 100vh;
+  /* height: 100vh; */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   /* background-color: #0a1c20; */
@@ -22,7 +22,6 @@ body {
   /* background-color: black; */
   color: white;
   font-family: "Poppins", sans-serif;
-  /* @apply lg:px-[50%]; */
 }
 
 body::-webkit-scrollbar {

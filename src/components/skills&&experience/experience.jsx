@@ -3,18 +3,18 @@ import { ExpCircle } from "../../assets/Icons";
 import Resume from "../../utils/victor.pdf";
 
 const Experience = () => {
-    const handleDownload = () => {
-      const downloadLink = document.createElement("a");
-      downloadLink.href = { Resume };
-      downloadLink.download = "hello  ";
-      document.body.appendChild(downloadLink);
-      downloadLink.click();
-      document.body.removeChild(downloadLink);
-    };
+  const handleDownload = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = { Resume };
+    downloadLink.download = "hello  ";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
 
   return (
     <>
-      <div className={`flex flex-col lg:items-end`}>
+      <div className={`flex flex-col ml-3 lg:items-end`}>
         <div className="font-pop">
           <h2
             className={`h-full flex items-center ml-0 lg:ml-20 font-clashbold text-white text-[20px] font-semibold lg:text- lg:text-[50px] lg:leading-[49.2px]`}
@@ -27,8 +27,8 @@ const Experience = () => {
             Some list of my experience over the year..
           </p>
         </div>
-        <div className="flex lg:justify-between mt-[30px]">
-          <div className="w-[3px] h-[740px] bg-[#1ED7601A]"></div>
+        <div className="flex relative z-[10000000000]  lg:justify-between mt-[30px]">
+          <div className="w-0.5 h-[740px] bg-[#1ED7601A]"></div>
           <div className={`flex flex-col space-y-[60px]`}>
             <div className="flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
@@ -140,7 +140,7 @@ const Experience = () => {
                 </h5>
               </div>
             </div> */}
-            <div className="flex gap-[38px] lg:gap-[48px]">
+            <div className="relative flex gap-[38px] lg:gap-[48px]">
               <div className="relative">
                 <span className="absolute -top-1 -translate-x-[55%] lg:translate-x-[-50%]">
                   <ExpCircle />
