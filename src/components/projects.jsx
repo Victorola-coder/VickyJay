@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Arrow } from "../assets/Icons";
-import { projectData } from "../Data/projects";
+import { projectData } from "../Data/data";
 
 const Projects = () => {
   return (

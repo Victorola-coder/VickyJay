@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Experience from "./experience";
 import { useInView } from "react-intersection-observer";
+import { skills } from "../../Data/data";
 
 const Skills = () => {
   const [sectionRef, inView] = useInView({
@@ -8,8 +9,8 @@ const Skills = () => {
     threshold: 0.9,
   });
   return (
-    <section className="overflow-hidden px-[33px] mt-[60px] lg:px-[76px] lg:mt-[152px]">
-      <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px] lg:justify-center">
+    <section className="overflow-hidden px-[33px] mt-[60px] lg:px-[70px] lg:mt-[152px]">
+      <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px]   lg:justify-cente">
         {/*skills */}
         <div className={`flex flex-col`}>
           <div>
@@ -26,7 +27,7 @@ const Skills = () => {
           </div>
           <div className="w-fit">
             <div
-              className={`mt-[31px] grid grid-cols-1 md:grid md:grid-cols-2  md:space-y-0 md:gap-3 space-y-[18.67px] lg:mt-[36px] lg:grid-cols-2 lg:space-y-0 lg:gap-[24px]`}
+              className={`mt-[31px] grid grid-cols-1 md:grid md:grid-cols-2 md:space-y-0 md:gap-3 space-y-[18.67px] lg:mt-[36px] lg:grid-cols-2 lg:space-y-0 lg:gap-[20px]`}
             >
               <motion.div
                 whileHover={{ scale: 0.96 }}
@@ -40,7 +41,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20] max-w-full w-[368px] px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     Html
                   </p>
@@ -58,7 +59,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     Css
                   </p>
@@ -76,7 +77,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     Bootstrap
                   </p>
@@ -94,7 +95,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     TailwindCSS
                   </p>
@@ -112,7 +113,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     SCSS
                   </p>
@@ -130,7 +131,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     JavaScript
                   </p>
@@ -148,7 +149,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     TypeScript
                   </p>
@@ -166,7 +167,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     JQuery
                   </p>
@@ -184,7 +185,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     Git
                   </p>
@@ -202,7 +203,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     Github
                   </p>
@@ -220,7 +221,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     ReactJs
                   </p>
@@ -238,7 +239,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     NextJs
                   </p>
@@ -256,7 +257,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     Framer-Motion
                   </p>
@@ -274,7 +275,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     Figma
                   </p>
@@ -292,7 +293,7 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     Photoshop
                   </p>
@@ -311,13 +312,39 @@ const Skills = () => {
                   className={`bg-[#0A1C20]  px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
                 >
                   <p
-                    className={`text-white tracking-[10px] font-medium font-clash lg:text-[25px] lg:leading-[30.75px] `}
+                    className={`text-white tracking-[10px] font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
                   >
                     ...
                   </p>
                 </div>
               </motion.div>
             </div>
+            {/* <div
+              className={`mt-[31px] grid w-full grid-cols-1 md:grid md:grid-cols-2 md:space-y-0 md:gap-3 space-y-[18.67px] lg:mt-[36px] lg:grid-cols-3 lg:space-y-0 lg:gap-[24px]`}
+            >
+              {skills.map((skill, id) => (
+                <div key={id}>
+                  <motion.div
+                    whileHover={{ scale: 0.96 }}
+                    // ref={sectionRef}
+                    // initial={{ opacity: 0, x: -300 }}
+                    // transition={{ duration: 0.6 }}
+                    // whileInView={{ opacity: 1, x: 0 }}
+                    className="bg-gradient-to-r max-w-[369px] lg:max-w-[252px] to-[#C8C8C880] from-[#C5F4FF00] pr-0.5 pt-0.5"
+                  >
+                    <div
+                      className={`bg-[#0A1C20] max-w-full w-[368px] px-[20px] py-[23px] lg:h-[100px] lg:max-w-full lg:w-[250px] lg:px-[32px] lg:py-[35px]`}
+                    >
+                      <p
+                        className={`text-white font-medium font-clash lg:text-[20px] lg:leading-[30.75px] `}
+                      >
+                        {skill.title}
+                      </p>
+                    </div>
+                  </motion.div>
+                </div>
+              ))}
+            </div> */}
           </div>
         </div>
 

@@ -171,7 +171,7 @@ const Experience = () => {
             >
               <a
                 href={Resume}
-                onclick={handleDownload}
+                onClick={handleDownload}
                 className="flex justify-center lg:flex lg:justify-start"
                 download="VickyJay.pdf"
                 rel="noopener noreferrer"
