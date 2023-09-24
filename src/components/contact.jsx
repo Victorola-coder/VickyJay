@@ -77,12 +77,10 @@ const Contact = () => {
           <p
             className={`text-[#FFFFFF99] text-base mx-auto text-center font-medium md:text-[20px] md:leading-[30px]`}
           >
-            {timeOfDay === "morning" && (
-              <span>somewhere in the metaverse!⚡</span>
-            )}
+            {timeOfDay === "morning" && <span>metaverse!⚡</span>}
             {timeOfDay === "afternoon" && <span>localhost:3000</span>}
             {timeOfDay === "evening" && <span>127.0.0.1:5500</span>}
-            {timeOfDay === "evening" && <span>metaverse</span>}
+            {/* {timeOfDay === "evening" && <span>somewhere in the metaverse</span>} */}
           </p>
         </div>
       </div>
