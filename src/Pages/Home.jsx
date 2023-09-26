@@ -1,22 +1,30 @@
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Services from "../components/Services";
-import Contact from "../components/contact";
-import Footer from "../components/footer";
-import Projects from "../components/projects";
-import Skills from "../components/skills&&experience/skills";
+import {
+  Hero,
+  Navbar,
+  Footer,
+  SEO,
+  Projects,
+  Services,
+  Contact,
+  Skills,
+} from "../components";
 
 function Home() {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <Services />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <SEO
+        title="Victor || VickyJay - Creative Frontend Engineer"
+        description="I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences."
+      />
+      <main>
+        <Navbar />
+        <Hero />
+        <Services />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }
 
