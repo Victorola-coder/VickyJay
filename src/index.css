@@ -21,7 +21,7 @@ body {
   background-color: #061417;
   /* background-color: black; */
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -51,11 +51,11 @@ html {
 
 @font-face {
   font-family: clash;
-  src: url("./assets/fonts/clash/ClashDisplay-Regular.otf") format("opentype");
+  src: url('./assets/fonts/clash/ClashDisplay-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: clashBold;
-  src: url("./assets/fonts/clash/ClashDisplay-Semibold.otf") format("opentype");
+  src: url('./assets/fonts/clash/ClashDisplay-Semibold.otf') format('opentype');
 }
 
 @-webkit-keyframes slime {

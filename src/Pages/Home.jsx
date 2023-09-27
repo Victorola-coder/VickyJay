@@ -7,15 +7,15 @@ import {
   Services,
   Contact,
   Skills,
-} from "../components";
+} from '../components';
 
 function Home() {
   return (
     <>
-      <SEO
+      {/* <SEO
         title="Victor || VickyJay - Creative Frontend Engineer"
         description="I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences."
-      />
+      /> */}
       <main>
         <Navbar />
         <Hero />
