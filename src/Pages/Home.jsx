@@ -12,10 +12,10 @@ import {
 function Home() {
   return (
     <>
-      {/* <SEO
-        title="Victor || VickyJay - Creative Frontend Engineer"
-        description="I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences."
-      /> */}
+      <SEO
+        title='Home'
+        description='I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences.'
+      />
       <main>
         <Navbar />
         <Hero />
