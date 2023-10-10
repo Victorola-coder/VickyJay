@@ -7,20 +7,20 @@ export const projectData = [
   },
   {
     name: "hbdAoPresh",
-    desc: "Happpu Birthday Wish to Ao Presh",
-    lang: " JavaScript + CSS + Html",
+    desc: "Happy Birthday Wish to Ao Presh",
+    lang: "JavaScript + CSS + Html",
     link: "https://hbd-aopresh.vercel.app",
   },
   {
     name: "askSolomon",
-    desc: "A search engine prototype that wokrs like google",
+    desc: "A search engine prototype that works like google",
     lang: "JavaScript + Css + Html",
     link: "https://asksolomon.vercel.app/",
   },
   {
     name: "Zeddpay(clone)",
     desc: "zeddpay V1 web clone",
-    lang: " JavaScript + Css + Html",
+    lang: "JavaScript + Css + Html",
     link: "https://zeddpay-clvne.vercel.app/",
   },
   {
