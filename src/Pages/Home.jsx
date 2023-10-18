@@ -20,8 +20,8 @@ function Home() {
         <Navbar />
         <Hero />
         <Services />
-        <Skills />
         <Projects />
+        <Skills />
         <Contact />
         <Footer />
       </main>
