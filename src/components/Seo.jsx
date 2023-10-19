@@ -7,7 +7,7 @@ export default function SEO({
   description = META_DESCRIPTION,
   children,
 }) {
-  const siteTitle = title ? title + '||' + META_TITLE : title;
+  const siteTitle = title ? title + ' || ' + META_TITLE : title;
 
   return (
     <Helmet>
