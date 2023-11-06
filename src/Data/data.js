@@ -66,8 +66,8 @@ export const projectData = [
     link: 'https://https://creos-ebon.vercel.app/',
   },
   {
-    name: 'Buck',
-    desc: 'Buck me my bro! Send, Receive, Buy and Save $USDC for Free',
+    name: 'Bucx',
+    desc: 'Bucx me my bro! Send, Receive, Buy and Save $USDC for Free',
     lang: 'ReactJs + TailwindCss',
     link: 'https://https://crymno.brimble.app/',
   },
