@@ -77,6 +77,12 @@ export const projectData = [
     lang: 'ReactJs + TailwindCss + Javascript',
     link: 'https://melearna.vercel.app/',
   },
+{
+name: 'Memome',
+desc: 'An anonymous messaging app with amazing feature'
+lang: 'NestJs + Tailwindcss + Typescript'
+link: 'https://memome.one/'
+},
 ];
 
 export const experienceData = [
