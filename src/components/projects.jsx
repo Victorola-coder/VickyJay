@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import { Arrow } from "../assets/Icons";
-import { projectData } from "../Data/data";
+import { motion } from 'framer-motion';
+import { Arrow } from '../assets/Icons';
+import { projectData } from '../Data/data';
 
 const Projects = () => {
   return (
@@ -20,7 +20,7 @@ const Projects = () => {
         </div>
 
         <div
-          className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[26px] lg:justify-around`}
+          className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[26px] lg:justify-start`}
           // className="grid grid-cols-1 gap-[13px] mt-[46px] md:grid-col-2 md:gap-[18px] xl:grid-cols-3 xl:gap-[26px] xl:mt-[67px]"
         >
           {projectData.map((project, index) => (
@@ -43,11 +43,11 @@ const Projects = () => {
               >
                 {project.desc}
               </small>
-              <div className="w-[68px]">
-                <a href={project.link} target="_blank" rel="noreferrer">
+              <div className='w-[68px]'>
+                <a href={project.link} target='_blank' rel='noreferrer'>
                   <motion.div
                     whileHover={{ scale: 0.9 }}
-                    className="flex items-center space-x-2"
+                    className='flex items-center space-x-2'
                   >
                     <span>
                       <Arrow

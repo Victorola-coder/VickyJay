@@ -17,7 +17,7 @@ const Navbar = () => {
             <NavLink to='/'>
               {({ isActive }) => (
                 <div
-                  className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] lg:hover:before:bg-[#4C686F] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
+                  className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] lg:hover:before:bg-[#4C686F]s active:scale-[0.86] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
                     isActive
                       ? 'text-white hover:before:w-full'
                       : 'text-white hover:before:w-full'
