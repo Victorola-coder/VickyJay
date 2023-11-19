@@ -23,7 +23,8 @@ const Navbar = () => {
                       : 'text-white hover:before:w-full'
                   } relative`}
                 >
-                  VickyJay<span>.</span>
+                  VickyJay<span>!</span>
+                  <span>⚡</span>
                 </div>
               )}
             </NavLink>
