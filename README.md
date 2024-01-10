@@ -25,7 +25,7 @@ Welcome to my personal portfolio! This project showcases my frontend development
 1. Clone this repository to your local machine using `git clone`.
 2. Navigate to the project directory: `cd vickyjay`.
 3. Install project dependencies using `npm install`.
-4. Start the development server: `npm start`.
+4. Start the development server: `npm run dev`.
 5. Open your web browser and navigate to `http://localhost:5173` to view the portfolio.
 
 ## Usage
