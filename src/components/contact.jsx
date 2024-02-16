@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { LocationIcon, MailIcon, PhoneIcon } from "./svgs";
 

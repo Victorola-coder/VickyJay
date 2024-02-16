@@ -14,14 +14,6 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- HTML Meta Tags -->
-    <meta
-      name="description"
-      content="I enjoy creating frontend
-    solutions with solid foundations, scalability, and excellent user
-    experiences."
-    />
-
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://vickyjay.vercel.app" />
     <meta property="og:type" content="website" />
@@ -71,23 +63,23 @@
     <script type="module" src="/src/main.jsx"></script>
     <script>
       if (
-        localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
-        document.documentElement.classList.add('dark');
+        document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.remove("dark");
       }
 
       // Whenever the user explicitly chooses light mode
-      localStorage.theme = 'light';
+      localStorage.theme = "light";
 
       // Whenever the user explicitly chooses dark mode
-      localStorage.theme = 'dark';
+      localStorage.theme = "dark";
 
       // Whenever the user explicitly chooses to respect the OS preference
-      localStorage.removeItem('theme');
+      localStorage.removeItem("theme");
     </script>
   </body>
 </html>

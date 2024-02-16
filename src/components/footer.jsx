@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Copyright, FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 
@@ -98,27 +99,27 @@ const Footer = () => {
       <div className="hidden  flex_ flex-col gap-2 items-start justify-center text-center font-medium text-[#FFFFFF99] text-xs *:max-w-[320px] *:md:max-w-[992px] md:text-[18px]">
         <h3>
           Inspiration -&nbsp;
-          <a
-            href="https://www.pariola.dev/"
+          <Link
             target="_blank"
             rel="noreferrer noopener"
+            to="https://www.pariola.dev/"
             className="text-white cursor-pointer"
             title="you might need internet to access this"
           >
             Pariola
-          </a>
+          </Link>
         </h3>
         <h3>
           Design -&nbsp;
-          <a
-            href="https://x.com/UI_Ninja_?s=09"
+          <Link
             target="_blank"
             rel="noreferrer noopener"
+            to="https://x.com/UI_Ninja_?s=09"
             className="text-white cursor-pointer"
             title="you might need internet to access this"
           >
             Chinemerem
-          </a>
+          </Link>
         </h3>
       </div>
     </section>

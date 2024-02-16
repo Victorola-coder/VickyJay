@@ -33,7 +33,7 @@ export const projects = [
     name: "Roomey",
     desc: "Stress free relocation to Regina, Saskatchewan and environs.",
     lang: "React TS + Tailwindcss ",
-    link: "https://roomey.ca/",
+    link: "https://roomey.io/",
   },
   {
     name: "showmeelove",
@@ -57,7 +57,7 @@ export const projects = [
     name: "VistaPay",
     desc: "A VTU and payment innovation for Africa",
     lang: "ReactJs + TailwindCss",
-    link: "https://vistapay-web.vercel.app/",
+    link: "https://vistapayhq.com/",
   },
   {
     name: "Memome",
@@ -82,13 +82,13 @@ export const projects = [
     name: "buildforge",
     desc: "we’re *bullish* on first time & early stage founders, builders and shippers",
     lang: "ReactJs + TailwindCss + Javascript",
-    link: "https://buildforge.vercel.app/",
+    link: "https://buildforge.xyz/",
   },
   {
     name: "Scoota",
     desc: "The best way to get around the city, the future of campus transportation is here",
     lang: "ReactJs + TailwindCss + Javascript",
-    link: "https://scoota.io/",
+    link: "https://scootaa.com/",
   },
 ];
 

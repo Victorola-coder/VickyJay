@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { GhIcon } from "./svgs";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -32,10 +32,10 @@ const Navbar = () => {
               )}
             </NavLink>
             <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
-              <a
+              <Link
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.github.com/victorola-coder"
+                to="https://www.github.com/victorola-coder"
                 className="group-hover:text-white transition-colors duration-300"
               >
                 <span className="flex items-center gap-[8px] md:gap-[10px]">
@@ -44,7 +44,7 @@ const Navbar = () => {
                     github
                   </p>
                 </span>
-              </a>
+              </Link>
             </div>
           </nav>
         </header>
