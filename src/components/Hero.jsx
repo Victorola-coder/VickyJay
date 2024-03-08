@@ -98,6 +98,7 @@ const Hero = () => {
                   alt="hero image is here"
                   className="absolute w-full h-full bottom-3 right-4 md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
                   draggable={false}
+                  loading="lazy"
                 />
               </div>
               <motion.div
@@ -113,6 +114,8 @@ const Hero = () => {
                   alt="hero image is here"
                   className="w-[330px] h-[330px] mg:w-3/4 lg:w-[512px] lg:h-[512px] absolute bottom-[32px] -left-[36px] md:bottom-[52px] md:right-[56px] object-cover"
                   draggable={false}
+                  loading="lazy"
+
                 />
               </motion.div>
               <div
