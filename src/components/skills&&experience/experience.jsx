@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ExpCircle } from "../../assets/Icons";
-import Resume from "../../utils/victor.pdf";
+import Resume from "../../utils/tolu.pdf";
 
 const Experience = () => {
   const handleDownload = () => {
@@ -47,7 +47,8 @@ const Experience = () => {
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
                 >
-                  Showmeelove
+                  Showmeelove -{" "}
+                  <span className="italic">some idea im building</span>
                 </p>
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
@@ -67,22 +68,25 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Web Developer <span>-</span>&nbsp;
+                  Fullstack Developer <span>-</span>&nbsp;
                   <span className="italic text-[#FFFFFF99]">
-                    2022 - till date
+                    March, 2024 - till date
                   </span>
                 </h3>
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
                 >
-                  Krubbs
+                  Zero Studio, India.
                 </p>
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
                 >
-                  I work as a frontend developer with the responsibility of
-                  building and managing the websites with a team of Creative
-                  developers.
+                  Managed source control systems such as Git to ensure version
+                  control of projects. • Collaborated with UX and UI designers
+                  to create intuitive user interfaces for web applications. •
+                  Troubleshot bugs in production code and resolved them
+                  efficiently. • Utilized AJAX technology to dynamically load
+                  content without refreshing the page.
                 </h5>
               </div>
             </div>
@@ -149,12 +153,12 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Web Developer
+                  Creative Web Developer
                 </h3>
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
                 >
-                  Edukarma
+                  Vistapay
                 </p>
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
