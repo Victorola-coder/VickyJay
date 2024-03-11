@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 test.jsx
 robots.txt
-
+# .bin

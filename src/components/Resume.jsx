@@ -1,70 +1,60 @@
-import { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import toast, { Toaster } from "react-hot-toast";
 
-const DownloadButton = ({ resumeUrl }) => {
-  const downloadRef = useRef(null); // Ref to hold the created anchor element
-  const [isLoading, setIsLoading] = useState(false); // State for loading indicator
-
-  const handleClick = async (event) => {
-    event.preventDefault(); // Prevent default anchor behavior
-
-    setIsLoading(true);
-
+const Resume = ({ pdfUrl, fileName, buttonText }) => {
+  const notify = () => toast("Here is your toast.");
+  const downloadPDF = async () => {
     try {
-      const link = downloadRef.current;
-      if (link) {
-        link.click();
-      } else {
-        console.error("Download link not found");
+      // Fetch the PDF file
+      const response = await fetch(pdfUrl);
+
+      // Check if the request was successful
+      if (!response.ok) {
+        throw new Error(`Failed to fetch PDF: ${response.statusText}`);
       }
-    } finally {
-      setIsLoading(false);
+
+      // Convert the response to a blob
+      const blob = await response.blob();
+
+      // Create a download link
+      const link = document.createElement("a");
+
+      // Create a Blob URL from the blob
+      const blobUrl = URL.createObjectURL(blob);
+
+      // Set the download link attributes
+      link.href = blobUrl;
+      link.download = fileName || "download.pdf";
+
+      // Append the link to the document
+      document.body.appendChild(link);
+
+      // Trigger a click on the link to start the download
+      link.click();
+
+      // Remove the link from the document
+      document.body.removeChild(link);
+
+      // Revoke the Blob URL to free up resources
+      URL.revokeObjectURL(blobUrl);
+    } catch (error) {
+      notify("Error downloading PDF", error.message);
+      console.error("Error downloading PDF:", error.message);
     }
   };
 
-  const loadingContent = (
-    <span className="cursor-pointer flex items-center justify-center">
-      <svg
-        className="animate-spin mr-2 h-5 w-5"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          d="M10 3v1.4a8 8 0 1 0 0 16 8 8 0 0 0 0-16V3z"
-          clipRule="evenodd"
-          fillRule="evenodd"
-        />
-      </svg>
-      Loading...
-    </span>
-  );
-
   return (
-    <motion.div
-      className="max-w-[200px] mx-auto md:mx-0"
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.9 }}
-    >
-      <button
-        ref={downloadRef}
-        className={`flex justify-center lg:flex lg:justify-start ${
-          isLoading ? "disabled opacity-50 cursor-wait" : ""
-        }`}
-        disabled={isLoading} // Disable button while loading
-        onClick={handleClick}
+    <div className="transition-all duration-300 active:scale-[0.96] max-w-[200px] mx-auto md:mx-0 flex justify-center lg:flex lg:justify-start">
+      <span
+        onClick={downloadPDF}
+        className="cursor-pointer bg-gradient-to-r max-w-[197px] lg:max-w-[252px] to-[#D9D9D9] from-[#D9D9D900] py-0.5 pr-0.5"
       >
-        {isLoading ? (
-          loadingContent
-        ) : (
-          <span className="cursor-pointer bg-gradient-to-r max-w-[197px] lg:max-w-[252px] to-[#D9D9D9] from-[#D9D9D900] py-0.5 pr-0.5">
-            <p className="bg-[#061417] px-[17px] py-[18px] font-medium text-[18px] font-clash">
-              Download Resume
-            </p>
-          </span>
-        )}
-      </button>
-    </motion.div>
+        <p className="bg-[#061417] px-[17px] py-[18px] font-medium text-[18px] font-clash">
+          {buttonText || "Download PDF"}
+        </p>
+      </span>
+      <Toaster />
+    </div>
   );
 };
 
-export default DownloadButton;
+export default Resume;
