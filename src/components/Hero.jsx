@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { FbIcon, IgIcon, InIcon, TwIcon } from "../assets/Icons";
-import hero from "../assets/images/hero.png";
+import { FbIcon, IgIcon, InIcon, TwIcon } from "./Svgs";
 
 const Hero = () => {
   return (
@@ -94,7 +93,7 @@ const Hero = () => {
             <div className="relative flex flex-col justify-center w-max">
               <div className={`w-full`}>
                 <img
-                  src={hero}
+                  src="/images/hero.png"
                   alt="hero image is here"
                   className="absolute w-full h-full bottom-3 right-4 md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
                   draggable={false}

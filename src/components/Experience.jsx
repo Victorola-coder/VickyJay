@@ -1,16 +1,9 @@
-import { motion } from "framer-motion";
-import { ExpCircle } from "../../assets/Icons";
-import Resume from "../../utils/tolu.pdf";
+import { ExpCircle } from "./Svgs";
+import { Resume } from ".";
+import resumeUrl from "../utils/tolu.pdf";
 
 const Experience = () => {
-  const handleDownload = () => {
-    const downloadLink = document.createElement("a");
-    downloadLink.href = { Resume };
-    downloadLink.download = "hello  ";
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-  };
+  // console.log("resume", resumeUrl);
 
   return (
     <>
@@ -168,25 +161,8 @@ const Experience = () => {
                 </h5>
               </div>
             </div>
-            <motion.div
-              className="max-w-[200px] mx-auto md:mx-0"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <a
-                href={Resume}
-                onClick={handleDownload}
-                className="flex justify-center lg:flex lg:justify-start"
-                download="VickyJay.pdf"
-                rel="noopener noreferrer"
-              >
-                <span className="cursor-pointer bg-gradient-to-r max-w-[197px] lg:max-w-[252px] to-[#D9D9D9] from-[#D9D9D900] py-0.5 pr-0.5">
-                  <p className="bg-[#061417] px-[17px] py-[18px] font-medium text-[18px] font-clash">
-                    Download Resume
-                  </p>
-                </span>
-              </a>
-            </motion.div>
+            {/* RESUME */}
+            <Resume resumeUrl={resumeUrl} />
           </div>
         </div>
       </div>

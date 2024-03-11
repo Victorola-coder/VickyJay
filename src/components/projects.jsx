@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { Arrow } from '../assets/Icons';
-import { projectData } from '../Data/data';
+import { motion } from "framer-motion";
+import { Arrow } from "./Svgs";
+import { projectData } from "../data/data";
 
 const Projects = () => {
   return (
@@ -43,11 +43,11 @@ const Projects = () => {
               >
                 {project.desc}
               </small>
-              <div className='w-[68px]'>
-                <a href={project.link} target='_blank' rel='noreferrer'>
+              <div className="w-[68px]">
+                <a href={project.link} target="_blank" rel="noreferrer">
                   <motion.div
                     whileHover={{ scale: 0.9 }}
-                    className='flex items-center space-x-2'
+                    className="flex items-center space-x-2"
                   >
                     <span>
                       <Arrow
