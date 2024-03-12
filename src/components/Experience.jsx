@@ -1,6 +1,8 @@
 import { ExpCircle } from "./svgs";
-import { Resume } from ".";
+// import { Resume } from ".";
+Resume;
 import resumeUrl from "../utils/ovt.pdf";
+import Resume from "./resume";
 
 const Experience = () => {
   // console.log("resume", resumeUrl)
