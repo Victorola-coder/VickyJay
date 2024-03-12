@@ -1,6 +1,6 @@
 import { ExpCircle } from "./Svgs";
 import { Resume } from ".";
-import resumeUrl from "../utils/tolu.pdf";
+import resumeUrl from "../utils/ovt.pdf";
 
 const Experience = () => {
   // console.log("resume", resumeUrl)
@@ -20,7 +20,7 @@ const Experience = () => {
             Some list of my experience over the year..
           </p>
         </div>
-        <div className="flex flex-row relative z-[10000000000]  lg:justify-between mt-[30px]">
+        <div className="flex flex-row relative z-[100]  lg:justify-between mt-[30px]">
           <div className="w-0.5 h-[740px] bg-[#1ED7601A]"></div>
           <div className={`flex flex-col space-y-[60px]`}>
             <div className="flex gap-[28px] lg:gap-[48px]">
