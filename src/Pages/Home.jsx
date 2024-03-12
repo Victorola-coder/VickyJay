@@ -1,20 +1,20 @@
 import {
-  Hero,
-  Navbar,
-  Footer,
   SEO,
-  Projects,
+  Navbar,
+  Hero,
   Services,
-  Contact,
+  Projects,
   Skills,
-} from '../components';
+  Contact,
+  Footer,
+} from "../components";
 
 function Home() {
   return (
     <>
       <SEO
-        title='Victor'
-        description='I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences.'
+        title="Victor"
+        description="I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences."
       />
       <main>
         <Navbar />
