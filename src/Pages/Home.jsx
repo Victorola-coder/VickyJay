@@ -1,13 +1,11 @@
-import {
-  SEO,
-  Navbar,
-  Hero,
-  Services,
-  Projects,
-  Skills,
-  Contact,
-  Footer,
-} from "../components";
+import SEO from "../components/Seo";
+import Navbar from "../components/navbar";
+import Hero from "../components/hero";
+import Services from "../components/services";
+import Projects from "../components/projects";
+import Skills from "../components/skills";
+import Contact from "../components/contact";
+import Footer from "../components/footer";
 
 function Home() {
   return (
