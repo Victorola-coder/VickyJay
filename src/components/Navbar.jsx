@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { GhIcon } from "./Svgs";
+import { GhIcon } from "./svgs";
 
 const Navbar = () => {
   return (

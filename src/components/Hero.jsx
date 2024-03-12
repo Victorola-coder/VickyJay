@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FbIcon, IgIcon, InIcon, TwIcon } from "./Svgs";
+import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 
 const Hero = () => {
   return (

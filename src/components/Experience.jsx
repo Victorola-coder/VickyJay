@@ -1,4 +1,4 @@
-import { ExpCircle } from "./Svgs";
+import { ExpCircle } from "./svgs";
 import { Resume } from ".";
 import resumeUrl from "../utils/ovt.pdf";
 
