@@ -33,8 +33,8 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Web Developer <span>-</span> &nbsp;
-                  <span className="italic text-[#FFFFFF99]">
+                  Web Developer <span className="hidden">-</span> &nbsp;
+                  <span className="hidden italic text-[#FFFFFF99]">
                     2023 - till date
                   </span>
                 </h3>
@@ -42,7 +42,9 @@ const Experience = () => {
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
                 >
                   Showmeelove -{" "}
-                  <span className="italic">some idea im building</span>
+                  <span className="italic animate-pulse text-[#FFFFFF99] text-sm">
+                    some idea im building
+                  </span>
                 </p>
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
@@ -63,7 +65,7 @@ const Experience = () => {
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
                   Fullstack Developer <span>-</span>&nbsp;
-                  <span className="italic text-[#FFFFFF99]">
+                  <span className=" md:text-base italic text-[#FFFFFF99]">
                     March, 2024 - till date
                   </span>
                 </h3>
@@ -94,8 +96,8 @@ const Experience = () => {
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
                   Frontend Engineer&nbsp;
-                  <span>-</span> &nbsp;
-                  <span className="italic text-[#FFFFFF99]">
+                  <span className="hidden">-</span> &nbsp;
+                  <span className="italic hidden text-[#FFFFFF99]">
                     2023 - till date
                   </span>
                 </h3>
