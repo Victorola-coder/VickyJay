@@ -38,7 +38,7 @@ If you have any questions or would like to get in touch, you can reach me at:
 
 - Email: victoluolatunji@gmail.com
 - GitHub: [Vitorola-coder](https://github.com/Victorla-coder)
-- Portfolio: [preview](https://www.vickyjay.dev)
+- Portfolio: [preview](https://vickyjay.vercel.app)
 
 Thank you for visiting my portfolio!
 
