@@ -37,8 +37,8 @@ const Resume = ({ pdfUrl, fileName, buttonText }) => {
       // Revoke the Blob URL to free up resources
       URL.revokeObjectURL(blobUrl);
     } catch (error) {
-      notify("Error downloading PDF", error.message);
-      console.error("Error downloading PDF:", error.message);
+      notify("Error downloading PDF", error?.message);
+      console.error("Error downloading PDF:", error?.message);
     }
   };
 
