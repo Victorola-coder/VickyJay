@@ -22,7 +22,7 @@ const Experience = () => {
           </p>
         </div>
         <div className="flex flex-row relative z-[100]  lg:justify-between mt-[30px]">
-          <div className="w-0.5 h-[740px] bg-[#1ED7601A]"></div>
+          <div className="w-0.5 h-[940px] lg:h-[740px] bg-[#1ED7601A]"></div>
           <div className={`flex flex-col space-y-[60px]`}>
             <div className="flex gap-[28px] lg:gap-[48px]">
               <div className="relative">
@@ -33,7 +33,7 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Web Developer <span className="hidden">-</span> &nbsp;
+                  Software Engineer <span className="hidden">-</span> &nbsp;
                   <span className="hidden italic text-[#FFFFFF99]">
                     2023 - till date
                   </span>
@@ -65,7 +65,7 @@ const Experience = () => {
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
                   Fullstack Developer <span>-</span>&nbsp;
-                  <span className=" md:text-base italic text-[#FFFFFF99]">
+                  <span className="text-xs md:text-base italic text-[#FFFFFF99]">
                     March, 2024 - till date
                   </span>
                 </h3>
@@ -77,12 +77,9 @@ const Experience = () => {
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
                 >
-                  Managed source control systems such as Git to ensure version
-                  control of projects. • Collaborated with UX and UI designers
-                  to create intuitive user interfaces for web applications. •
-                  Troubleshot bugs in production code and resolved them
-                  efficiently. • Utilized AJAX technology to dynamically load
-                  content without refreshing the page.
+                  Collaborated with UX and UI designers to create intuitive user
+                  interfaces for web applications. Troubleshot bugs in
+                  production code and resolved them efficiently.
                 </h5>
               </div>
             </div>
@@ -104,7 +101,7 @@ const Experience = () => {
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
                 >
-                  TekArt
+                  TekArt, Lagos, NG.
                 </p>
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
@@ -154,7 +151,7 @@ const Experience = () => {
                 <p
                   className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
                 >
-                  Vistapay
+                  Vistapay, Uyo, Ng.
                 </p>
                 <h5
                   className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
