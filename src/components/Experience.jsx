@@ -1,6 +1,5 @@
 import { ExpCircle } from "./svgs";
 // import { Resume } from ".";
-Resume;
 import resumeUrl from "../utils/ovt.pdf";
 import Resume from "./resume";
 
@@ -34,7 +33,7 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Web Developer <span>-</span> &nbsp
+                  Web Developer <span>-</span> &nbsp;
                   <span className="italic text-[#FFFFFF99]">
                     2023 - till date
                   </span>
@@ -63,7 +62,7 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Fullstack Developer <span>-</span>&nbsp
+                  Fullstack Developer <span>-</span>&nbsp;
                   <span className="italic text-[#FFFFFF99]">
                     March, 2024 - till date
                   </span>
@@ -94,8 +93,8 @@ const Experience = () => {
 
               <div>
                 <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]  ">
-                  Frontend Engineer&nbsp
-                  <span>-</span> &nbsp
+                  Frontend Engineer&nbsp;
+                  <span>-</span> &nbsp;
                   <span className="italic text-[#FFFFFF99]">
                     2023 - till date
                   </span>
