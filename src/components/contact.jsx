@@ -7,7 +7,7 @@ const Contact = () => {
   useEffect(() => {
     // Update timeOfDay when component mounts
     setTimeOfDay(getTimeOfDay());
-  }, []);
+  }, [timeOfDay]);
 
   function getTimeOfDay() {
     const now = new Date();
