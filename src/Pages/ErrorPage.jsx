@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SEO from "../components/Seo";
-import Navbar from "../components/navbar";
+import { Navbar } from "../components";
 
 const ErrorPage = () => {
   return (

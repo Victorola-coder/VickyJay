@@ -1,11 +1,11 @@
 import SEO from "../components/Seo";
-import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import Services from "../components/services";
-import Projects from "../components/projects";
+import Projects from "../components/Projects";
 import Skills from "../components/skills";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
+import { Navbar } from "../components";
 
 function Home() {
   return (
