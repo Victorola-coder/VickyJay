@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">
-          <motion.a
+          <a
             href="https://web.facebook.com/victortoluu"
             target="_blank"
             rel="noreferrer"
@@ -32,21 +32,21 @@ const Footer = () => {
               fill={`#FFFFFF99`}
               className={`w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-[#0a1c20]`}
             />
-          </motion.a>
-          <motion.a
+          </a>
+          <a
             href="https://twitter.com/HeyVickyJay"
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}
             whileHover={{ scale: 0.99 }}
-            className={`h-auto w-auto`}
+            className={`h-auto w-auto jo`}
           >
             <TwIcon
               fill={`#FFFFFF99`}
               className={`w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-[#0a1c20]`}
             />
-          </motion.a>
-          <motion.a
+          </a>
+          <a
             href="https://www.instagram.com/vickyjayox"
             target="_blank"
             rel="noreferrer"
@@ -58,8 +58,8 @@ const Footer = () => {
               fill={`#FFFFFF99`}
               className={`w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-[#0a1c20]`}
             />
-          </motion.a>
-          <motion.a
+          </a>
+          <a
             href="https://www.linkedin.com/in/victor-olatunji-889568246"
             target="_blank"
             rel="noreferrer"
@@ -71,7 +71,7 @@ const Footer = () => {
               fill={`#FFFFFF99`}
               className={`w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-[#0a1c20]`}
             />
-          </motion.a>
+          </a>
         </div>
       </div>
     </section>
