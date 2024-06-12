@@ -1,7 +1,7 @@
 import toast, { Toaster } from "react-hot-toast";
 
 const Resume = ({ pdfUrl, fileName, buttonText }) => {
-  const notify = () => toast("Here is your toast.");
+  const notify = () => toast("My Toast of love.");
   const downloadPDF = async () => {
     try {
       // Fetch the PDF file
