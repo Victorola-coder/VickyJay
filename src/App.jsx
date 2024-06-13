@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
-import ErrorPage from "./Pages/ErrorPage";
-import Test from "./Pages/test";
+import Home from "./pages/home";
+import NotFound from "./pages/not-found";
+import Test from "./pages/test";
 import { useEffect } from "react";
 import scroll from "./animation/scroll";
 
@@ -15,7 +15,7 @@ const App = () => {
     <main className={`transition-all duration-300`}>
       <Routes>
         <Route index path="/" element={<Home />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/test" element={<Test />} />
       </Routes>
     </main>
@@ -24,4 +24,6 @@ const App = () => {
 
 export default App;
 
-/*VickyJay Builds the Web!*/
+/*
+VickyJay Builds the Web!
+*/

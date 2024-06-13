@@ -1,4 +1,4 @@
-import SEO from "../components/Seo";
+import SEO from "../components/seo";
 import Hero from "../components/hero";
 import Services from "../components/services";
 import Projects from "../components/Projects";
