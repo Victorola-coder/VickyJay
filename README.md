@@ -49,3 +49,4 @@ Thank you for visiting my portfolio!
 - change the services section into an array and map it.
 - 404 page - done ✔✔
 - more features yet to come.
+- bro thus shot ain't deploying 
