@@ -80,7 +80,7 @@ export const projectData = [
   {
     name: "Memome",
     desc: "An anonymous messaging app with amazing feature",
-    lang: "NestJs + Tailwindcss + Typescript",
+    lang: "NextJs + Tailwindcss + Typescript",
     link: "https://memome.one/",
   },
 ];
