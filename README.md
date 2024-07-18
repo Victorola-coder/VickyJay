@@ -1,3 +1,6 @@
+# Note to people trying to fork
+dev and main branch is not deploying, i promise to fix as soon as im back.(retired rn, lmao) the live code is on prod branch. thanks :)
+
 # VickyJay - Personal Portfolio Website
 
 ![VickyJay's Portfolio Screenshot](/public/images/cover.png)
