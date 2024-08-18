@@ -43,6 +43,7 @@ const Services = () => {
               </p>
             </motion.div>
           </motion.div>
+
           <motion.div
             whileHover={{ scale: 0.99 }}
             className="bg-gradient-to-r max-w-[369.808px] lg:max-w-[642px] to-[#F0FEFF4D] from-[#F0FEFF00] pr-0.5 pt-0.5"

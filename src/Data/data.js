@@ -1,11 +1,5 @@
 export const projectData = [
   {
-    name: "text2Speech",
-    desc: "converts the text input to an audio output",
-    lang: "JavaScript + webspeechAPI + TailwindCss + Html",
-    link: "https://text2speeech.vercel.app/",
-  },
-  {
     name: "hbdAoPresh",
     desc: "Happy Birthday Wish to Ao Presh",
     lang: "JavaScript + CSS + Html",
@@ -29,12 +23,12 @@ export const projectData = [
     lang: "Bootstrap + Html",
     link: "https://victorola-coder.github.io/scrimm/",
   },
-  {
-    name: "afrifanz",
-    desc: "onlyfans for africans content creators",
-    lang: "JavaScript + ReactJS + TailwindCss",
-    link: "https://waitlist.afrifanz.com/",
-  },
+  // {
+  //   name: "afrifanz",
+  //   desc: "onlyfans for africans content creators",
+  //   lang: "JavaScript + ReactJS + TailwindCss",
+  //   link: "https://waitlist.afrifanz.com/",
+  // },
   {
     name: "showmeelove",
     desc: "buymeeacoffe for african creators",
@@ -57,7 +51,7 @@ export const projectData = [
     name: "VistaPay",
     desc: "A VTU and payment innovation for Africa",
     lang: "ReactJs + TailwindCss",
-    link: "https://vistapay-web.vercel.app/",
+    link: "https://vistapayhq.comß",
   },
   {
     name: "Creos",

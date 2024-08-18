@@ -74,6 +74,23 @@ const Footer = () => {
           </motion.a>
         </div>
       </div>
+
+      {/* inspiration */}
+      <div>
+        <h3
+          className={`mx-auto block font-medium text-[#FFFFFF99] text-lg text-center max-w-[320px] md:max-w-[992px] md:text-[25px] mmd:leading-[37.5px]`}
+        >
+          Insprired by&nbsp;
+          <a
+            href="http://pairiola.dev"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-white"
+          >
+            Pariola
+          </a>
+        </h3>
+      </div>
     </section>
   );
 };
