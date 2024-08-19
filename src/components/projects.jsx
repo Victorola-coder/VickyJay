@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { Arrow } from "./svg";
+import { motion } from "framer-motion";
 import { projectData } from "../datas/data";
 
 const Projects = () => {
@@ -20,8 +20,8 @@ const Projects = () => {
         </div>
 
         <div
-          className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[26px] lg:justify-start`}
-          // className="grid grid-cols-1 gap-[13px] mt-[46px] md:grid-col-2 md:gap-[18px] xl:grid-cols-3 xl:gap-[26px] xl:mt-[67px]"
+          // className={`mt-[46px] flex flex-wrap gap-[13px] lg:mt-[67px] lg:gap-[26px] lg:justify-start`}
+          className="grid grid-cols-1 gap-[13px] mt-[46px] md:grid-col-2 md:gap-[18px] xl:grid-cols-3 xl:gap-[26px] xl:mt-[67px]"
         >
           {projectData.map((project, index) => (
             <div
