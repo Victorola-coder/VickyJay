@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import Experience from "./experience";
+import { Experience } from ".";
 import { useInView } from "react-intersection-observer";
-import { skills } from "../data/data";
 
 const Skills = () => {
   const [sectionRef, inView] = useInView({
     triggerOnce: false,
     threshold: 0.9,
   });
+
   return (
     <section className="overflow-hidden px-[33px] mt-[60px] lg:px-[70px] lg:mt-[152px]">
       <div className="flex flex-col gap-[60px] lg:flex-row lg:gap-[36px]   lg:justify-cente">

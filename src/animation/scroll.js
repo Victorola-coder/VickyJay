@@ -1,4 +1,4 @@
-import gsap from "gsap";
+// import gsap from "gsap";
 import Lenis from "@studio-freight/lenis";
 
 export default function scroll() {
