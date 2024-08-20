@@ -1,6 +1,6 @@
 import { Arrow } from "./svgs";
 import { motion } from "framer-motion";
-import { projectData } from "../datas/data";
+import { projectData } from "../data/data";
 
 const Projects = () => {
   return (

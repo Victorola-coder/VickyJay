@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Home, NotFound, Test } from "./page";
+import { Home, NotFound, Test } from "./pages";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
