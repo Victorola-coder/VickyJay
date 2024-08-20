@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { LocationIcon, MailIcon, PhoneIcon } from "./svgs";
+import { LocationIcon, MailIcon, PhoneIcon } from "./svg";
 
 const Contact = () => {
   const [timeOfDay, setTimeOfDay] = useState(getTimeOfDay());
@@ -7,7 +7,7 @@ const Contact = () => {
   useEffect(() => {
     // Update timeOfDay when component mounts
     setTimeOfDay(getTimeOfDay());
-  }, [timeOfDay]);
+  }, []);
 
   function getTimeOfDay() {
     const now = new Date();

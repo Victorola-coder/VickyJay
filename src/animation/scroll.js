@@ -1,9 +1,9 @@
-import gsap from "gsap";
+// import gsap from "gsap";
 import Lenis from "@studio-freight/lenis";
 
 export default function scroll() {
   const lenis = new Lenis({
-    duration: 1.8,
+    duration: 1.6,
     easing: function (t) {
       return Math.min(1, 1.001 - Math.pow(2, -10 * t));
     },

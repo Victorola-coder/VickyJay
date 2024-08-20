@@ -1,9 +1,6 @@
-# Note to people trying to fork
-dev and main branch is not deploying, i promise to fix as soon as im back.(retired rn, lmao) the live code is on prod branch. thanks :)
-
 # VickyJay - Personal Portfolio Website
 
-![VickyJay's Portfolio Screenshot](/public/images/cover.png)
+![VickyJay's Portfolio Screenshot](./src/assets/images/cover.png)
 
 Welcome to my personal portfolio! This project showcases my frontend development skills and projects I've worked on. Feel free to explore the different sections to learn more about me and my work.
 
@@ -41,7 +38,7 @@ If you have any questions or would like to get in touch, you can reach me at:
 
 - Email: victoluolatunji@gmail.com
 - GitHub: [Vitorola-coder](https://github.com/Victorla-coder)
-- Portfolio: [preview](https://vickyjay.vercel.app)
+- Portfolio: [preview](https://www.vickyjay.dev)
 
 Thank you for visiting my portfolio!
 
@@ -52,4 +49,3 @@ Thank you for visiting my portfolio!
 - change the services section into an array and map it.
 - 404 page - done ✔✔
 - more features yet to come.
-- bro thus shot ain't deploying 

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import SEO from "../components/seo";
+import SEO from "../components/seoo";
 import { Navbar } from "../components";
 
-const ErrorPage = () => {
+const NotFound = () => {
   return (
     <>
       <SEO
@@ -70,4 +70,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default NotFound;

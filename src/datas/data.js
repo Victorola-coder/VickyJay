@@ -12,7 +12,7 @@ export const projectData = [
     link: "https://hbd-aopresh.vercel.app",
   },
   {
-    name: "AskSolomon",
+    name: "askSolomon",
     desc: "A search engine prototype that works like google",
     lang: "JavaScript + Css + Html",
     link: "https://asksolomon.vercel.app/",
@@ -25,12 +25,12 @@ export const projectData = [
   },
   {
     name: "Scrimm",
-    desc: "Get to know everything about scrim - built cos i love what pleasant built",
+    desc: "Get to know everything about scrim.",
     lang: "Bootstrap + Html",
     link: "https://victorola-coder.github.io/scrimm/",
   },
   {
-    name: "Afrifanz",
+    name: "afrifanz",
     desc: "onlyfans for africans content creators",
     lang: "JavaScript + ReactJS + TailwindCss",
     link: "https://waitlist.afrifanz.com/",
@@ -54,7 +54,7 @@ export const projectData = [
     link: "https://tekarthq.com/",
   },
   {
-    name: "Vistapay",
+    name: "VistaPay",
     desc: "A VTU and payment innovation for Africa",
     lang: "ReactJs + TailwindCss",
     link: "https://vistapay-web.vercel.app/",
@@ -77,10 +77,11 @@ export const projectData = [
     lang: "ReactJs + TailwindCss + Javascript",
     link: "https://melearna.vercel.app/",
   },
+
   {
     name: "Memome",
     desc: "An anonymous messaging app with amazing feature",
-    lang: "NextJs + Tailwindcss + Typescript",
+    lang: "NestJs + Tailwindcss + Typescript",
     link: "https://memome.one/",
   },
 ];

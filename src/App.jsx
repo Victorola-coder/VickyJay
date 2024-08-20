@@ -1,9 +1,6 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
-import NotFound from "./pages/not-found";
-import Test from "./pages/test";
 import { useEffect } from "react";
-import scroll from "./animation/scroll";
+import { Home, NotFound, Test } from "./page";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   // ==== scroll no work sha imma try it later
@@ -14,9 +11,9 @@ const App = () => {
   return (
     <main className={`transition-all duration-300`}>
       <Routes>
-        <Route index path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/test" element={<Test />} />
+        <Route index path="/" element={<Home />} />
       </Routes>
     </main>
   );

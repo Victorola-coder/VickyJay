@@ -1,7 +1,7 @@
 import toast, { Toaster } from "react-hot-toast";
 
 const Resume = ({ pdfUrl, fileName, buttonText }) => {
-  const notify = () => toast("My Toast of love.");
+  const notify = () => toast("Here is your toast.");
   const downloadPDF = async () => {
     try {
       // Fetch the PDF file
@@ -37,8 +37,8 @@ const Resume = ({ pdfUrl, fileName, buttonText }) => {
       // Revoke the Blob URL to free up resources
       URL.revokeObjectURL(blobUrl);
     } catch (error) {
-      notify("Error downloading PDF", error?.message);
-      console.error("Error downloading PDF:", error?.message);
+      notify("Error downloading PDF", error.message);
+      console.error("Error downloading PDF:", error.message);
     }
   };
 
