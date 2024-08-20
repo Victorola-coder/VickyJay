@@ -1,4 +1,4 @@
-import { Arrow } from "./svg";
+import { Arrow } from "./svgs";
 import { motion } from "framer-motion";
 import { projectData } from "../datas/data";
 

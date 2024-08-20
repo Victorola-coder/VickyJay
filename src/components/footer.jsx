@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Copyright, FbIcon, IgIcon, InIcon, TwIcon } from "./svg";
+import { Copyright, FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 
 const Footer = () => {
   return (
