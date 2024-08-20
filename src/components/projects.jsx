@@ -10,12 +10,13 @@ const Projects = () => {
           <h2
             className={`flex items-center font-clashbold text-[20px] text-white md:text-[60px] md:font-semibold md:leading-[73.8px]`}
           >
-            Do...ings? Yo! <span className={`animate-bounce`}>👨‍🍳</span>
+            Do...ings? Aktiv! <span className={`animate-bounce`}>👨‍🍳</span>
           </h2>
           <p
             className={`font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] lg:text-[18px] lg:leading-[27px]`}
           >
-            some of my fun and real projects I{"'"}ve worked on...
+            some of my fun and real projects I{"'"}ve worked on...brinnnnng
+            mooooore!
           </p>
         </div>
 
