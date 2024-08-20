@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { SEO } from "../components";
 
 const App = () => {
   const [timeOfDay, setTimeOfDay] = useState(getTimeOfDay());
@@ -22,11 +23,15 @@ const App = () => {
   }
 
   return (
-    <div className="text-center text-xl text-white">
-      {timeOfDay === "morning" && <div>Good Morning!</div>}
-      {timeOfDay === "afternoon" && <div>Good Afternoon!</div>}
-      {timeOfDay === "evening" && <div>Good Evening!</div>}
-    </div>
+    <>
+      <SEO title="Test" />
+
+      <div className="text-center text-xl flex flex-col items-center justify-center min-h-[100dvh] text-white">
+        {timeOfDay === "morning" && <div>Good Morning!</div>}
+        {timeOfDay === "afternoon" && <div>Good Afternoon!</div>}
+        {timeOfDay === "evening" && <div>Good Evening!</div>}
+      </div>
+    </>
   );
 };
 
