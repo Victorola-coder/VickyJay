@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { Home, NotFound, Test } from "./pages";
 import { Routes, Route } from "react-router-dom";
+import { Scroll } from "./animation";
 
 const App = () => {
   // ==== scroll no work sha imma try it later
   useEffect(() => {
-    scroll();
+    Scroll();
   }, []);
 
   return (
