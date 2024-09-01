@@ -82,7 +82,7 @@ const Footer = () => {
         >
           Insprired by&nbsp;
           <a
-            href="http://pairiola.dev"
+            href="https://www.pariola.dev/"
             target="_blank"
             rel="noreferrer noopener"
             className="text-white cursor-pointer"
