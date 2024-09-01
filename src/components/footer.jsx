@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
 
       {/* inspiration */}
-      <div>
+      <div className="mt-4">
         <h3
           className={`mx-auto block font-medium text-[#FFFFFF99] text-base text-center max-w-[320px] md:max-w-[992px] md:text-[20px] mmd:leading-[37.5px]`}
         >
