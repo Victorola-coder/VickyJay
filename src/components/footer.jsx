@@ -3,9 +3,7 @@ import { Copyright, FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 
 const Footer = () => {
   return (
-    <section
-      className={`mx-[30px] mt-[60px] pb-[50px] lg:mx-[76px] lg:mt-[150px]`}
-    >
+    <section className="mx-[30px] mt-[60px] pb-[50px] lg:mx-[76px] lg:mt-[150px]">
       {/* line */}
       <div className="lg:max-w-[13000px] lg:mx-[71px] h-[2px] mt-[63.37px] bg-[#0A1C20]"></div>
       <div className="mt-[63px] flex flex-col md:flex md:flex-row justify-between items-center ">
@@ -42,7 +40,7 @@ const Footer = () => {
             className={`h-auto w-auto`}
           >
             <TwIcon
-              fill={`#FFFFFF99`}
+              fill="#FFFFFF99"
               className={`w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-[#0a1c20]`}
             />
           </motion.a>

@@ -1,6 +1,6 @@
 # VickyJay - Personal Portfolio Website
 
-![VickyJay's Portfolio Screenshot](./src/assets/images/cover.png)
+![VickyJay's Portfolio Screenshot](./public/images/cover.png)
 
 Welcome to my personal portfolio! This project showcases my frontend development skills and projects I've worked on. Feel free to explore the different sections to learn more about me and my work.
 
