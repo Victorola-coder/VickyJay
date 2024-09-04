@@ -14,7 +14,8 @@ const Footer = () => {
             />
           </span>
           <p className={`text-[#FFFFFF99] md:text-xl text-lg font-medium`}>
-            Victor Olatunji<span> {new Date().getFullYear()} </span>
+            Victor Olatunji<span> 2021 -</span>{" "}
+            <span>{new Date().getFullYear()}</span>
           </p>
         </div>
         <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">

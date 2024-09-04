@@ -1,3 +1,4 @@
+import { SEO } from "../components";
 import { token } from "../constants/config";
 import { useState, useEffect } from "react";
 
@@ -47,25 +48,28 @@ const Spotify = () => {
   }, []);
 
   return (
-    <div className="max-w-md mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center mb-4">
-        Spotify Top Tracks
-      </h1>
-      {error ? (
-        <p className="text-red-600">{error}</p>
-      ) : (
-        <ul>
-          {topTracks.map((track) => (
-            <li key={track.id}>
-              <Track
-                name={track.name}
-                artists={track.artists.map((artist) => artist.name)}
-              />
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <>
+      <SEO title="Top Tracks" />
+      <div className="max-w-md mx-auto p-4">
+        <h1 className="text-3xl font-bold text-center mb-4">
+          Spotify Top Tracks
+        </h1>
+        {error ? (
+          <p className="text-red-600">{error}</p>
+        ) : (
+          <ul>
+            {topTracks.map((track) => (
+              <li key={track.id}>
+                <Track
+                  name={track.name}
+                  artists={track.artists.map((artist) => artist.name)}
+                />
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </>
   );
 };
 
