@@ -25,3 +25,9 @@ dist-ssr
 # test.jsx
 robots.txt
 # .bin
+
+
+# lock files
+package-lock.json
+yarn.lock
+bun.lockb
