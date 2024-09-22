@@ -30,7 +30,7 @@ Welcome to my personal portfolio! This project showcases my frontend development
 
 ## Usage
 
-Feel free to customize this portfolio to showcase your own projects and skills. Update the project descriptions, images, and links to match your work.
+Feel free to customize this portfolio to showcase your own projects and skills. Update the project descriptions, images, and links to match your work. shout out is important too.
 
 ## Contact
 
@@ -40,7 +40,7 @@ If you have any questions or would like to get in touch, you can reach me at:
 - GitHub: [Vitorola-coder](https://github.com/Victorla-coder)
 - Portfolio: [preview](https://www.vickyjay.dev)
 
-Thank you for visiting my portfolio!
+Thank you for visiting my portfolio repository!
 
 ## Todos
 
