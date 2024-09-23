@@ -1,5 +1,5 @@
 // import gsap from "gsap";
-import Lenis from " lenis";
+import Lenis from "lenis";
 
 export default function scroll() {
   const lenis = new Lenis({
