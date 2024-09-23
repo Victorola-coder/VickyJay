@@ -14,7 +14,7 @@ Welcome to my personal portfolio! This project showcases my frontend development
 
 ## Features
 
-- Responsive design: The portfolio is fully responsive to ensure a seamless experience on different devices.
+- Responsive design: The portfolio is fully responsive to ensure a seamless experience on       different devices.
 - Smooth animations: Framer Motion is used to add elegant animations and transitions.
 - Easy navigation: React Router allows for smooth navigation between different sections of the portfolio.
 - Project showcase: A dedicated section to showcase my projects with descriptions and links.
@@ -22,15 +22,16 @@ Welcome to my personal portfolio! This project showcases my frontend development
 
 ## Installation and Setup
 
-1. Clone this repository to your local machine using `git clone`.
-2. Navigate to the project directory: `cd vickyjay`.
-3. Install project dependencies using `npm install`.
-4. Start the development server: `npm run dev`.
-5. Open your web browser and navigate to `http://localhost:5173` to view the portfolio.
+1.  Fork
+2.  Clone the forked repository to your local machine using `git clone`.
+3.  Navigate to the project directory: `cd vickyjay`.
+4.  Install project dependencies using `npm install`.
+5.  Start the development server: `npm run dev`.
+6.  Open your web browser and navigate to `http://localhost:5173` to view the portfolio.
 
 ## Usage
 
-Feel free to customize this portfolio to showcase your own projects and skills. Update the project descriptions, images, and links to match your work. shout out is important too.
+Feel free to customize this portfolio to showcase your own projects and skills. Update the project descriptions, images, and links to match your work. Shout out is important too.
 
 ## Contact
 
@@ -40,12 +41,11 @@ If you have any questions or would like to get in touch, you can reach me at:
 - GitHub: [Vitorola-coder](https://github.com/Victorla-coder)
 - Portfolio: [preview](https://www.vickyjay.dev)
 
-Thank you for visiting my portfolio repository!
-
 ## Todos
 
 - add few sleazy animation.
 - change the experience section into an array and map it.
 - change the services section into an array and map it.
 - 404 page - done ✔✔
-- more features yet to come.
+
+Thank you for visiting my portfolio repository!
