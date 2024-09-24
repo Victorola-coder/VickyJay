@@ -79,7 +79,7 @@ const Footer = () => {
         <h3
           className={`mx-auto block font-medium text-[#FFFFFF99] text-base text-center max-w-[320px] md:max-w-[992px] md:text-[20px] mmd:leading-[37.5px]`}
         >
-          Insprired by&nbsp;
+          Inspired by&nbsp;
           <a
             href="https://www.pariola.dev/"
             target="_blank"
@@ -88,6 +88,20 @@ const Footer = () => {
             title="you might need internet to access this"
           >
             Pariola
+          </a>
+        </h3>
+        <h3
+          className={`mx-auto block font-medium text-[#FFFFFF99] text-base text-center max-w-[320px] md:max-w-[992px] md:text-[20px] mmd:leading-[37.5px]`}
+        >
+          Designed by&nbsp;
+          <a
+            href="https://x.com/UI_Ninja_?s=09"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-white cursor-pointer"
+            title="you might need internet to access this"
+          >
+            Chinemerem
           </a>
         </h3>
       </div>
