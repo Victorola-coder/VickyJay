@@ -79,9 +79,9 @@ const Footer = () => {
       </div>
 
       {/* Shout out */}
-      <div className="flex flex-col-reverse gap-2 *:self-start text-center font-medium text-[#FFFFFF99] text-xs *:max-w-[320px] *:md:max-w-[992px] md:text-[18px]">
+      <div className="flex flex-col gap-2 items-start justify-center text-center font-medium text-[#FFFFFF99] text-xs *:max-w-[320px] *:md:max-w-[992px] md:text-[18px]">
         <h3>
-          Inspired by&nbsp;
+          Inspiration -&nbsp;
           <a
             href="https://www.pariola.dev/"
             target="_blank"
@@ -93,7 +93,7 @@ const Footer = () => {
           </a>
         </h3>
         <h3>
-          Designed by&nbsp;
+          Design -&nbsp;
           <a
             href="https://x.com/UI_Ninja_?s=09"
             target="_blank"
