@@ -7,7 +7,7 @@ const Footer = () => {
       {/* line */}
       <div className="lg:max-w-[13000px] lg:mx-[71px] h-[2px] mt-[63.37px] bg-[#0A1C20]"></div>
       <div className="mt-[63px] flex flex-col md:flex md:flex-row justify-between items-center ">
-        <div className="flex flex-row items-center gap-1 lg:gap-[4px]">
+        <div className="flex flex-row items-center gap- lg:gap-[4px]">
           <span>
             <Copyright className="size-[18px] md:size-[20px]" />
           </span>
@@ -22,7 +22,7 @@ const Footer = () => {
             </span>
           </p>
         </div>
-        <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">
+        <div className="mt-[10px] md:mt-[65px] flex justify-start items-center gap-[20px] md:gap-[40px]">
           <motion.a
             href="https://web.facebook.com/victortoluu"
             target="_blank"
@@ -79,7 +79,7 @@ const Footer = () => {
       </div>
 
       {/* Shout out */}
-      <div className="flex flex-col gap-2 items-start justify-center text-center font-medium text-[#FFFFFF99] text-xs *:max-w-[320px] *:md:max-w-[992px] md:text-[18px]">
+      <div className="hidden flex_ flex-col gap-2 items-start justify-center text-center font-medium text-[#FFFFFF99] text-xs *:max-w-[320px] *:md:max-w-[992px] md:text-[18px]">
         <h3>
           Inspiration -&nbsp;
           <a

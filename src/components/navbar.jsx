@@ -28,17 +28,18 @@ const Navbar = () => {
                 </div>
               )}
             </NavLink>
-            <div className="text-[#FFFFFF99] hover:text-white transition-all duration-300">
+            <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
               <a
-                href="https://www.github.com/victorola-coder"
                 target="_blank"
                 rel="noreferrer"
+                href="https://www.github.com/victorola-coder"
+                className="group-hover:text-white transition-colors duration-300"
               >
                 <span className={`flex items-center gap-[8px] md:gap-[10px]`}>
                   <GhIcon
-                    className={`hover:opacity-100 opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px]`}
+                    className={`opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px] transition-opacity duration-300 group-hover:opacity-100`}
                   />
-                  <p className="font-clash text-[15px] md:text-[18px] font-medium">
+                  <p className="font-clash text-[15px] md:text-[18px] font-medium group-shover:text-white transition-colors duration-300">
                     github
                   </p>
                 </span>
