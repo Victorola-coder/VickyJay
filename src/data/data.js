@@ -1,4 +1,4 @@
-export const projectData = [
+export const projects = [
   {
     name: "text2Speech",
     desc: "converts the text input to an audio output",

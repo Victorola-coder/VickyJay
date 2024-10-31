@@ -16,6 +16,7 @@ function Track({ name, artists }) {
 const Spotify = () => {
   const [topTracks, setTopTracks] = useState([]);
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   async function fetchWebApi(endpoint, method, body) {
     const res = await fetch(`https://api.spotify.com/${endpoint}`, {
@@ -25,6 +26,15 @@ const Spotify = () => {
       method,
       body: JSON.stringify(body),
     });
+
+    if (res.status === 401) {
+      throw new Error("Unauthorized: Please check your Spotify access token");
+    }
+
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+
     return await res.json();
   }
 
@@ -40,6 +50,8 @@ const Spotify = () => {
       setTopTracks(tracks);
     } catch (error) {
       setError(error.message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -56,9 +68,11 @@ const Spotify = () => {
         </h1>
         {error ? (
           <p className="text-red-600">{error}</p>
-        ) : (
+        ) : isLoading ? (
+          <p>Loading...</p>
+        ) : topTracks?.length > 0 ? (
           <ul>
-            {topTracks.map((track) => (
+            {[...topTracks].reverse().map((track) => (
               <li key={track.id}>
                 <Track
                   name={track.name}
@@ -67,6 +81,8 @@ const Spotify = () => {
               </li>
             ))}
           </ul>
+        ) : (
+          <p>No tracks found</p>
         )}
       </div>
     </>
