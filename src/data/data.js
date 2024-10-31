@@ -1,5 +1,11 @@
 export const projects = [
   {
+    name: "Showmeelove",
+    desc: "Let your fans Show You Love for your contents",
+    lang: "Nodejs + React Ts + TailwindCss",
+    link: "https://showmeelove.com/",
+  },
+  {
     name: "text2Speech",
     desc: "converts the text input to an audio output",
     lang: "JavaScript + webspeechAPI + TailwindCss + Html",
@@ -18,22 +24,16 @@ export const projects = [
     link: "https://asksolomon.vercel.app/",
   },
   {
-    name: "Zeddpay(clone)",
-    desc: "zeddpay V1 web clone",
-    lang: "JavaScript + Css + Html",
-    link: "https://zeddpay-clvne.vercel.app/",
+    name: "Studioperks",
+    desc: "we are committed to capturing your vision and bringing it to life through exceptional visual storytelling.",
+    lang: "React TS + TailwindCSS",
+    link: "https://studioperks.org",
   },
   {
-    name: "Scrimm",
-    desc: "Get to know everything about scrim.",
-    lang: "Bootstrap + Html",
-    link: "https://victorola-coder.github.io/scrimm/",
-  },
-  {
-    name: "afrifanz",
-    desc: "onlyfans for africans content creators",
-    lang: "JavaScript + ReactJS + TailwindCss",
-    link: "https://waitlist.afrifanz.com/",
+    name: "Roomey",
+    desc: "Stress free relocation to Regina, Saskatchewan and environs.",
+    lang: "React TS + Tailwindcss ",
+    link: "https://roomey.ca/",
   },
   {
     name: "showmeelove",
@@ -42,10 +42,10 @@ export const projects = [
     link: "https://showmeelove.com/",
   },
   {
-    name: "luxstay",
-    desc: "help the homeless get affordable house",
+    name: "Momentum",
+    desc: "A chat bot for your business integrated with whatsapp",
     lang: "ReactJs + TailwindCss",
-    link: "https://luxstayy.vercel.app/",
+    link: "https://momentumprop.my.id/",
   },
   {
     name: "TekArt",
@@ -60,29 +60,35 @@ export const projects = [
     link: "https://vistapay-web.vercel.app/",
   },
   {
-    name: "Creos",
-    desc: "Where dreams intersect disruptive innovations",
-    lang: "ReactJs + TailwindCss",
-    link: "https://https://creos-ebon.vercel.app/",
-  },
-  {
-    name: "Bucx",
-    desc: "Bucx me my bro! Send, Receive, Buy and Save $USDC for Free",
-    lang: "ReactJs + TailwindCss",
-    link: "https://https://crymno.brimble.app/",
-  },
-  {
-    name: "Melearna",
-    desc: "learn and earn passive income as a student!",
-    lang: "ReactJs + TailwindCss + Javascript",
-    link: "https://melearna.vercel.app/",
-  },
-
-  {
     name: "Memome",
     desc: "An anonymous messaging app with amazing feature",
     lang: "NestJs + Tailwindcss + Typescript",
-    link: "https://memome.one/",
+    link: "https://memome.online/",
+  },
+  {
+    name: "30DaysOfCode",
+    desc: "30 Days of Code Challenge With VickyJay",
+    lang: "Next TS + TailwindCss + Firebase",
+    link: "https://30days-proto.vercel.app/",
+  },
+
+  {
+    name: "Emerald's Dairy",
+    desc: "Note taking app with amazing features",
+    lang: "Next Js + TailwindCss + Typescript + Firebase",
+    link: "https://notee-app.vercel.app/",
+  },
+  {
+    name: "buildforge",
+    desc: "we’re *bullish* on first time & early stage founders, builders and shippers",
+    lang: "ReactJs + TailwindCss + Javascript",
+    link: "https://buildforge.vercel.app/",
+  },
+  {
+    name: "Scoota",
+    desc: "The best way to get around the city, the future of campus transportation is here",
+    lang: "ReactJs + TailwindCss + Javascript",
+    link: "https://scoota.io/",
   },
 ];
 
