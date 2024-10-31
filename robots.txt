@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: /private/
-Sitemap: https://myviteapp.com/sitemap.xml
+Sitemap: https://victorola.me/sitemap.xml
