@@ -17,9 +17,9 @@ const Footer = () => {
     <section className="mx-[30px] mt-[60px] pb-[20px] lg:pb-[50px] lg:mx-[76px] lg:mt-[150px]">
       {/* line */}
       <div className="lg:max-w-[13000px] lg:mx-[71px] h-[2px] mt-[63.37px] bg-[#0A1C20]"></div>
-      <div className="mt-[63px] flex flex-col md:flex md:flex-row justify-between items-center ">
-        <div className="flex flex-col">
-          <div className="flex flex-row items-center gap- lg:gap-[4px]">
+      <div className="mt-[63px] flex flex-col-reverse justify-start gap-5 md:gap-0 md:flex md:flex-row md:justify-between md:items-center ">
+        <div className="flex flex-col justify-start items-start">
+          <div className="flex flex-row items-center lg:gap-[4px]">
             <span>
               <Copyright className="size-[18px] md:size-[20px]" />
             </span>
