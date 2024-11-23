@@ -5,3 +5,6 @@ edit asf
 
 
 - Wants to add spotify playing display
+
+
+this is just to restore my commit histrot i lost
