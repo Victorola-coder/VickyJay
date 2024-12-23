@@ -35,7 +35,7 @@
     "postcss": "^8.4.47",
     "rollup-plugin-terser": "^7.0.2",
     "tailwindcss": "^3.4.13",
-    "vite": "^5.4.7",
+    "vite": "^6.0.5",
     "vite-plugin-sitemap": "^0.7.1"
   }
 }
