@@ -90,6 +90,12 @@ export const projects = [
     lang: "ReactJs + TailwindCss + Javascript",
     link: "https://scootaa.com/",
   },
+  {
+    name: "Adrise.Ai",
+    desc: "Adrise.Ai is a platform that allows you to create and manage your social media presense.",
+    lang: "NextJs + TailwindCss + Typescript + Gemini",
+    link: "https://adrise.ai/",
+  },
 ];
 
 export const experienceData = [
