@@ -14,7 +14,7 @@ Welcome to my personal portfolio! This project showcases my frontend development
 
 ## Features
 
-- Responsive design: The portfolio is fully responsive to ensure a seamless experience on       different devices.
+- Responsive design: The portfolio is fully responsive to ensure a seamless experience on different devices.
 - Smooth animations: Framer Motion is used to add elegant animations and transitions.
 - Easy navigation: React Router allows for smooth navigation between different sections of the portfolio.
 - Project showcase: A dedicated section to showcase my projects with descriptions and links.
@@ -39,7 +39,7 @@ If you have any questions or would like to get in touch, you can reach me at:
 
 - Email: victoluolatunji@gmail.com
 - GitHub: [Vitorola-coder](https://github.com/Victorla-coder)
-- Portfolio: [preview](https://www.vickyjay.dev)
+- Portfolio: [preview](https://www.victorola.me)
 
 ## Todos
 
