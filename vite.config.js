@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     Sitemap({
-      hostname: "https://victorola.me",
+      hostname: "https://victorola.dev",
       dynamicRoutes: ["/"],
     }),
   ],

@@ -4,7 +4,7 @@ const creator = "VickyJay";
 const author = creator;
 
 export const url = (slug) => {
-  return `https://victorola.me/${slug ?? ""}`;
+  return `https://victorola.dev/${slug ?? ""}`;
 };
 export const SEOdata = {
   homePage: {

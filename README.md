@@ -39,7 +39,7 @@ If you have any questions or would like to get in touch, you can reach me at:
 
 - Email: victoluolatunji@gmail.com
 - GitHub: [Vitorola-coder](https://github.com/Victorla-coder)
-- Portfolio: [preview](https://www.victorola.me)
+- Portfolio: [preview](https://www.victorola.dev)
 
 ## Todos
 
