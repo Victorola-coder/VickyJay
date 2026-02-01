@@ -21,7 +21,7 @@ function Home() {
         <Hero />
         <Services />
         <Projects />
-        <Skills />
+        {/* <Skills /> */}
         <Contact />
         <Footer />
       </main>

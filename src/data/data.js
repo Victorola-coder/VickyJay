@@ -1,4 +1,46 @@
+// Active projects - shown on site
 export const projects = [
+  {
+    name: "Adesina Assets",
+    desc: "A modern real estate platform for property listings and management",
+    lang: "NextJs + TypeScript + TailwindCSS",
+    link: "https://www.adesinaassets.com/",
+  },
+  {
+    name: "Studioperks",
+    desc: "We are committed to capturing your vision and bringing it to life through exceptional visual storytelling.",
+    lang: "NextJs + TypeScript + TailwindCSS",
+    link: "https://www.studioperks.org/",
+  },
+  {
+    name: "VistaPay",
+    desc: "A VTU and payment innovation for Africa",
+    lang: "ReactJs + TailwindCss",
+    link: "https://vistapayhq.com/",
+  },
+  {
+    name: "Trex",
+    desc: "A modern HR management system for workforce management and employee engagement",
+    lang: "NextJs + TypeScript + TailwindCSS",
+    link: "https://www.trexworkspace.com/",
+  },
+  {
+    name: "Machoka",
+    desc: "A creative digital platform delivering innovative solutions",
+    lang: "NextJs + TypeScript + TailwindCSS",
+    link: "https://www.machoka.com/",
+  },
+  {
+    name: "Riddles",
+    desc: "An interactive riddles game to test your wit",
+    lang: "NextJs + TypeScript + TailwindCSS",
+    link: "https://riddle.victorola.dev/",
+  },
+];
+
+// COMMENTED OUT PROJECTS - Uncomment to restore
+/*
+export const archivedProjects = [
   {
     name: "Showmeelove",
     desc: "Let your fans Show You Love for your contents",
@@ -24,22 +66,10 @@ export const projects = [
     link: "https://asksolomon.vercel.app/",
   },
   {
-    name: "Studioperks",
-    desc: "we are committed to capturing your vision and bringing it to life through exceptional visual storytelling.",
-    lang: "React TS + TailwindCSS",
-    link: "https://studioperks.org",
-  },
-  {
     name: "Roomey",
     desc: "Stress free relocation to Regina, Saskatchewan and environs.",
     lang: "React TS + Tailwindcss ",
     link: "https://roomey.io/",
-  },
-  {
-    name: "showmeelove",
-    desc: "buymeeacoffe for african creators",
-    lang: "ReactJs + Tailwindcs",
-    link: "https://showmeelove.com/",
   },
   {
     name: "Momentum",
@@ -54,12 +84,6 @@ export const projects = [
     link: "https://tekarthq.com/",
   },
   {
-    name: "VistaPay",
-    desc: "A VTU and payment innovation for Africa",
-    lang: "ReactJs + TailwindCss",
-    link: "https://vistapayhq.com/",
-  },
-  {
     name: "Memome",
     desc: "An anonymous messaging app with amazing feature",
     lang: "NestJs + Tailwindcss + Typescript",
@@ -71,7 +95,6 @@ export const projects = [
     lang: "Next TS + TailwindCss + Firebase",
     link: "https://30days-proto.vercel.app/",
   },
-
   {
     name: "Emerald's Dairy",
     desc: "Note taking app with amazing features",
@@ -80,7 +103,7 @@ export const projects = [
   },
   {
     name: "buildforge",
-    desc: "we’re *bullish* on first time & early stage founders, builders and shippers",
+    desc: "we're *bullish* on first time & early stage founders, builders and shippers",
     lang: "ReactJs + TailwindCss + Javascript",
     link: "https://buildforge.xyz/",
   },
@@ -89,12 +112,6 @@ export const projects = [
     desc: "The best way to get around the city, the future of campus transportation is here",
     lang: "ReactJs + TailwindCss + Javascript",
     link: "https://scootaa.com/",
-  },
-  {
-    name: "Adrise.Ai",
-    desc: "Adrise.Ai is a platform that allows you to create and manage your social media presense.",
-    lang: "NextJs + TailwindCss + Typescript + Gemini",
-    link: "https://adrise.ai/",
   },
   {
     name: "ZenTask",
@@ -126,13 +143,8 @@ export const projects = [
     lang: "TypeScript + React + TailwindCss",
     link: "https://github.com/Victorola-coder/nemerem",
   },
-  {
-    name: "Riddles",
-    desc: "An interactive riddles game to test your wit",
-    lang: "TypeScript + React + TailwindCss",
-    link: "https://github.com/Victorola-coder/riddles",
-  },
 ];
+*/
 
 export const experienceData = [
   {
@@ -144,72 +156,21 @@ export const experienceData = [
 ];
 
 export const skills = [
-  {
-    id: 0,
-    title: "Html",
-  },
-  {
-    id: 1,
-    title: "Css",
-  },
-  {
-    id: 2,
-    title: "Bootstrap",
-  },
-  {
-    id: 3,
-    title: "TailwindCSS",
-  },
-  {
-    id: 4,
-    title: "SCSS",
-  },
-  {
-    id: 5,
-    title: "JavaScript",
-  },
-  {
-    id: 6,
-    title: "TypeScript",
-  },
-  {
-    id: 7,
-    title: "Jquery",
-  },
-  {
-    id: 8,
-    title: "ReactJs",
-  },
-  {
-    id: 9,
-    title: "NextJs",
-  },
-  {
-    id: 10,
-    title: "Git",
-  },
-  {
-    id: 11,
-    title: "Github",
-  },
-  {
-    id: 12,
-    title: "Figma",
-  },
-  {
-    id: 13,
-    title: "Photoshop",
-  },
-  {
-    id: 14,
-    title: "Premiere pro",
-  },
-  {
-    id: 15,
-    title: "NodeJs/Express",
-  },
-  {
-    id: Math.random(),
-    title: "MongoDB",
-  },
+  { id: 0, title: "Html" },
+  { id: 1, title: "Css" },
+  { id: 2, title: "Bootstrap" },
+  { id: 3, title: "TailwindCSS" },
+  { id: 4, title: "SCSS" },
+  { id: 5, title: "JavaScript" },
+  { id: 6, title: "TypeScript" },
+  { id: 7, title: "JQuery" },
+  { id: 8, title: "ReactJs" },
+  { id: 9, title: "NextJs" },
+  { id: 10, title: "Git" },
+  { id: 11, title: "Github" },
+  { id: 12, title: "Figma" },
+  { id: 13, title: "Photoshop" },
+  { id: 14, title: "WordPress" },
+  { id: 15, title: "Backend Development" },
+  { id: 16, title: "Framer-Motion" },
 ];

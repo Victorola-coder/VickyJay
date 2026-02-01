@@ -7,10 +7,10 @@ const Experience = () => {
 
   return (
     <>
-      <div className={`flex flex-col ml-3 lg:items-end`}>
+      <div className={`flex flex-col ml-3 lg:items-start`}>
         <div className="font-pop">
           <h2
-            className={`h-full flex items-center ml-0 lg:ml-20 font-clashbold text-white text-[20px] font-semibold lg:text- lg:text-[50px] lg:leading-[49.2px]`}
+            className={`h-full flex items-center ml-0 font-clashbold text-white text-[20px] font-semibold lg:text-[50px] lg:leading-[49.2px]`}
           >
             Experience <small className={`animate-bounce`}>🚀</small>
           </h2>
