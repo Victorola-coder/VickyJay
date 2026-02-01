@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Scroll } from "./animation";
 import { Routes, Route } from "react-router-dom";
-import { Home, NotFound, Spotify, Test } from "./pages";
+import { Home, NotFound, Spotify, Test, Changelog } from "./pages";
 
 const App = () => {
   // ==== scroll no work sha imma try it later
@@ -13,6 +13,7 @@ const App = () => {
     <main className={`transition-all duration-300`}>
       <Routes>
         <Route path="*" element={<NotFound />} />
+        <Route path="/changelog" element={<Changelog />} />
         <Route path="/test" element={<Test />} />
         <Route path="/spotify" element={<Spotify />} />
         <Route index path="/" element={<Home />} />
