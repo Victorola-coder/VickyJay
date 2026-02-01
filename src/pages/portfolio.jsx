@@ -5,6 +5,7 @@ import {
   Hero,
   Projects,
   Services,
+  Experience,
   Skills,
   SEO,
 } from "../components";
@@ -20,6 +21,7 @@ function Home() {
         <Navbar />
         <Hero />
         <Services />
+        <Experience />
         <Projects />
         {/* <Skills /> */}
         <Contact />

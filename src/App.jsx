@@ -6,7 +6,8 @@ import { Home, NotFound, Spotify, Test, Changelog } from "./pages";
 const App = () => {
   // ==== scroll no work sha imma try it later
   useEffect(() => {
-    Scroll();
+    const cleanup = Scroll();
+    return cleanup;
   }, []);
 
   return (

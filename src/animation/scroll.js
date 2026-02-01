@@ -1,7 +1,6 @@
-// import gsap from "gsap";
 import Lenis from "lenis";
 
-export default function scroll() {
+export default function Scroll() {
   const lenis = new Lenis({
     duration: 1.6,
     easing: function (t) {
@@ -17,17 +16,9 @@ export default function scroll() {
   }
 
   requestAnimationFrame(raf);
+  
+  // Return cleanup function
+  return () => {
+    lenis.destroy();
+  };
 }
-
-// === i might have to use this later
-// const lenis = new Lenis({
-//   lerp: 0.1,
-// });
-
-// lenis.on("scroll", ScrollTrigger.update);
-
-// gsap.ticker.add(time => {
-//   lenis.raf(time * 1000);
-// });
-
-// gsap.ticker.lagSmoothing(0);
