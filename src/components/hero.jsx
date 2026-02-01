@@ -4,7 +4,7 @@ import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 const Hero = () => {
   return (
     <>
-      <section className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
+      <section className="mx-auto px-[38px] pt-[100px] md:px-[50px] lg:pt-[120px] lg:px-[80px] xl:px-[100px]">
         <div className="flex flex-col items-start flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:gap-x-12 lg:justify-between">
           <div>
             <div className="gradientText">

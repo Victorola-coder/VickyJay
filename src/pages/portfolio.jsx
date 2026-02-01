@@ -16,7 +16,7 @@ function Home() {
         title="Victor"
         description="I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences."
       />
-      <main>
+      <main className="max-w-[1440px] mx-auto">
         <Navbar />
         <Hero />
         <Services />

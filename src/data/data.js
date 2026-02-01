@@ -96,6 +96,42 @@ export const projects = [
     lang: "NextJs + TailwindCss + Typescript + Gemini",
     link: "https://adrise.ai/",
   },
+  {
+    name: "ZenTask",
+    desc: "A minimalist productivity hub for focused task management",
+    lang: "TypeScript + React + TailwindCss",
+    link: "https://github.com/Victorola-coder/zentask",
+  },
+  {
+    name: "Waves",
+    desc: "A streaming party platform for watching together",
+    lang: "TypeScript + React + TailwindCss",
+    link: "https://github.com/Victorola-coder/waves",
+  },
+  {
+    name: "Tewo",
+    desc: "A fun interactive web experience",
+    lang: "TypeScript + React + TailwindCss",
+    link: "https://github.com/Victorola-coder/tewo",
+  },
+  {
+    name: "Tekcify",
+    desc: "A centralized dashboard that can handle all products",
+    lang: "TypeScript + React + TailwindCss",
+    link: "https://github.com/Victorola-coder/tekcify",
+  },
+  {
+    name: "Nemerem",
+    desc: "A beautifully crafted designer portfolio website",
+    lang: "TypeScript + React + TailwindCss",
+    link: "https://github.com/Victorola-coder/nemerem",
+  },
+  {
+    name: "Riddles",
+    desc: "An interactive riddles game to test your wit",
+    lang: "TypeScript + React + TailwindCss",
+    link: "https://github.com/Victorola-coder/riddles",
+  },
 ];
 
 export const experienceData = [

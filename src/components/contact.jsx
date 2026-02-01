@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[150px]">
+    <section className="mx-[30px] mt-[60px] md:mx-[50px] lg:mx-[80px] lg:mt-[150px] xl:mx-[100px]">
       <div className="flex flex-col items-center gap-[35px] md:gap-[25px]">
         <h3
           className={`font-medium text-[#FFFFFF99] text-lg text-center max-w-[320px] md:max-w-[992px] md:text-[25px] mmd:leading-[37.5px]`}

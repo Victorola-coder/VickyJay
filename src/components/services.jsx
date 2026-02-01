@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section className={`mt-[20px] mx-[30px] lg:mt-[86px] lg:mx-[76px]`}>
+    <section className={`mt-[20px] mx-[30px] md:mx-[50px] lg:mt-[86px] lg:mx-[80px] xl:mx-[100px]`}>
       <div className="gradientTex">
         <h1
           className={`flex items-center font-clashbold font-semibold text-white text-[20px] leading-[30.75px] lg:text-[60px] lg:leading-[73.8px]`}

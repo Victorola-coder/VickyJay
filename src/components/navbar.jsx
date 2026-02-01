@@ -8,7 +8,7 @@ const Navbar = () => {
       <main className="">
         <header
           className={clsx(
-            "fixed z-40 top-0 md:relatives bg-[#061417]/90 pb-3  w-full pt-[20px] px-[32px] md:py-[30px] lg:px-[80px]"
+            "fixed z-40 top-0 md:relatives bg-[#061417]/90 pb-3 w-full pt-[20px] px-[32px] md:py-[30px] md:px-[50px] lg:px-[80px] xl:px-[100px] max-w-[1440px] left-1/2 -translate-x-1/2"
           )}
         >
           <nav className="flex items-center justify-between">

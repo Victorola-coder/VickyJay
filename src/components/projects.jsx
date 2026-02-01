@@ -5,7 +5,7 @@ import { projects } from "../data/data";
 
 const Projects = () => {
   return (
-    <section className="mx-[30px] mt-[60px] lg:mx-[76px] lg:mt-[152px]">
+    <section className="mx-[30px] mt-[60px] md:mx-[50px] lg:mx-[80px] lg:mt-[152px] xl:mx-[100px]">
       <div>
         <div>
           <h2 className="flex items-center font-clashbold text-[20px] text-white md:text-[60px] md:font-semibold md:leading-[73.8px]">
