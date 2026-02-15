@@ -47,7 +47,7 @@ const Hero = () => {
                 />
               </motion.a>
               <motion.a
-                href="https://twitter.com/HeyVickyJay"
+                href="https://x.com/victorolax"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
