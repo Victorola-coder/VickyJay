@@ -30,11 +30,17 @@ export const projects = [
     lang: "NextJs + TypeScript + TailwindCSS",
     link: "https://www.machoka.com/",
   },
+  // {
+  //   name: "Riddles",
+  //   desc: "An interactive riddles game to test your wit",
+  //   lang: "NextJs + TypeScript + TailwindCSS",
+  //   link: "https://riddle.victorola.dev/",
+  // },
   {
-    name: "Riddles",
-    desc: "An interactive riddles game to test your wit",
-    lang: "NextJs + TypeScript + TailwindCSS",
-    link: "https://riddle.victorola.dev/",
+    name: "SmartSend",
+    desc: "A WhatsApp automation platform for sales, customer support, and business workflow integrations.",
+    lang: "C# + .NET 6 + WhatsApp Automation",
+    link: "https://smartsend.co.il/",
   },
 ];
 

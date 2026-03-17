@@ -80,9 +80,9 @@ export const EXPERIENCE_DATA = [
     subtext: "some idea im building" 
   },
   {
-    role: "Fullstack Developer",
-    company: "Zero Studio, India.",
-    period: "Mar 2024 - Dec 2024",
-    description: "Collaborated with UX and UI designers to create intuitive user interfaces for web applications. Troubleshot bugs in production code and resolved them efficiently."
+    role: "Creative Web Developer",
+    company: "Vistapay, Uyo, NG.",
+    period: "2023 - till date",
+    description: "I work as a frontend developer building the system of the company, creating beautiful interfaces users love."
   }
 ];
