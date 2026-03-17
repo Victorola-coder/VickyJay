@@ -37,8 +37,8 @@ const Experience = () => {
                 {/* Content */}
                 <div className="lg:w-[45%] lg:ml-auto lg:pl-10">
                   <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]">
-                    {exp.role} <span className="hidden">-</span> &nbsp;
-                    <span className="hidden italic text-[#FFFFFF99]">
+                    {exp.role}{" "}
+                    <span className="italic text-[#FFFFFF99] text-sm lg:text-base">
                       {exp.period}
                     </span>
                   </h3>

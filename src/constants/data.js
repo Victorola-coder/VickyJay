@@ -43,28 +43,35 @@ export const SERVICES_DATA = [
 
 export const EXPERIENCE_DATA = [
   {
+    role: "C# Backend Developer",
+    company: "SmartSend-Agent",
+    period: "2025 - Feb 2026",
+    description: "Built and maintained SmartSend-Agent, a .NET 6 C# service with API controllers, background services, and WhatsApp automation workflows.",
+    subtext: "C# / .NET 6"
+  },
+  {
     role: "Software Engineer",
     company: "Showmeelove",
-    period: "2023 - till date",
+    period: "2023 - 2024",
     description: "I work as a Lead Frontend Engineer at showmeelove, crafting thoughtful and inclusive experiences that adhere to web standards.",
     subtext: "some idea im building" 
   },
   {
     role: "Fullstack Developer",
     company: "Zero Studio, India.",
-    period: "March, 2024 - till date",
+    period: "Mar 2024 - Dec 2024",
     description: "Collaborated with UX and UI designers to create intuitive user interfaces for web applications. Troubleshot bugs in production code and resolved them efficiently."
   },
   {
     role: "Frontend Engineer",
     company: "TekArt, Lagos, NG.",
-    period: "2023 - till date",
+    period: "2023 - 2025",
     description: "I work as a frontend developer with the responsibility of building and managing the websites with a team of Creative developers."
   },
   {
     role: "Creative Web Developer",
     company: "Vistapay, Uyo, Ng.",
-    period: "2023 - till date", // Assuming similar period as layout suggested, though not explicit in original text for this one it was "Vistapay, Uyo, Ng."
+    period: "2023 - till date",
     description: "I work as a frontend developer building the system of the company, creating beautiful interfaces that user loves."
   }
 ];
