@@ -11,12 +11,12 @@ const Hero = () => {
               <h1
               // className={`font-clashbold font-semibold text-[40px] leading-[36.9px] text-[#CFFAFF] md:leading-[4 5px] md:text-[35px] md:max-w-max lg:leading-[73.8px] lg:max-w-[580px] lg:text-[60px] `}
               >
-                Creative Frontend Developer<span>.</span>
+                Creative Fullstack Engineer<span>.</span>
               </h1>
             </div>
             <p className="gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]">
-              I like to craft solid and scalable frontend products with great
-              user experiences.
+              I like to craft solid and scalable products, from backend
+              systems to frontend experiences.
             </p>
             <div
               id="intro"
@@ -27,9 +27,9 @@ const Hero = () => {
                 ensuring a seamless web experience for clients across africa.
               </p>
               <p className="max-w-[319px]">
-                Highly skilled at progressive enhancement, design systems & UI
-                Engineering - performance and scalability are top objectives on
-                my radar.
+                Highly skilled across the stack, from building reliable APIs
+                and services to crafting polished UI Engineering - performance
+                and scalability are top objectives on my radar.
               </p>
             </div>
             <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">

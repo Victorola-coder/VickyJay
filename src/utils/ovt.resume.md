@@ -62,7 +62,7 @@ Self-directed training via online platforms and practical projects.
 ## Projects
 
 - GitHub: https://github.com/Victorola-Coder
-- Portfolio: https://vickyjay.brimble.app/
+- Portfolio: https://victorola.dev/
 
 ## Languages
 

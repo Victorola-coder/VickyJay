@@ -77,7 +77,19 @@ export const EXPERIENCE_DATA = [
     company: "Showmeelove",
     period: "2023 - 2024",
     description: "I work as a Lead Frontend Engineer at showmeelove, crafting thoughtful and inclusive experiences that adhere to web standards.",
-    subtext: "some idea im building" 
+    subtext: "some idea im building"
+  },
+  {
+    role: "Fullstack Developer",
+    company: "Zero Studio, India",
+    period: "Mar 2024 - Dec 2024",
+    description: "Collaborated with UX and UI teams to build intuitive web application flows, diagnosing and fixing production issues across the stack."
+  },
+  {
+    role: "Frontend Engineer",
+    company: "TekArt, Lagos, NG",
+    period: "2023 - 2025",
+    description: "Built and maintained production web interfaces with a collaborative engineering team, converting design requirements into reusable frontend components."
   },
   {
     role: "Creative Web Developer",

@@ -8,7 +8,7 @@ const NotFound = () => {
     <>
       <SEO
         title="Page not found 👀"
-        description="I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences."
+        description="I enjoy building fullstack solutions, from backend systems to frontend experiences, with solid foundations, scalability, and excellent user experiences."
       />
       <section className="overflow-hidden mx-auto relative min-h-[100vh]">
         <Navbar />

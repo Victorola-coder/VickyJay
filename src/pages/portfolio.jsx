@@ -15,7 +15,7 @@ function Home() {
     <>
       <SEO
         title="Victor"
-        description="I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences."
+        description="I enjoy building fullstack solutions, from backend systems to frontend experiences, with solid foundations, scalability, and excellent user experiences."
       />
       <main className="max-w-[1440px] mx-auto">
         <Navbar />

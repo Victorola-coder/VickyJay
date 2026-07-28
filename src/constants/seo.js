@@ -12,8 +12,8 @@ export const SEOdata = {
     image,
     creator,
     url: url(),
-    title: "VickyJay - Creative Frontend Engineer",
+    title: "VickyJay - Creative Fullstack Engineer",
     description:
-      "I enjoy creating frontend solutions with solid foundations, scalability, and excellent user experiences.",
+      "I enjoy building fullstack solutions, from backend systems to frontend experiences, with solid foundations, scalability, and excellent user experiences.",
   },
 };
