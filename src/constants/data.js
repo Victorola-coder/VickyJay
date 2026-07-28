@@ -66,35 +66,22 @@ export const SERVICES_DATA = [
 
 export const EXPERIENCE_DATA = [
   {
-    role: "C# Backend Developer",
-    company: "SmartSend-Agent",
-    period: "2025 - Feb 2026",
-    description: "Built and maintained SmartSend-Agent, a .NET 6 C# service with API controllers, background services, and WhatsApp automation workflows.",
-    subtext: "C# / .NET 6"
-  },
-  {
-    role: "Software Engineer",
-    company: "Showmeelove",
-    period: "2023 - 2024",
-    description: "I work as a Lead Frontend Engineer at showmeelove, crafting thoughtful and inclusive experiences that adhere to web standards.",
-    subtext: "some idea im building"
+    role: "Fullstack Developer",
+    company: "Talksign",
+    period: "Feb 2026 - Present",
+    description: "Building Talksign, a sign-language translation and learning platform, across a React/Vite/TypeScript frontend and a Node.js/MongoDB backend — the team's newest, actively developing product.",
+    subtext: "translation engine, learning suite & creator studio"
   },
   {
     role: "Fullstack Developer",
-    company: "Zero Studio, India",
-    period: "Mar 2024 - Dec 2024",
-    description: "Collaborated with UX and UI teams to build intuitive web application flows, diagnosing and fixing production issues across the stack."
+    company: "Adesina",
+    period: "Aug 2025 - Jan 2026",
+    description: "Worked as a fullstack developer across frontend, backend, and mobile, building and maintaining the product end to end and shipping features on a live, in-production application."
   },
   {
-    role: "Frontend Engineer",
-    company: "TekArt, Lagos, NG",
-    period: "2023 - 2025",
-    description: "Built and maintained production web interfaces with a collaborative engineering team, converting design requirements into reusable frontend components."
-  },
-  {
-    role: "Creative Web Developer",
-    company: "Vistapay, Uyo, NG.",
-    period: "2023 - till date",
-    description: "I work as a frontend developer building the system of the company, creating beautiful interfaces users love."
+    role: "Fullstack Developer",
+    company: "Trex",
+    period: "Nov 2024 - Present",
+    description: "Contributing across frontend, backend, and mobile on a team building Trex, a modern HR and workforce management platform."
   }
 ];
