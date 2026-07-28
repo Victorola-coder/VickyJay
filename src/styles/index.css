@@ -99,27 +99,19 @@ SEXY ANIMATION CODE
   /* margin-bottom: 30px; */
   background: linear-gradient(
     76deg,
-    #fde1ff,
-    #e0e7ff,
-    #e0f9ff,
-    #fffae9,
-    #e8eaff,
-    #ffe3f7,
-    #daf1ff,
-    #fde1ff,
-    #e0e7ff,
-    #e0f9ff,
-    #fffae9,
-    #e8eaff,
-    #ffe3f7,
-    #daf1ff,
-    #fde1ff,
-    #e0e7ff,
-    #e0f9ff,
-    #fffae9,
-    #e8eaff,
-    #ffe3f7,
-    #daf1ff
+    #cffaff,
+    #1ed760,
+    #f0feff,
+    #0fa858,
+    #cffaff,
+    #1ed760,
+    #f0feff,
+    #0fa858,
+    #cffaff,
+    #1ed760,
+    #f0feff,
+    #0fa858,
+    #cffaff
   );
   background-size: 500% 500%;
   -webkit-animation: slime 45s ease infinite;

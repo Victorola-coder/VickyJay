@@ -6,7 +6,7 @@ import { EXPERIENCE_DATA } from "../constants/data";
 const Experience = () => {
   return (
     <>
-      <div className={`flex flex-col ml-3 lg:items-end mt-20 lg:mt-32 px-[30px] md:px-[50px] lg:px-[80px] xl:px-[100px]`}>
+      <div id="experience" className={`flex flex-col ml-3 lg:items-end mt-20 lg:mt-32 px-[30px] md:px-[50px] lg:px-[80px] xl:px-[100px] scroll-mt-[100px]`}>
         <div className="font-pop w-full">
           <h2
             className={`flex items-center font-clashbold text-white text-[20px] font-semibold lg:text-[50px] lg:leading-[49.2px]`}

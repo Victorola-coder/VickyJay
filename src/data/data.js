@@ -5,6 +5,7 @@ export const projects = [
     desc: "A modern real estate platform for property listings and management",
     lang: "NextJs + TypeScript + TailwindCSS",
     link: "https://www.adesinaassets.com/",
+    image: "/images/projects/adesina.jpg",
   },
   {
     name: "Studioperks",
@@ -17,6 +18,7 @@ export const projects = [
     desc: "A VTU and payment innovation for Africa",
     lang: "ReactJs + TailwindCss",
     link: "https://vistapayhq.com/",
+    image: "/images/projects/vistapay.jpg",
   },
   {
     name: "Trex",
@@ -41,6 +43,7 @@ export const projects = [
     desc: "A WhatsApp automation platform for sales, customer support, and business workflow integrations.",
     lang: "C# + .NET 6 + WhatsApp Automation",
     link: "https://smartsend.co.il/",
+    image: "/images/projects/smartsend.jpg",
   },
 ];
 

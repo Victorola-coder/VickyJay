@@ -31,20 +31,42 @@ const Navbar = () => {
                 </div>
               )}
             </NavLink>
-            <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
-              <Link
-                target="_blank"
-                rel="noreferrer"
-                to="https://www.github.com/victorola-coder"
-                className="group-hover:text-white transition-colors duration-300"
-              >
-                <span className="flex items-center gap-[8px] md:gap-[10px]">
-                  <GhIcon className="opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px] transition-opacity duration-300 group-hover:opacity-100" />
-                  <p className="font-clash text-[15px] md:text-[18px] font-medium group-shover:text-white transition-colors duration-300">
-                    github
-                  </p>
-                </span>
-              </Link>
+            <div className="flex items-center gap-[24px] md:gap-[36px]">
+              <div className="hidden md:flex items-center gap-[28px]">
+                <a
+                  href="#experience"
+                  className="text-[#FFFFFF99] hover:text-[#1ED760] transition-colors duration-300 font-clash text-[15px] font-medium"
+                >
+                  Experience
+                </a>
+                <a
+                  href="#projects"
+                  className="text-[#FFFFFF99] hover:text-[#1ED760] transition-colors duration-300 font-clash text-[15px] font-medium"
+                >
+                  Projects
+                </a>
+                <a
+                  href="#contact"
+                  className="text-[#FFFFFF99] hover:text-[#1ED760] transition-colors duration-300 font-clash text-[15px] font-medium"
+                >
+                  Contact
+                </a>
+              </div>
+              <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
+                <Link
+                  target="_blank"
+                  rel="noreferrer"
+                  to="https://www.github.com/victorola-coder"
+                  className="group-hover:text-white transition-colors duration-300"
+                >
+                  <span className="flex items-center gap-[8px] md:gap-[10px]">
+                    <GhIcon className="opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px] transition-opacity duration-300 group-hover:opacity-100" />
+                    <p className="font-clash text-[15px] md:text-[18px] font-medium group-shover:text-white transition-colors duration-300">
+                      github
+                    </p>
+                  </span>
+                </Link>
+              </div>
             </div>
           </nav>
         </header>
