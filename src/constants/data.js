@@ -66,17 +66,18 @@ export const SERVICES_DATA = [
 
 export const EXPERIENCE_DATA = [
   {
+    role: "DevOps Engineer",
+    company: "Seel",
+    period: "Aug 2026 - Present",
+    description: "Running the cloud infrastructure for Seel, a sales automation platform, with Terraform on AWS, containerised services, and CI pipelines that keep releases fast and reliable.",
+    subtext: "AWS, Terraform, Docker & CI/CD"
+  },
+  {
     role: "Fullstack Developer",
     company: "Talksign",
     period: "Feb 2026 - Present",
     description: "Building Talksign, a sign-language translation and learning platform, across a React/Vite/TypeScript frontend and a Node.js/MongoDB backend — the team's newest, actively developing product.",
     subtext: "translation engine, learning suite & creator studio"
-  },
-  {
-    role: "Fullstack Developer",
-    company: "Adesina",
-    period: "Aug 2025 - Jan 2026",
-    description: "Worked as a fullstack developer across frontend, backend, and mobile, building and maintaining the product end to end and shipping features on a live, in-production application."
   },
   {
     role: "Fullstack Developer",
