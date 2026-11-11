@@ -1,59 +1,57 @@
 import toast, { Toaster } from "react-hot-toast";
 
 const Resume = ({ pdfUrl, fileName, buttonText }) => {
-  const notify = () => toast("Here is your toast.");
   const downloadPDF = async () => {
     try {
-      // Fetch the PDF file
       const response = await fetch(pdfUrl);
-
-      // Check if the request was successful
       if (!response.ok) {
         throw new Error(`Failed to fetch PDF: ${response.statusText}`);
       }
-
-      // Convert the response to a blob
       const blob = await response.blob();
-
-      // Create a download link
-      const link = document.createElement("a");
-
-      // Create a Blob URL from the blob
       const blobUrl = URL.createObjectURL(blob);
-
-      // Set the download link attributes
+      const link = document.createElement("a");
       link.href = blobUrl;
       link.download = fileName || "download.pdf";
-
-      // Append the link to the document
       document.body.appendChild(link);
-
-      // Trigger a click on the link to start the download
       link.click();
-
-      // Remove the link from the document
       document.body.removeChild(link);
-
-      // Revoke the Blob URL to free up resources
       URL.revokeObjectURL(blobUrl);
+      toast.success("Résumé on its way");
     } catch (error) {
-      notify("Error downloading PDF", error.message);
+      toast.error("Couldn't download the résumé");
       console.error("Error downloading PDF:", error.message);
     }
   };
 
   return (
-    <div className="transition-all duration-300 active:scale-[0.96] max-w-[200px] mx-auto md:mx-0 flex justify-center lg:flex lg:justify-start">
-      <span
-        onClick={downloadPDF}
-        className="cursor-pointer bg-gradient-to-r max-w-[197px] lg:max-w-[252px] to-[#D9D9D9] from-[#D9D9D900] py-0.5 pr-0.5"
-      >
-        <p className="bg-[#061417] px-[17px] py-[18px] font-medium text-[18px] font-clash">
-          {buttonText || "Download PDF"}
-        </p>
-      </span>
-      <Toaster />
-    </div>
+    <>
+      <button type="button" onClick={downloadPDF} className="btn-ghost group">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 3v12" />
+          <path d="M7 10l5 5 5-5" />
+          <path d="M4 19h16" />
+        </svg>
+        {buttonText || "Download PDF"}
+      </button>
+      <Toaster
+        position="bottom-center"
+        toastOptions={{
+          style: {
+            background: "#0A1C20",
+            color: "#F0FEFF",
+            border: "1px solid rgba(207,250,255,0.1)",
+          },
+        }}
+      />
+    </>
   );
 };
 

@@ -1,77 +1,126 @@
 import clsx from "clsx";
+import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { GhIcon } from "./svgs";
-import { Link, NavLink } from "react-router-dom";
+
+const LINKS = [
+  { label: "Services", href: "#services" },
+  { label: "Experience", href: "#experience" },
+  { label: "Work", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <>
-      <main className="">
-        <header
+    <header
+      className={clsx(
+        "fixed inset-x-0 top-0 z-50 transition-all duration-500",
+        scrolled ? "py-3" : "py-5 md:py-7"
+      )}
+    >
+      <div className="section-x mx-auto max-w-[1440px]">
+        <nav
           className={clsx(
-            "fixed z-40 top-0 md:relatives bg-[#061417]/90 pb-3 w-full pt-[20px] px-[32px] md:py-[30px] md:px-[50px] lg:px-[80px] xl:px-[100px] max-w-[1440px] left-1/2 -translate-x-1/2"
+            "flex items-center justify-between rounded-full border px-4 py-2.5 md:px-6 transition-all duration-500",
+            scrolled
+              ? "border-line bg-ink/70 backdrop-blur-xl shadow-card"
+              : "border-transparent bg-transparent"
           )}
         >
-          <nav className="flex items-center justify-between">
-            {/* <h2
-              className={`font-clashbold font-semibold text-[18px] md:text-[25px] leading-[]`}
+          <NavLink
+            to="/"
+            className="font-clashbold text-[18px] md:text-[22px] font-semibold text-white active:scale-95 transition-transform"
+          >
+            VickyJay<span className="text-mint">.</span>
+          </NavLink>
+
+          <div className="hidden md:flex items-center gap-1">
+            {LINKS.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="rounded-full px-4 py-2 font-clash text-[14px] font-medium text-ice/70 transition-colors duration-300 hover:bg-ice/5 hover:text-white"
+              >
+                {l.label}
+              </a>
+            ))}
+          </div>
+
+          <div className="flex items-center gap-2">
+            <a
+              href="https://www.github.com/victorola-coder"
+              target="_blank"
+              rel="noreferrer"
+              className="group hidden sm:inline-flex items-center gap-2 rounded-full border border-ice/15 px-4 py-2 font-clash text-[14px] font-medium text-ice/80 transition-all duration-300 hover:border-mint/60 hover:text-white"
             >
-              VickyJay<span>.</span>
-            </h2> */}
-            <NavLink to="/">
-              {({ isActive }) => (
-                <div
-                  className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] lg:hover:before:bg-[#4C686F]s active:scale-[0.86] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
-                    isActive
-                      ? "text-white hover:before:w-full"
-                      : "text-white hover:before:w-full"
-                  } relative`}
-                >
-                  VickyJay<span>!</span>
-                  <span>⚡</span>
-                </div>
-              )}
-            </NavLink>
-            <div className="flex items-center gap-[24px] md:gap-[36px]">
-              <div className="hidden md:flex items-center gap-[28px]">
-                <a
-                  href="#experience"
-                  className="text-[#FFFFFF99] hover:text-[#1ED760] transition-colors duration-300 font-clash text-[15px] font-medium"
-                >
-                  Experience
-                </a>
-                <a
-                  href="#projects"
-                  className="text-[#FFFFFF99] hover:text-[#1ED760] transition-colors duration-300 font-clash text-[15px] font-medium"
-                >
-                  Projects
-                </a>
-                <a
-                  href="#contact"
-                  className="text-[#FFFFFF99] hover:text-[#1ED760] transition-colors duration-300 font-clash text-[15px] font-medium"
-                >
-                  Contact
-                </a>
-              </div>
-              <div className="text-[#FFFFFF99] group group-hover:text-white transition-all duration-300">
-                <Link
-                  target="_blank"
-                  rel="noreferrer"
-                  to="https://www.github.com/victorola-coder"
-                  className="group-hover:text-white transition-colors duration-300"
-                >
-                  <span className="flex items-center gap-[8px] md:gap-[10px]">
-                    <GhIcon className="opacity-60 w-[26px] h-[26px] md:w-[32px] md:h-[32px] transition-opacity duration-300 group-hover:opacity-100" />
-                    <p className="font-clash text-[15px] md:text-[18px] font-medium group-shover:text-white transition-colors duration-300">
-                      github
-                    </p>
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </nav>
-        </header>
-      </main>
-    </>
+              <GhIcon className="h-[18px] w-[18px] opacity-80 transition-opacity group-hover:opacity-100" />
+              GitHub
+            </a>
+            <button
+              type="button"
+              aria-label={open ? "Close menu" : "Open menu"}
+              aria-expanded={open}
+              onClick={() => setOpen((v) => !v)}
+              className="md:hidden flex h-10 w-10 items-center justify-center rounded-full border border-ice/15 text-ice"
+            >
+              <span className="relative block h-3 w-4">
+                <span
+                  className={clsx(
+                    "absolute left-0 top-0 h-[2px] w-full rounded bg-current transition-all duration-300",
+                    open && "top-[5px] rotate-45"
+                  )}
+                />
+                <span
+                  className={clsx(
+                    "absolute left-0 bottom-0 h-[2px] w-full rounded bg-current transition-all duration-300",
+                    open && "bottom-[5px] -rotate-45"
+                  )}
+                />
+              </span>
+            </button>
+          </div>
+        </nav>
+
+        {/* Mobile menu */}
+        <div
+          className={clsx(
+            "md:hidden overflow-hidden transition-all duration-500",
+            open ? "mt-2 max-h-80 opacity-100" : "max-h-0 opacity-0"
+          )}
+        >
+          <div className="card flex flex-col p-2">
+            {LINKS.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="rounded-xl px-4 py-3 font-clash text-[16px] text-ice/80 hover:bg-ice/5 hover:text-white"
+              >
+                {l.label}
+              </a>
+            ))}
+            <a
+              href="https://www.github.com/victorola-coder"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1 flex items-center gap-2 rounded-xl px-4 py-3 font-clash text-[16px] text-ice/80 hover:bg-ice/5 hover:text-white sm:hidden"
+            >
+              <GhIcon className="h-[18px] w-[18px]" /> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
   );
 };
 

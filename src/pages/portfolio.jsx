@@ -6,7 +6,6 @@ import {
   Projects,
   Services,
   Experience,
-  Skills,
   SEO,
 } from "../components";
 
@@ -17,13 +16,12 @@ function Home() {
         title="Victor"
         description="I enjoy building fullstack solutions, from backend systems to frontend experiences, with solid foundations, scalability, and excellent user experiences."
       />
-      <main className="max-w-[1440px] mx-auto">
-        <Navbar />
+      <Navbar />
+      <main className="mx-auto max-w-[1440px] overflow-x-clip">
         <Hero />
         <Services />
         <Experience />
         <Projects />
-        {/* <Skills /> */}
         <Contact />
         <Footer />
       </main>

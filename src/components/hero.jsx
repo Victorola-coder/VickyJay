@@ -1,128 +1,133 @@
 import { motion } from "framer-motion";
-import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
+import Socials from "./socials";
+import { Arrow } from "./svgs";
+
+const STATS = [
+  { value: "3+", label: "Years shipping" },
+  { value: "15+", label: "Products built" },
+  { value: "Full", label: "Stack: UI to API" },
+];
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.09, delayChildren: 0.1 } },
+};
+const item = {
+  hidden: { opacity: 0, y: 22 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+};
 
 const Hero = () => {
   return (
-    <>
-      <section className="mx-auto px-[38px] pt-[100px] md:px-[50px] lg:pt-[120px] lg:px-[80px] xl:px-[100px]">
-        <div className="flex flex-col items-start flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:gap-x-12 lg:justify-between">
-          <div>
-            <div className="gradientText">
-              <h1
-              // className={`font-clashbold font-semibold text-[40px] leading-[36.9px] text-[#CFFAFF] md:leading-[4 5px] md:text-[35px] md:max-w-max lg:leading-[73.8px] lg:max-w-[580px] lg:text-[60px] `}
-              >
-                Creative Fullstack Engineer<span>.</span>
-              </h1>
-            </div>
-            <p className="gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]">
-              I like to craft solid and scalable products, from backend
-              systems to frontend experiences.
-            </p>
-            <div
-              id="intro"
-              className="text-[#F0FEFF] font-pop flex-shrink-0 text-[.9em] leading-[1.5] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-start lg:gap-[12px]"
-            >
-              <p className="max-w-[310px]">
-                3+ Years of experience. Specialized in building products, while
-                ensuring a seamless web experience for clients across africa.
-              </p>
-              <p className="max-w-[319px]">
-                Highly skilled across the stack, from building reliable APIs
-                and services to crafting polished UI Engineering - performance
-                and scalability are top objectives on my radar.
-              </p>
-            </div>
-            <div className="mt-[35px] md:mt-[65px] flex justify-start items-center  gap-[26px] md:gap-[40px]">
-              <motion.a
-                href="https://web.facebook.com/victortoluu"
-                target="_blank"
-                rel="noreferrer"
-                whileTap={{ scale: 1.1 }}
-                whileHover={{ scale: 0.99 }}
-                className="h-auto w-auto"
-              >
-                <FbIcon
-                  fill="#1ED760"
-                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
-                />
-              </motion.a>
-              <motion.a
-                href="https://x.com/victorolax"
-                target="_blank"
-                rel="noreferrer"
-                whileTap={{ scale: 1.1 }}
-                whileHover={{ scale: 0.99 }}
-                className={`h-auto w-auto`}
-              >
-                <TwIcon
-                  fill={`#1ED760`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
-                />
-              </motion.a>
-              <motion.a
-                href="https://www.instagram.com/vickyjayox"
-                target="_blank"
-                rel="noreferrer"
-                whileTap={{ scale: 1.1 }}
-                whileHover={{ scale: 0.99 }}
-                className={`h-auto w-auto`}
-              >
-                <IgIcon
-                  fill={`#1ED760`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
-                />
-              </motion.a>
-              <motion.a
-                href="https://www.linkedin.com/in/victor-olatunji-889568246"
-                target="_blank"
-                rel="noreferrer"
-                whileTap={{ scale: 1.1 }}
-                whileHover={{ scale: 0.99 }}
-                className={`h-auto w-auto`}
-              >
-                <InIcon
-                  fill={`#1ED760`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#1ED760] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
-                />
-              </motion.a>
-            </div>
-          </div>
-          <div className="mt-[2.5rem]">
-            <div className="relative flex flex-col justify-center w-max">
-              <div className={`w-full`}>
-                <img
-                  src="/images/ovt.jpeg"
-                  alt="hero image is here"
-                  className="absolute w-full h-full bottom-3 right-4 md:bottom-5 md:right-6 lg:bottom-10 lg:right-12"
-                  draggable={false}
-                  loading="lazy"
-                />
-              </div>
-              <motion.div
-                className={`shrink-0 w-[300px] h-[300px] lg:min-w-[400px] lg:min-h-[400px] border-[3px] border-[#1ED760]`}
-              ></motion.div>
-            </div>
-          </div>
-          {/* <div className="flex flex-col items-center mt-[60px] md:mt-0">
-            <div className="relative">
-              <motion.div whileHover={{}}>
-                <img
-                  src={hero}
-                  alt="hero image is here"
-                  className="w-[330px] h-[330px] mg:w-3/4 lg:w-[512px] lg:h-[512px] absolute bottom-[32px] -left-[36px] md:bottom-[52px] md:right-[56px] object-cover"
-                  draggable={false}
-                  loading="lazy"
+    <section className="section-x relative mx-auto pt-[112px] md:pt-[140px] lg:pt-[168px]">
+      <div className="grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="flex flex-col items-start"
+        >
+          <motion.span
+            variants={item}
+            className="inline-flex items-center gap-2 rounded-full border border-mint/30 bg-mint/10 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-mint"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full rounded-full bg-mint animate-ping2" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-mint" />
+            </span>
+            Available for new work
+          </motion.span>
 
-                />
-              </motion.div>
-              <div
-                className={`max-w-[330px] min-h-[330px] md:w-[200px] lg:min-w-[512px] lg:min-h-[512px] border-[#1ED760] border-[3px] border-solid`}
-              ></div>
+          <motion.h1
+            variants={item}
+            className="gradientText mt-6 font-clashbold font-semibold text-[40px] leading-[1.02] tracking-[-0.02em] sm:text-[52px] md:text-[64px] lg:text-[72px] xl:text-[80px]"
+          >
+            Creative
+            <br className="hidden sm:block" />
+            Fullstack Engineer.
+          </motion.h1>
+
+          <motion.p
+            variants={item}
+            className="gradientText mt-6 max-w-[560px] font-pop text-[16px] font-medium leading-relaxed md:text-[19px]"
+          >
+            I&apos;m Victor. I craft solid, scalable products end to end, from
+            reliable APIs and services to polished, performant interfaces that
+            people enjoy using.
+          </motion.p>
+
+          <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3">
+            <a href="#projects" className="btn-primary">
+              See my work
+              <Arrow className="h-4 w-4 [&_path]:stroke-ink" />
+            </a>
+            <a href="#contact" className="btn-ghost">
+              Let&apos;s talk
+            </a>
+          </motion.div>
+
+          <motion.div variants={item} className="mt-10 grid w-full max-w-[520px] grid-cols-3 gap-4 border-t border-line pt-6">
+            {STATS.map((s) => (
+              <div key={s.label}>
+                <p className="font-clashbold text-[26px] leading-none text-white md:text-[32px]">
+                  {s.value}
+                </p>
+                <p className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ice/50">
+                  {s.label}
+                </p>
+              </div>
+            ))}
+          </motion.div>
+
+          <motion.div variants={item} className="mt-8">
+            <Socials />
+          </motion.div>
+        </motion.div>
+
+        {/* Portrait */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.94, rotate: -2 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+          className="relative mx-auto w-full max-w-[340px] lg:max-w-[420px] lg:justify-self-end"
+        >
+          {/* glow */}
+          <div className="absolute -inset-6 -z-10 rounded-[40px] bg-mint/20 blur-3xl" />
+          {/* offset frame */}
+          <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[28px] border-2 border-mint/70 md:translate-x-5 md:translate-y-5" />
+          <div className="group relative aspect-square overflow-hidden rounded-[28px] border border-line bg-card animate-float">
+            <img
+              src="/images/ovt.jpeg"
+              alt="Portrait of Victor Olatunji"
+              draggable={false}
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+              <div>
+                <p className="font-clashbold text-[18px] leading-none text-white">Victor Olatunji</p>
+                <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.16em] text-mint">
+                  VickyJay
+                </p>
+              </div>
+              <span className="chip">Lagos, NG</span>
             </div>
-          </div> */}
-        </div>
-      </section>
-    </>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* scroll hint */}
+      <a
+        href="#services"
+        aria-label="Scroll to services"
+        className="mt-16 hidden items-center gap-3 font-mono text-[11px] uppercase tracking-[0.2em] text-ice/40 transition-colors hover:text-mint md:inline-flex"
+      >
+        <span className="relative block h-10 w-px overflow-hidden bg-ice/15">
+          <span className="absolute inset-x-0 top-0 h-1/2 animate-[float_2s_ease-in-out_infinite] bg-mint" />
+        </span>
+        Scroll
+      </a>
+    </section>
   );
 };
 

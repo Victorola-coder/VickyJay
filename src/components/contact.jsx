@@ -1,90 +1,111 @@
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import toast from "react-hot-toast";
+import Reveal from "./reveal";
+import Socials from "./socials";
+import { EMAIL, PHONE } from "../constants/socials";
 import { LocationIcon, MailIcon, PhoneIcon } from "./svgs";
 
+const getTimeOfDay = () => {
+  const h = new Date().getHours();
+  if (h >= 6 && h < 12) return "morning";
+  if (h >= 12 && h < 18) return "afternoon";
+  return "evening";
+};
+
+const WHEREABOUTS = {
+  morning: "metaverse ⚡",
+  afternoon: "localhost:3000",
+  evening: "127.0.0.1:5500",
+};
+
 const Contact = () => {
-  const [timeOfDay, setTimeOfDay] = useState(getTimeOfDay());
+  const [timeOfDay] = useState(getTimeOfDay);
+  const [copied, setCopied] = useState(false);
 
-  useEffect(() => {
-    // Update timeOfDay when component mounts
-    setTimeOfDay(getTimeOfDay());
-  }, []);
-
-  function getTimeOfDay() {
-    const now = new Date();
-    const currentHour = now.getHours();
-
-    if (currentHour >= 6 && currentHour < 12) {
-      return "morning";
-    } else if (currentHour >= 12 && currentHour < 18) {
-      return "afternoon";
-    } else {
-      return "evening";
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      toast.success("Email copied");
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      window.location.href = `mailto:${EMAIL}`;
     }
-  }
+  };
+
+  const items = [
+    {
+      Icon: MailIcon,
+      label: "Email",
+      value: EMAIL,
+      href: `mailto:${EMAIL}`,
+    },
+    {
+      Icon: PhoneIcon,
+      label: "Phone",
+      value: PHONE,
+      href: `tel:${PHONE}`,
+    },
+    {
+      Icon: LocationIcon,
+      label: `This ${timeOfDay}, find me at`,
+      value: WHEREABOUTS[timeOfDay],
+    },
+  ];
 
   return (
-    <section id="contact" className="mx-[30px] mt-[60px] md:mx-[50px] lg:mx-[80px] lg:mt-[150px] xl:mx-[100px] scroll-mt-[100px]">
-      <div className="flex flex-col items-center gap-[35px] md:gap-[25px]">
-        <h3
-          className={`font-medium text-[#FFFFFF99] text-lg text-center max-w-[320px] md:max-w-[992px] md:text-[25px] mmd:leading-[37.5px]`}
-        >
-          I can help you design, improve or build the product experience for
-          your new or existing products. Feel free to get in touch with me.
-        </h3>
-        <h1 className="font-clashbold font-semibold text-xl text-white md:text-[60px] md:leading-[73.8px]">
-          Do You Have Any Ideas?
-        </h1>
+    <section id="contact" className="section-x mt-28 scroll-mt-28 lg:mt-40">
+      <Reveal>
+        <div className="card relative overflow-hidden px-6 py-14 text-center md:px-12 md:py-20">
+          {/* glows */}
+          <div className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-mint/15 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-ice/10 blur-3xl" />
 
-        <p className="flex items-center font-semibold text-[15px] leading-[22.5px] md:text-[20px] md:leading-[30px] text-[#FFFFFF99]">
-          SAY HELLO! <small className={`animate-bounce`}>👋</small>
-        </p>
-      </div>
-      <div
-        className={`mt-[51px] flex flex-col gap-[60px] lg:flex lg:flex-row items-center justify-center`}
-      >
-        <div className="flex flex-col items-center gap-[10px]">
-          <div className="bg-gradient-to-l from-[#CFFAFF] to-[#CFFAFF00] pr-[1px] pt-[1px] max-w-[75px] max-h-[75px]">
-            <MailIcon
-              className={`w-[30px] h-[30px] p-2 md:p-[5px] bg-[#061417] md:w-[36px] md:h-[36px]`}
-            />
-          </div>
-          <a
-            className={`text-[#FFFFFF99] font-medium text-base md:text-[20px] md:leading-[30px]`}
-            href="mailto:victoluolatunji@gmail.com"
-          >
-            victoluolatunji@gmail.com
-          </a>
-        </div>
-        <div className="flex flex-col items-center gap-[10px]">
-          <div className="bg-gradient-to-r to-[#CFFAFF] from-[#CFFAFF00] pr-[1px] pt-[1px] max-w-[75px] max-h-[50px]">
-            <PhoneIcon
-              className={`w-[30px] h-[30px] p-2 md:p-[5px] bg-[#061417] md:w-[36px] md:h-[36px]`}
-            />
-          </div>
-          <a
-            href="tel:+2349075789680"
-            className={`text-[#FFFFFF99] tex-base font-medium md:text-[20px] md:leading-[30px]`}
-          >
-            +2349075789680
-          </a>
-        </div>
-        <div className="flex flex-col items-center gap-[10px]">
-          <div className="bg-gradient-to-l from-[#CFFAFF] to-[#CFFAFF00] pr-[1px] pt-[1px] max-w-[75px] max-h-[75px]">
-            <LocationIcon
-              className={`w-[30px] h-[30px] p-2 md:p-[5px] bg-[#061417] md:w-[36px] md:h-[36px]`}
-            />
-          </div>
-          <p
-            className={`text-[#FFFFFF99] text-base mx-auto text-center font-medium md:text-[20px] md:leading-[30px]`}
-          >
-            {timeOfDay === "morning" && <span>metaverse!⚡</span>}
-            {timeOfDay === "afternoon" && <span>localhost:3000</span>}
-            {timeOfDay === "evening" && <span>127.0.0.1:5500</span>}
-            {/* {timeOfDay === "evening" && <span>somewhere in the metaverse</span>} */}
+          <span className="eyebrow justify-center">Say hello 👋</span>
+          <h2 className="section-title mx-auto mt-4 max-w-[820px] [text-wrap:balance] md:text-[52px] lg:text-[64px]">
+            Have an idea? Let&apos;s build it
+            <span className="text-mint">.</span>
+          </h2>
+          <p className="section-sub mx-auto mt-5 text-center">
+            I can help you design, improve or build the product experience for
+            your new or existing product. My inbox is open.
           </p>
+
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
+            <a href={`mailto:${EMAIL}`} className="btn-primary">
+              Email me
+            </a>
+            <button type="button" onClick={copyEmail} className="btn-ghost">
+              {copied ? "Copied ✓" : "Copy email"}
+            </button>
+          </div>
+
+          <div className="mx-auto mt-12 grid max-w-[900px] gap-4 border-t border-line pt-10 sm:grid-cols-3">
+            {items.map(({ Icon, label, value, href }) => {
+              const Wrapper = href ? "a" : "div";
+              return (
+                <Wrapper
+                  key={label}
+                  {...(href ? { href } : {})}
+                  className="group flex flex-col items-center gap-3 rounded-xl p-4 transition-colors hover:bg-ice/5"
+                >
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full border border-ice/15 bg-ink text-ice transition-colors group-hover:border-mint/50">
+                    <Icon className="h-5 w-5" />
+                  </span>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-ice/40">
+                    {label}
+                  </span>
+                  <span className="break-all font-pop text-[15px] font-medium text-ice/85 group-hover:text-white">
+                    {value}
+                  </span>
+                </Wrapper>
+              );
+            })}
+          </div>
+
+          <Socials className="mt-10 justify-center" />
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 };

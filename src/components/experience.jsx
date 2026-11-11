@@ -1,88 +1,81 @@
+import Reveal from "./reveal";
 import Resume from "./resume";
-import { ExpCircle } from "./svgs";
+import SectionHeading from "./section-heading";
 import resumeUrl from "../utils/ovt.pdf";
 import { EXPERIENCE_DATA } from "../constants/data";
 
+const isCurrent = (period = "") => /present/i.test(period);
+
 const Experience = () => {
   return (
-    <>
-      <div id="experience" className={`flex flex-col ml-3 lg:items-end mt-20 lg:mt-32 px-[30px] md:px-[50px] lg:px-[80px] xl:px-[100px] scroll-mt-[100px]`}>
-        <div className="font-pop w-full">
-          <h2
-            className={`flex items-center font-clashbold text-white text-[20px] font-semibold lg:text-[50px] lg:leading-[49.2px]`}
-          >
-            Experience <small className={`animate-bounce ml-2`}>🚀</small>
-          </h2>
-          <p
-            className={`font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] text-left lg:text-[20px] lg:leading-[30px] mt-2`}
-          >
-            Some list of my experience over the year..
-          </p>
+    <section id="experience" className="section-x mt-28 scroll-mt-28 lg:mt-40">
+      <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+        {/* Sticky intro column */}
+        <div className="lg:sticky lg:top-32 lg:self-start">
+          <SectionHeading
+            eyebrow="Where I've been"
+            title="Experience"
+            emoji="🚀"
+            sub="Teams I've shipped with, from early-stage products to live, in-production platforms."
+          />
+          <Reveal delay={0.15} className="mt-8">
+            <Resume
+              pdfUrl={resumeUrl}
+              fileName="Victor Olatunji.pdf"
+              buttonText="Download résumé"
+            />
+          </Reveal>
         </div>
-        
-        <div className="flex flex-row relative z-[100] w-full mt-[30px]">
-          {/* Timeline Line */}
-          <div className="absolute left-[7px] lg:left-[50%] top-2 bottom-0 w-0.5 bg-[#1ED7601A] -translate-x-1/2"></div>
-          
-          <div className={`flex flex-col space-y-[60px] w-full`}>
-            {EXPERIENCE_DATA.map((exp, index) => (
-              <div key={index} className="flex gap-[28px] lg:gap-[48px] lg:justify-center w-full">
-                {/* Timeline Dot */}
-                <div className="relative shrink-0 lg:absolute lg:left-[50%] lg:-translate-x-1/2 z-10">
-                  <span className="block -mt-1">
-                    <ExpCircle />
-                  </span>
-                </div>
 
-                {/* Content */}
-                <div className="lg:w-[45%] lg:ml-auto lg:pl-10">
-                  <h3 className="font-semibold text-white lg:text-[20px] lg:leading-[30px]">
-                    {exp.role}{" "}
-                    <span className="italic text-[#FFFFFF99] text-sm lg:text-base">
-                      {exp.period}
-                    </span>
-                  </h3>
-                  <p
-                    className={`text-[#1ED760] font-semibold md:mt-[10px] text-[18px] leading-[27px]`}
-                  >
-                    {exp.company}
-                    {exp.subtext && (
-                      <>
-                        {" - "}
-                        <span className="italic animate-pulse text-[#FFFFFF99] text-sm">
-                          {exp.subtext}
-                        </span>
-                      </>
-                    )}
-                  </p>
-                  <h5
-                    className={`text-[#FFFFFF99] font-medium mt-[20px] max-w-[300px] md:max-w-md lg:mt-[19px] lg:max-w-[651px] lg:text-[18px] lg:leading-[27px]`}
-                  >
-                    {exp.description}
-                  </h5>
-                </div>
-              </div>
-            ))}
-
-            {/* RESUME */}
-            <div className="flex gap-[28px] lg:gap-[48px] lg:justify-center w-full pt-4">
-               <div className="relative shrink-0 lg:absolute lg:left-[50%] lg:-translate-x-1/2 z-10 invisible">
-                  <span className="block">
-                    <ExpCircle />
-                  </span>
-                </div>
-               <div className="lg:w-[45%] lg:ml-auto lg:pl-10">
-                  <Resume
-                    pdfUrl={resumeUrl}
-                    fileName="Victor Olatunji.pdf"
-                    buttonText="Download Resume"
+        {/* Timeline */}
+        <ol className="relative border-l border-line pl-8 md:pl-10">
+          {EXPERIENCE_DATA.map((exp, index) => {
+            const current = isCurrent(exp.period);
+            return (
+              <li key={`${exp.company}-${index}`} className="relative pb-10 last:pb-0">
+                {/* dot */}
+                <span className="absolute -left-[calc(2rem+6px)] top-6 flex h-3 w-3 md:-left-[calc(2.5rem+6px)]">
+                  {current && (
+                    <span className="absolute inline-flex h-full w-full rounded-full bg-mint animate-ping2" />
+                  )}
+                  <span
+                    className={`relative inline-flex h-3 w-3 rounded-full ${
+                      current ? "bg-mint" : "bg-ice/30"
+                    }`}
                   />
-               </div>
-            </div>
-          </div>
-        </div>
+                </span>
+
+                <Reveal delay={index * 0.08}>
+                  <article className="card card-hover p-6 md:p-7">
+                    <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+                      <h3 className="font-clashbold text-[20px] font-semibold text-white md:text-[22px]">
+                        {exp.company}
+                      </h3>
+                      <span
+                        className={`chip ${
+                          current ? "border-mint/40 bg-mint/10 text-mint" : ""
+                        }`}
+                      >
+                        {exp.period}
+                      </span>
+                    </div>
+                    <p className="mt-1 font-pop text-[14px] font-medium text-ice/60">
+                      {exp.role}
+                      {exp.subtext && (
+                        <span className="text-ice/40"> · {exp.subtext}</span>
+                      )}
+                    </p>
+                    <p className="mt-4 font-pop text-[15px] leading-relaxed text-ice/70 md:text-[16px]">
+                      {exp.description}
+                    </p>
+                  </article>
+                </Reveal>
+              </li>
+            );
+          })}
+        </ol>
       </div>
-    </>
+    </section>
   );
 };
 

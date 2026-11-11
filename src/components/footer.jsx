@@ -1,128 +1,54 @@
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { Copyright, FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
+import Socials from "./socials";
 
 const Footer = () => {
-  const [time, setTime] = useState(new Date().toLocaleTimeString());
+  const [time, setTime] = useState(() =>
+    new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" })
+  );
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(new Date().toLocaleTimeString());
-    }, 1000);
-
+    const timer = setInterval(
+      () =>
+        setTime(
+          new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" })
+        ),
+      1000
+    );
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <section className="mx-[30px] mt-[60px] pb-[20px] md:mx-[50px] lg:pb-[50px] lg:mx-[80px] lg:mt-[150px] xl:mx-[100px]">
-      {/* line */}
-      <div className="max-w-full h-[2px] mt-[63.37px] bg-[#0A1C20]"></div>
-      <div className="mt-[63px] flex flex-col-reverse justify-start gap-5 md:gap-0 md:flex md:flex-row md:justify-between md:items-center ">
-        <div className="flex flex-col justify-start items-start">
-          <div className="flex flex-row items-center lg:gap-[4px]">
-            <span>
-              <Copyright className="size-[18px] md:size-[20px]" />
-            </span>
-            <p className={`text-[#FFFFFF99] md:text-xl text-lg font-medium`}>
-              Victorola
-              <span className="text-[#FFFFFF] text-[14px] lg:text-base">
-                {" "}
-                2021 -
-              </span>{" "}
-              <span className="text-[#FFFFFF] text-[14px] lg:text-base">
-                {new Date().getFullYear()}
-              </span>
-            </p>
-          </div>
-          <p className="text-[#FFFFFF99] transition-all duration-300 text-end text-sm lg:text-base mt-1">
-            {time}
+    <footer className="section-x mt-24 pb-10 lg:mt-32">
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-ice/20 to-transparent" />
+      <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p className="font-clashbold text-[20px] font-semibold text-white">
+            VickyJay<span className="text-mint">.</span>
+          </p>
+          <p className="mt-1 font-pop text-[14px] text-ice/50">
+            © 2021 – {new Date().getFullYear()} Victor Olatunji. Built with React, Tailwind &amp; a lot of coffee.
           </p>
         </div>
-        <div className="mt-[10px] md:mt-[65px] flex justify-start items-center gap-[20px] md:gap-[40px]">
-          <motion.a
-            href="https://web.facebook.com/victortoluu"
-            target="_blank"
-            rel="noreferrer"
-            whileTap={{ scale: 1.1 }}
-            whileHover={{ scale: 0.99 }}
-            className="h-auto w-auto"
-          >
-            <FbIcon
-              fill={`#FFFFFF99`}
-              className={`w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-gray-500`}
-            />
-          </motion.a>
-          <motion.a
-            href="https://x.com/victorolax"
-            target="_blank"
-            rel="noreferrer"
-            whileTap={{ scale: 1.1 }}
-            whileHover={{ scale: 0.99 }}
-            className="h-auto w-auto"
-          >
-            <TwIcon
-              fill="#FFFFFF99"
-              className={`w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-gray-500`}
-            />
-          </motion.a>
-          <motion.a
-            href="https://www.instagram.com/vickyjayox"
-            target="_blank"
-            rel="noreferrer"
-            whileTap={{ scale: 1.1 }}
-            whileHover={{ scale: 0.99 }}
-            className="h-auto w-auto"
-          >
-            <IgIcon
-              fill={`#FFFFFF99`}
-              className={`w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-gray-500`}
-            />
-          </motion.a>
-          <motion.a
-            href="https://www.linkedin.com/in/victor-olatunji-889568246"
-            target="_blank"
-            rel="noreferrer"
-            whileTap={{ scale: 1.1 }}
-            whileHover={{ scale: 0.99 }}
-            className="h-auto w-auto"
-          >
-            <InIcon
-              fill={`#FFFFFF99`}
-              className="w-[30px] h-[30px] rounded-full border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-gray-500"
-            />
-          </motion.a>
+
+        <div className="flex flex-col gap-5 md:items-end">
+          <Socials />
+          <div className="flex items-center gap-4 font-mono text-[12px] text-ice/40">
+            <span>
+              Local time <span className="text-ice/80 tabular-nums">{time}</span>
+            </span>
+            <span className="h-3 w-px bg-ice/15" />
+            <Link to="/changelog" className="transition-colors hover:text-mint">
+              Changelog
+            </Link>
+            <span className="h-3 w-px bg-ice/15" />
+            <a href="#" className="transition-colors hover:text-mint">
+              Top ↑
+            </a>
+          </div>
         </div>
       </div>
-
-      {/* Shout out */}
-      <div className="hidden  flex_ flex-col gap-2 items-start justify-center text-center font-medium text-[#FFFFFF99] text-xs *:max-w-[320px] *:md:max-w-[992px] md:text-[18px]">
-        <h3>
-          Inspiration -&nbsp;
-          <Link
-            target="_blank"
-            rel="noreferrer noopener"
-            to="https://www.pariola.dev/"
-            className="text-white cursor-pointer"
-            title="you might need internet to access this"
-          >
-            Pariola
-          </Link>
-        </h3>
-        <h3>
-          Design -&nbsp;
-          <Link
-            target="_blank"
-            rel="noreferrer noopener"
-            to="https://x.com/UI_Ninja_?s=09"
-            className="text-white cursor-pointer"
-            title="you might need internet to access this"
-          >
-            Chinemerem
-          </Link>
-        </h3>
-      </div>
-    </section>
+    </footer>
   );
 };
 
