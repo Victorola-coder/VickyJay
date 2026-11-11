@@ -13,17 +13,17 @@ export const SOCIALS = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/victor-olatunji-889568246",
+    href: "https://www.linkedin.com/in/victorolax/",
     Icon: InIcon,
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/vickyjayox",
+    href: "https://www.instagram.com/victorolax",
     Icon: IgIcon,
   },
   {
     name: "Facebook",
-    href: "https://web.facebook.com/victortoluu",
+    href: "https://www.facebook.com/victorola",
     Icon: FbIcon,
   },
 ];
