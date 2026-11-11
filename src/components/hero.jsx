@@ -3,9 +3,9 @@ import Socials from "./socials";
 import { Arrow } from "./svgs";
 
 const STATS = [
-  { value: "3+", label: "Years shipping" },
-  { value: "15+", label: "Products built" },
-  { value: "Full", label: "Stack: UI to API" },
+  { value: "3+", label: "Years" },
+  { value: "15+", label: "Products" },
+  { value: "Full", label: "UI to API" },
 ];
 
 const container = {
@@ -25,7 +25,7 @@ const Hero = () => {
           variants={container}
           initial="hidden"
           animate="show"
-          className="flex flex-col items-start"
+          className="flex min-w-0 flex-col items-start"
         >
           <motion.span
             variants={item}
@@ -40,9 +40,9 @@ const Hero = () => {
 
           <motion.h1
             variants={item}
-            className="gradientText mt-6 font-clashbold font-semibold text-[40px] leading-[1.02] tracking-[-0.02em] sm:text-[52px] md:text-[64px] lg:text-[72px] xl:text-[80px]"
+            className="gradientText mt-6 font-clashbold font-semibold text-[34px] leading-[1.05] tracking-[-0.02em] min-[400px]:text-[42px] sm:text-[52px] md:text-[64px] lg:text-[72px] xl:text-[80px]"
           >
-            Creative
+            Creative{" "}
             <br className="hidden sm:block" />
             Fullstack Engineer.
           </motion.h1>
@@ -72,7 +72,7 @@ const Hero = () => {
                 <p className="font-clashbold text-[26px] leading-none text-white md:text-[32px]">
                   {s.value}
                 </p>
-                <p className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-ice/50">
+                <p className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-ice/50 sm:text-[11px] sm:tracking-[0.14em]">
                   {s.label}
                 </p>
               </div>
@@ -89,7 +89,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.94, rotate: -2 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
-          className="relative mx-auto w-full max-w-[340px] lg:max-w-[420px] lg:justify-self-end"
+          className="relative mx-auto w-[calc(100%-1rem)] max-w-[340px] lg:max-w-[420px] lg:justify-self-end"
         >
           {/* glow */}
           <div className="absolute -inset-6 -z-10 rounded-[40px] bg-mint/20 blur-3xl" />

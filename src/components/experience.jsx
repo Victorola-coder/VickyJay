@@ -28,13 +28,13 @@ const Experience = () => {
         </div>
 
         {/* Timeline */}
-        <ol className="relative border-l border-line pl-8 md:pl-10">
+        <ol className="relative border-l border-line pl-6 md:pl-10">
           {EXPERIENCE_DATA.map((exp, index) => {
             const current = isCurrent(exp.period);
             return (
               <li key={`${exp.company}-${index}`} className="relative pb-10 last:pb-0">
                 {/* dot */}
-                <span className="absolute -left-[calc(2rem+6px)] top-6 flex h-3 w-3 md:-left-[calc(2.5rem+6px)]">
+                <span className="absolute -left-[calc(1.5rem+6px)] top-6 flex h-3 w-3 md:-left-[calc(2.5rem+6px)]">
                   {current && (
                     <span className="absolute inline-flex h-full w-full rounded-full bg-mint animate-ping2" />
                   )}
@@ -46,7 +46,7 @@ const Experience = () => {
                 </span>
 
                 <Reveal delay={index * 0.08}>
-                  <article className="card card-hover p-6 md:p-7">
+                  <article className="card card-hover p-5 md:p-7">
                     <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
                       <h3 className="font-clashbold text-[20px] font-semibold text-white md:text-[22px]">
                         {exp.company}

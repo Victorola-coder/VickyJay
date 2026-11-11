@@ -40,7 +40,11 @@ const Services = () => {
 
       <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
         {SERVICES_DATA.map((service, index) => (
-          <Reveal key={service.title} delay={index * 0.1}>
+          <Reveal
+            key={service.title}
+            delay={index * 0.1}
+            className={index === SERVICES_DATA.length - 1 && SERVICES_DATA.length % 2 === 1 ? "md:col-span-2 lg:col-span-1" : ""}
+          >
             <motion.article
               whileHover={{ y: -4 }}
               transition={{ type: "spring", stiffness: 260, damping: 22 }}

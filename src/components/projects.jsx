@@ -72,10 +72,10 @@ const ProjectCard = ({ project, index }) => {
 
       <div className="flex flex-1 flex-col p-5 md:p-6">
         <div className="flex items-baseline justify-between gap-3">
-          <h3 className="font-clashbold text-[20px] font-semibold text-white md:text-[22px]">
+          <h3 className="min-w-0 font-clashbold text-[20px] font-semibold text-white md:text-[22px]">
             {project.name}
           </h3>
-          <span className="truncate font-mono text-[11px] text-ice/40">
+          <span className="max-w-[45%] shrink-0 truncate font-mono text-[11px] text-ice/40">
             {hostOf(project.link)}
           </span>
         </div>

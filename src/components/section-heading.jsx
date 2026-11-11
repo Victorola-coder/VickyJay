@@ -5,10 +5,10 @@ const SectionHeading = ({ eyebrow, title, sub, emoji, align = "left" }) => {
   return (
     <Reveal className={center ? "flex flex-col items-center text-center" : ""}>
       {eyebrow && <span className="eyebrow">{eyebrow}</span>}
-      <h2 className="section-title mt-3 flex items-center gap-3">
+      <h2 className="section-title mt-3">
         {title}
         {emoji && (
-          <span className="text-[0.6em] animate-bounce" aria-hidden>
+          <span className="ml-3 inline-block text-[0.6em] animate-bounce" aria-hidden>
             {emoji}
           </span>
         )}

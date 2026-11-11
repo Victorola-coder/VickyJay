@@ -56,7 +56,7 @@ const Contact = () => {
   return (
     <section id="contact" className="section-x mt-28 scroll-mt-28 lg:mt-40">
       <Reveal>
-        <div className="card relative overflow-hidden px-6 py-14 text-center md:px-12 md:py-20">
+        <div className="card relative overflow-hidden px-5 py-12 text-center sm:px-6 md:px-12 md:py-20">
           {/* glows */}
           <div className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-mint/15 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-ice/10 blur-3xl" />
