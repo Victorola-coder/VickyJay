@@ -9,19 +9,12 @@ export const projects = [
     tag: "Flagship",
   },
   {
-    name: "Orizon",
-    desc: "VPS-backed cloud hosting for African businesses: git-push deploys, managed runtimes, Caddy routing, NGN billing and one-click cPanel migration.",
-    lang: "Go + TypeScript + Caddy + Cloud-init",
-    link: "https://orzn.io/",
-    image: "/images/projects/orizon.jpg",
-    tag: "DevOps",
-  },
-  {
     name: "Seel",
-    desc: "Sales automation platform that speeds up the sales cycle and lets teams collaborate with clients on a single pane of glass.",
-    lang: "Fullstack",
+    desc: "Sales automation platform. I worked as DevOps engineer, running its AWS infrastructure with Terraform and ECS, Docker builds and CI pipelines.",
+    lang: "AWS + Terraform + Docker + CI/CD",
     link: "https://seelhq.com/",
     image: "/images/projects/seel.jpg",
+    tag: "DevOps",
   },
   {
     name: "Greanz",
