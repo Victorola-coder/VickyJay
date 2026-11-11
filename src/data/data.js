@@ -9,6 +9,14 @@ export const projects = [
     tag: "Flagship",
   },
   {
+    name: "Orizon",
+    desc: "VPS-backed cloud hosting for African businesses: git-push deploys, managed runtimes, Caddy routing, NGN billing and one-click cPanel migration.",
+    lang: "Go + TypeScript + Caddy + Cloud-init",
+    link: "https://orzn.io/",
+    image: "/images/projects/orizon.jpg",
+    tag: "DevOps",
+  },
+  {
     name: "Seel",
     desc: "Sales automation platform that speeds up the sales cycle and lets teams collaborate with clients on a single pane of glass.",
     lang: "Fullstack",
@@ -32,11 +40,11 @@ export const projects = [
     tag: "Web + Mobile",
   },
   {
-    name: "Verse",
-    desc: "A minimalist, cinematic space to create, share and export beautiful quotes.",
-    lang: "NextJs + TypeScript",
-    link: "https://verse.victorola.dev/",
-    image: "/images/projects/verse.jpg",
+    name: "Varsh Foundation",
+    desc: "Website for a non-profit fighting gender-based violence, with an admin dashboard for managing site content.",
+    lang: "NextJs + Prisma + PostgreSQL",
+    link: "https://www.varshfoundation.org/",
+    image: "/images/projects/varsh.jpg",
   },
   {
     name: "Startlog",
@@ -77,6 +85,13 @@ export const sideProjects = [
     lang: "Game + Open source",
     link: "https://riddle.victorola.dev/",
     image: "/images/projects/riddle.jpg",
+  },
+  {
+    name: "Verse",
+    desc: "A minimalist, cinematic space to create, share and export beautiful quotes.",
+    lang: "NextJs + TypeScript",
+    link: "https://verse.victorola.dev/",
+    image: "/images/projects/verse.jpg",
   },
 ];
 
