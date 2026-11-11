@@ -1,72 +1,147 @@
-import { Arrow } from "./svgs";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { projects } from "../data/data";
+import Reveal from "./reveal";
+import SectionHeading from "./section-heading";
+import { Arrow } from "./svgs";
+import { projects, sideProjects } from "../data/data";
+
+const PLACEHOLDER_GRADIENTS = [
+  "from-mint/30 via-card to-ice/10",
+  "from-ice/20 via-card to-mint/20",
+  "from-[#0fa858]/40 via-card to-card",
+  "from-ice/10 via-mint/10 to-card",
+];
+
+const hostOf = (link) => {
+  try {
+    return new URL(link).hostname.replace(/^www\./, "");
+  } catch {
+    return link;
+  }
+};
+
+const Thumb = ({ project, index }) => {
+  if (project.image) {
+    return (
+      <img
+        src={project.image}
+        alt={`${project.name} preview`}
+        loading="lazy"
+        draggable={false}
+        className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+      />
+    );
+  }
+  const g = PLACEHOLDER_GRADIENTS[index % PLACEHOLDER_GRADIENTS.length];
+  return (
+    <div className={`relative flex h-full w-full items-center justify-center bg-gradient-to-br ${g}`}>
+      <div className="absolute inset-0 opacity-40 [background-image:radial-gradient(rgba(207,250,255,0.18)_1px,transparent_1px)] [background-size:18px_18px]" />
+      <span className="relative font-clashbold text-[64px] font-semibold leading-none text-white/90 transition-transform duration-700 group-hover:scale-110">
+        {project.name.charAt(0)}
+      </span>
+    </div>
+  );
+};
+
+const ProjectCard = ({ project, index }) => {
+  const hasLink = Boolean(project.link);
+  const Wrapper = hasLink ? motion.a : motion.div;
+  const linkProps = hasLink
+    ? { href: project.link, target: "_blank", rel: "noreferrer" }
+    : {};
+
+  return (
+    <Wrapper
+      {...linkProps}
+      whileHover={{ y: -6 }}
+      transition={{ type: "spring", stiffness: 260, damping: 22 }}
+      className="card card-hover group flex h-full flex-col overflow-hidden"
+    >
+      <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-line">
+        <Thumb project={project} index={index} />
+        {project.tag && (
+          <span className="absolute left-3 top-3 rounded-full border border-mint/40 bg-ink/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-mint backdrop-blur">
+            {project.tag}
+          </span>
+        )}
+        {hasLink && (
+          <span className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full border border-ice/15 bg-ink/70 text-ice backdrop-blur transition-all duration-300 group-hover:border-mint group-hover:bg-mint group-hover:[&_path]:stroke-ink">
+            <Arrow className="h-4 w-4" />
+          </span>
+        )}
+      </div>
+
+      <div className="flex flex-1 flex-col p-5 md:p-6">
+        <div className="flex items-baseline justify-between gap-3">
+          <h3 className="font-clashbold text-[20px] font-semibold text-white md:text-[22px]">
+            {project.name}
+          </h3>
+          <span className="truncate font-mono text-[11px] text-ice/40">
+            {hostOf(project.link)}
+          </span>
+        </div>
+        <p className="mt-2 line-clamp-2 font-pop text-[14px] leading-relaxed text-ice/65 md:text-[15px]">
+          {project.desc}
+        </p>
+        <div className="mt-auto flex flex-wrap gap-1.5 pt-5">
+          {project.lang.split("+").map((t) => (
+            <span key={t.trim()} className="chip">
+              {t.trim()}
+            </span>
+          ))}
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
 
 const Projects = () => {
   return (
-    <section id="projects" className="mx-[30px] mt-[60px] md:mx-[50px] lg:mx-[80px] lg:mt-[152px] xl:mx-[100px] scroll-mt-[100px]">
-      <div>
-        <div>
-          <h2 className="flex items-center font-clashbold text-[20px] text-white md:text-[60px] md:font-semibold md:leading-[73.8px]">
-            Do...ings? Aktiv! <span className="animate-bounce">👨‍🍳</span>
-          </h2>
-          <p className="font-medium text-[#FFFFFF99] text-[15px] leading-[22.5px] lg:text-[18px] lg:leading-[27px]">
-            some of my fun and real projects I{"'"}ve worked on...brinnnnng
-            mooooore!
-          </p>
-        </div>
+    <section id="projects" className="section-x mt-28 scroll-mt-28 lg:mt-40">
+      <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <SectionHeading
+          eyebrow="Selected work"
+          title="Things I've built"
+          emoji="👨‍🍳"
+          sub="Real products for real users, across Africa and beyond. More cooking."
+        />
+        <Reveal delay={0.1}>
+          <a
+            href="https://www.github.com/victorola-coder"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-ghost"
+          >
+            More on GitHub
+            <Arrow className="h-4 w-4" />
+          </a>
+        </Reveal>
+      </div>
 
-        <div className="grid grid-cols-1 gap-[13px] mt-[46px] md:grid-cols-2 md:gap-[18px] lg:grid-cols-3 lg:gap-[26px] lg:mt-[67px]">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="w-full rounded-t-md relative overflow-hidden after:content-[''] after:absolute after:bg-zinc-100 after:w-0 after:h-0.5 after:bottom-0 after:right-0 after:transition-all after:duration-300 after:hover:left-0 after:hover:w-full hover:shadow-2xl hover:shadow-emerald-400/20 group bg-[#0A1C20] flex flex-col h-[322px] md:h-[373px]"
-            >
-              {project.image ? (
-                <div className="w-full h-[130px] md:h-[150px] shrink-0 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={`${project.name} preview`}
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                    draggable={false}
-                  />
-                </div>
-              ) : null}
-              <div
-                className={`flex flex-col gap-[14px] md:gap-[16px] px-[27px] py-[22px] md:px-[32px] md:py-[28px] flex-1 justify-center overflow-hidden`}
-              >
-                <h5 className="font-medium font-clash text-[20px] leading-[24.6px] md:text-[25px] md:leading-[30.75px]">
-                  {project.name}
-                </h5>
-                <p className="text-[#FFFFFF99] text-[15px] font-medium md:text-[18px] md:leading-[27px]">
-                  {project.lang}
-                </p>
-                <small className="text-[#FFFFFF99] font-medium max-w-[294px] text-[15px] leading-[22.5px] md:max-w-[340px] md:text-[18px] md:leading-[27px] line-clamp-2">
-                  {project.desc}
-                </small>
-                <div className="w-[68px]">
-                  <Link to={project.link} target="_blank" rel="noreferrer">
-                    <motion.div
-                      whileHover={{ scale: 0.9 }}
-                      className="flex items-center space-x-2"
-                    >
-                      <span>
-                        <Arrow className="w-[20px] h-[20px] md:w-[18px] md:h-[18px]" />
-                      </span>
-                      <p className="text-[15px] leading-[22.5px] md:text-[18px] md:leading-[27px] font-medium text-[#FFFFFF99]">
-                        view
-                      </p>
-                    </motion.div>
-                  </Link>
-                </div>
-              </div>
-            </div>
+      <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        {projects.map((project, index) => (
+          <Reveal key={project.name} delay={(index % 3) * 0.08} className="h-full">
+            <ProjectCard project={project} index={index} />
+          </Reveal>
+        ))}
+      </div>
+
+      <div className="mt-20">
+        <SectionHeading
+          eyebrow="Side quests"
+          title="Games & experiments"
+          emoji="🎮"
+          sub="Things I build for fun, each one live on its own victorola.dev subdomain."
+        />
+        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+          {sideProjects.map((project, index) => (
+            <Reveal key={project.name} delay={(index % 3) * 0.08} className="h-full">
+              <ProjectCard project={project} index={index} />
+            </Reveal>
           ))}
         </div>
       </div>
     </section>
   );
 };
+
 export default Projects;
