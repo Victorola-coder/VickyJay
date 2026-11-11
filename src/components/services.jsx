@@ -12,6 +12,13 @@ const ICONS = {
       <circle cx="11" cy="11" r="2" />
     </svg>
   ),
+  DevOps: (
+    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="4" width="18" height="7" rx="2" />
+      <rect x="3" y="13" width="18" height="7" rx="2" />
+      <path d="M7 7.5h.01M7 16.5h.01M12 7.5h5M12 16.5h5" />
+    </svg>
+  ),
   Engineering: (
     <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
       <path d="M16 18l6-6-6-6" />
@@ -28,10 +35,10 @@ const Services = () => {
         eyebrow="What I do"
         title="Services"
         emoji="🔥"
-        sub="Two halves of the same craft. I design the experience, then build the systems that make it real."
+        sub="I design the experience, build the systems behind it, and keep them running."
       />
 
-      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:gap-6">
+      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
         {SERVICES_DATA.map((service, index) => (
           <Reveal key={service.title} delay={index * 0.1}>
             <motion.article

@@ -5,7 +5,7 @@ Fullstack Software Engineer
 
 ## Professional Summary
 
-Fullstack software engineer with hands-on experience building and shipping production web and mobile applications across the stack — frontend (React, Next.js, TypeScript), backend (Node.js, Express), and mobile (React Native). Currently balancing multiple concurrent engagements spanning contract and product-development work, from a flagship cloud-deployment platform to consumer and business apps in active production. Eager to bring strong fundamentals, adaptability, and a fast learning curve to a product engineering team.
+Fullstack software engineer with hands-on experience building and shipping production web and mobile applications across the stack — frontend (React, Next.js, TypeScript), backend (Node.js, Express), mobile (React Native), and DevOps (setting up and managing small-scale servers and deployments). Currently balancing multiple concurrent engagements spanning contract and product-development work, from a flagship cloud-deployment platform to consumer and business apps in active production. Eager to bring strong fundamentals, adaptability, and a fast learning curve to a product engineering team.
 
 ## Skills
 
@@ -15,7 +15,7 @@ Fullstack software engineer with hands-on experience building and shipping produ
 - Databases & ORMs: Prisma, MongoDB, PostgreSQL, Supabase, Drizzle ORM
 - Payments & Fintech: Stripe, Paystack, Coinbase/Crypto, Solana/Web3, VTU.ng API
 - AI Integration: OpenAI, Google Gemini
-- DevOps & Deployment: Docker, Vercel, Render, Nginx, CI/CD
+- DevOps & Deployment: Docker, Vercel, Render, Nginx, CI/CD, small-scale server management
 - AI Annotation & Evaluation: AI/ML Data Annotation (Outlier, Handshake AI)
 - Mobile: React Native, Expo, Flutter
 - Tools & Design: Git, CMD, Bash, Figma, Design, Communication
