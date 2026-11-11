@@ -13,6 +13,7 @@ export const projects = [
     desc: "Sales automation platform that speeds up the sales cycle and lets teams collaborate with clients on a single pane of glass.",
     lang: "Fullstack",
     link: "https://seelhq.com/",
+    image: "/images/projects/seel.jpg",
   },
   {
     name: "Greanz",
@@ -56,6 +57,7 @@ export const projects = [
     desc: "A modern HR management system for workforce management and employee engagement",
     lang: "NextJs + TypeScript + TailwindCSS",
     link: "https://www.trexworkspace.com/",
+    image: "/images/projects/trex.jpg",
   },
 ];
 
@@ -75,13 +77,6 @@ export const sideProjects = [
     lang: "Game + Open source",
     link: "https://riddle.victorola.dev/",
     image: "/images/projects/riddle.jpg",
-  },
-  {
-    name: "Waves",
-    desc: "Connect your music apps and listen together in real time with listening parties and leaderboards.",
-    lang: "Music + Social",
-    link: "https://waves.victorola.dev/",
-    image: "/images/projects/waves.jpg",
   },
 ];
 
