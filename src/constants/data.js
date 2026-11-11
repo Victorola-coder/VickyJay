@@ -66,10 +66,10 @@ export const SERVICES_DATA = [
 
 export const EXPERIENCE_DATA = [
   {
-    role: "DevOps Engineer",
+    role: "Fullstack Engineer, DevOps",
     company: "Seel",
     period: "Aug 2026 - Present",
-    description: "Running the cloud infrastructure for Seel, a sales automation platform, with Terraform on AWS, containerised services, and CI pipelines that keep releases fast and reliable.",
+    description: "Building across the stack on Seel, a sales automation platform, and running its cloud infrastructure with Terraform on AWS, containerised services, and CI pipelines that keep releases fast and reliable.",
     subtext: "AWS, Terraform, Docker & CI/CD"
   },
   {
