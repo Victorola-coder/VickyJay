@@ -5,7 +5,7 @@ import { Arrow } from "./svgs";
 const STATS = [
   { value: "3+", label: "Years" },
   { value: "15+", label: "Products" },
-  { value: "Full", label: "UI to API" },
+  { value: "E2E", label: "Design to deploy" },
 ];
 
 const container = {
